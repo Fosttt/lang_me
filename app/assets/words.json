@@ -1,147 +1,8336 @@
 [
-{"word":"apple","ipa":"/ˈæp.əl/","pos":"noun","level":"A1","ru":"яблоко","theme":"food","examples":[{"en":"I eat an apple every morning.","ru":"Я ем яблоко каждое утро."},{"en":"This apple is very sweet.","ru":"Это яблоко очень сладкое."}]},
-{"word":"water","ipa":"/ˈwɔː.tər/","pos":"noun","level":"A1","ru":"вода","theme":"drink","examples":[{"en":"Can I have a glass of water?","ru":"Можно мне стакан воды?"},{"en":"The water in the lake is cold.","ru":"Вода в озере холодная."}]},
-{"word":"bread","ipa":"/bred/","pos":"noun","level":"A1","ru":"хлеб","theme":"food","examples":[{"en":"We need to buy bread.","ru":"Нам нужно купить хлеб."},{"en":"She makes fresh bread at home.","ru":"Она печёт свежий хлеб дома."}]},
-{"word":"house","ipa":"/haʊs/","pos":"noun","level":"A1","ru":"дом","theme":"home","examples":[{"en":"Their house has a big garden.","ru":"У их дома большой сад."},{"en":"We stayed in the house all day.","ru":"Мы весь день были дома."}]},
-{"word":"family","ipa":"/ˈfæm.əl.i/","pos":"noun","level":"A1","ru":"семья","theme":"family","examples":[{"en":"My family lives in a small town.","ru":"Моя семья живёт в маленьком городе."},{"en":"Family is the most important thing.","ru":"Семья — самое важное."}]},
-{"word":"mother","ipa":"/ˈmʌð.ər/","pos":"noun","level":"A1","ru":"мама, мать","theme":"family","examples":[{"en":"My mother cooks very well.","ru":"Моя мама очень хорошо готовит."},{"en":"Her mother is a doctor.","ru":"Её мама — врач."}]},
-{"word":"father","ipa":"/ˈfɑː.ðər/","pos":"noun","level":"A1","ru":"папа, отец","theme":"family","examples":[{"en":"My father works in a bank.","ru":"Мой отец работает в банке."},{"en":"His father taught him to swim.","ru":"Его отец научил его плавать."}]},
-{"word":"friend","ipa":"/frend/","pos":"noun","level":"A1","ru":"друг","theme":"people","examples":[{"en":"He is my best friend.","ru":"Он мой лучший друг."},{"en":"I met an old friend yesterday.","ru":"Вчера я встретил старого друга."}]},
-{"word":"work","ipa":"/wɜːk/","pos":"verb","level":"A1","ru":"работать; работа","theme":"work","examples":[{"en":"I work from nine to five.","ru":"Я работаю с девяти до пяти."},{"en":"She loves her work.","ru":"Она любит свою работу."}]},
-{"word":"school","ipa":"/skuːl/","pos":"noun","level":"A1","ru":"школа","theme":"education","examples":[{"en":"The children go to school by bus.","ru":"Дети ездят в школу на автобусе."},{"en":"Our school is near the park.","ru":"Наша школа рядом с парком."}]},
-{"word":"book","ipa":"/bʊk/","pos":"noun","level":"A1","ru":"книга","theme":"education","examples":[{"en":"I am reading a good book.","ru":"Я читаю хорошую книгу."},{"en":"This book has many pictures.","ru":"В этой книге много картинок."}]},
-{"word":"cat","ipa":"/kæt/","pos":"noun","level":"A1","ru":"кот, кошка","theme":"animals","examples":[{"en":"The cat sleeps on the sofa.","ru":"Кот спит на диване."},{"en":"Our cat likes fish.","ru":"Наша кошка любит рыбу."}]},
-{"word":"dog","ipa":"/dɒɡ/","pos":"noun","level":"A1","ru":"собака","theme":"animals","examples":[{"en":"The dog runs in the yard.","ru":"Собака бегает во дворе."},{"en":"I walk my dog twice a day.","ru":"Я гуляю с собакой два раза в день."}]},
-{"word":"sun","ipa":"/sʌn/","pos":"noun","level":"A1","ru":"солнце","theme":"nature","examples":[{"en":"The sun is very bright today.","ru":"Солнце сегодня очень яркое."},{"en":"We sat in the sun for an hour.","ru":"Мы час сидели на солнце."}]},
-{"word":"rain","ipa":"/reɪn/","pos":"noun","level":"A1","ru":"дождь","theme":"weather","examples":[{"en":"The rain stopped in the evening.","ru":"Дождь прекратился вечером."},{"en":"I love the sound of rain.","ru":"Я люблю звук дождя."}]},
-{"word":"day","ipa":"/deɪ/","pos":"noun","level":"A1","ru":"день","theme":"time","examples":[{"en":"Have a nice day!","ru":"Хорошего дня!"},{"en":"It was a long day.","ru":"Это был длинный день."}]},
-{"word":"night","ipa":"/naɪt/","pos":"noun","level":"A1","ru":"ночь","theme":"time","examples":[{"en":"The city is beautiful at night.","ru":"Город красив ночью."},{"en":"Good night, see you tomorrow.","ru":"Спокойной ночи, до завтра."}]},
-{"word":"eat","ipa":"/iːt/","pos":"verb","level":"A1","ru":"есть, кушать","theme":"food","examples":[{"en":"We eat dinner at seven.","ru":"Мы ужинаем в семь."},{"en":"What do you want to eat?","ru":"Что ты хочешь поесть?"}]},
-{"word":"drink","ipa":"/drɪŋk/","pos":"verb","level":"A1","ru":"пить; напиток","theme":"drink","examples":[{"en":"Drink more water in summer.","ru":"Летом пей больше воды."},{"en":"Would you like a cold drink?","ru":"Хочешь холодный напиток?"}]},
-{"word":"go","ipa":"/ɡəʊ/","pos":"verb","level":"A1","ru":"идти, ехать","theme":"transport","examples":[{"en":"Let's go home.","ru":"Пойдём домой."},{"en":"They go to the sea every year.","ru":"Они ездят на море каждый год."}]},
-{"word":"come","ipa":"/kʌm/","pos":"verb","level":"A1","ru":"приходить","theme":"communication","examples":[{"en":"Come to my birthday party.","ru":"Приходи на мой день рождения."},{"en":"The bus comes at eight.","ru":"Автобус приходит в восемь."}]},
-{"word":"see","ipa":"/siː/","pos":"verb","level":"A1","ru":"видеть","theme":"communication","examples":[{"en":"I can see the mountains from here.","ru":"Отсюда я вижу горы."},{"en":"See you later!","ru":"Увидимся позже!"}]},
-{"word":"big","ipa":"/bɪɡ/","pos":"adjective","level":"A1","ru":"большой","theme":"other","examples":[{"en":"They live in a big city.","ru":"Они живут в большом городе."},{"en":"This box is too big.","ru":"Эта коробка слишком большая."}]},
-{"word":"small","ipa":"/smɔːl/","pos":"adjective","level":"A1","ru":"маленький","theme":"other","examples":[{"en":"She has a small dog.","ru":"У неё маленькая собака."},{"en":"The room is small but cozy.","ru":"Комната маленькая, но уютная."}]},
-{"word":"good","ipa":"/ɡʊd/","pos":"adjective","level":"A1","ru":"хороший","theme":"other","examples":[{"en":"That is a good idea.","ru":"Это хорошая идея."},{"en":"The food here is very good.","ru":"Еда здесь очень хорошая."}]},
-{"word":"happy","ipa":"/ˈhæp.i/","pos":"adjective","level":"A1","ru":"счастливый","theme":"feelings","examples":[{"en":"She looks very happy today.","ru":"Она выглядит очень счастливой сегодня."},{"en":"Happy birthday!","ru":"С днём рождения!"}]},
-{"word":"money","ipa":"/ˈmʌn.i/","pos":"noun","level":"A1","ru":"деньги","theme":"money","examples":[{"en":"I don't have enough money.","ru":"У меня недостаточно денег."},{"en":"He saves money for a car.","ru":"Он копит деньги на машину."}]},
-{"word":"car","ipa":"/kɑːr/","pos":"noun","level":"A1","ru":"машина","theme":"transport","examples":[{"en":"Our car is old but reliable.","ru":"Наша машина старая, но надёжная."},{"en":"She drives her car to work.","ru":"Она ездит на работу на машине."}]},
-{"word":"city","ipa":"/ˈsɪt.i/","pos":"noun","level":"A1","ru":"город","theme":"city","examples":[{"en":"Moscow is a very big city.","ru":"Москва — очень большой город."},{"en":"The city center is busy.","ru":"Центр города оживлённый."}]},
-{"word":"shop","ipa":"/ʃɒp/","pos":"noun","level":"A1","ru":"магазин","theme":"city","examples":[{"en":"The shop opens at nine.","ru":"Магазин открывается в девять."},{"en":"I bought milk in the shop.","ru":"Я купил молоко в магазине."}]},
-{"word":"time","ipa":"/taɪm/","pos":"noun","level":"A1","ru":"время","theme":"time","examples":[{"en":"What time is it?","ru":"Который час?"},{"en":"We have no time to wait.","ru":"У нас нет времени ждать."}]},
-{"word":"year","ipa":"/jɪər/","pos":"noun","level":"A1","ru":"год","theme":"time","examples":[{"en":"I started this job last year.","ru":"Я начал эту работу в прошлом году."},{"en":"A year has twelve months.","ru":"В году двенадцать месяцев."}]},
-{"word":"hand","ipa":"/hænd/","pos":"noun","level":"A1","ru":"рука (кисть)","theme":"body","examples":[{"en":"Wash your hands before dinner.","ru":"Мой руки перед ужином."},{"en":"He held the ticket in his hand.","ru":"Он держал билет в руке."}]},
-{"word":"head","ipa":"/hed/","pos":"noun","level":"A1","ru":"голова","theme":"body","examples":[{"en":"My head hurts.","ru":"У меня болит голова."},{"en":"He shook his head.","ru":"Он покачал головой."}]},
-{"word":"phone","ipa":"/fəʊn/","pos":"noun","level":"A1","ru":"телефон","theme":"technology","examples":[{"en":"My phone is almost dead.","ru":"Мой телефон почти разрядился."},{"en":"She left her phone at home.","ru":"Она оставила телефон дома."}]},
-{"word":"weather","ipa":"/ˈweð.ər/","pos":"noun","level":"A2","ru":"погода","theme":"weather","examples":[{"en":"The weather is getting warmer.","ru":"Погода становится теплее."},{"en":"What's the weather like today?","ru":"Какая сегодня погода?"}]},
-{"word":"travel","ipa":"/ˈtræv.əl/","pos":"verb","level":"A2","ru":"путешествовать","theme":"travel","examples":[{"en":"They travel abroad every summer.","ru":"Они ездят за границу каждое лето."},{"en":"I like to travel by train.","ru":"Мне нравится путешествовать на поезде."}]},
-{"word":"ticket","ipa":"/ˈtɪk.ɪt/","pos":"noun","level":"A2","ru":"билет","theme":"travel","examples":[{"en":"I bought two tickets to the concert.","ru":"Я купил два билета на концерт."},{"en":"Keep your ticket until the end of the trip.","ru":"Сохраняйте билет до конца поездки."}]},
-{"word":"airport","ipa":"/ˈeə.pɔːt/","pos":"noun","level":"A2","ru":"аэропорт","theme":"travel","examples":[{"en":"We arrived at the airport early.","ru":"Мы приехали в аэропорт рано."},{"en":"The airport is far from the city.","ru":"Аэропорт далеко от города."}]},
-{"word":"breakfast","ipa":"/ˈbrek.fəst/","pos":"noun","level":"A2","ru":"завтрак","theme":"food","examples":[{"en":"I usually have breakfast at eight.","ru":"Я обычно завтракаю в восемь."},{"en":"Breakfast is included in the price.","ru":"Завтрак включён в стоимость."}]},
-{"word":"kitchen","ipa":"/ˈkɪtʃ.ən/","pos":"noun","level":"A2","ru":"кухня","theme":"home","examples":[{"en":"She is cooking in the kitchen.","ru":"Она готовит на кухне."},{"en":"Our kitchen is small but bright.","ru":"Наша кухня маленькая, но светлая."}]},
-{"word":"healthy","ipa":"/ˈhel.θi/","pos":"adjective","level":"A2","ru":"здоровый, полезный","theme":"health","examples":[{"en":"Vegetables are healthy food.","ru":"Овощи — полезная еда."},{"en":"He leads a healthy lifestyle.","ru":"Он ведёт здоровый образ жизни."}]},
-{"word":"doctor","ipa":"/ˈdɒk.tər/","pos":"noun","level":"A2","ru":"врач","theme":"health","examples":[{"en":"You should see a doctor.","ru":"Тебе стоит сходить к врачу."},{"en":"The doctor gave me some pills.","ru":"Врач дал мне таблетки."}]},
-{"word":"weekend","ipa":"/ˌwiːkˈend/","pos":"noun","level":"A2","ru":"выходные","theme":"time","examples":[{"en":"What are your plans for the weekend?","ru":"Какие у тебя планы на выходные?"},{"en":"We spent the weekend at the lake.","ru":"Мы провели выходные на озере."}]},
-{"word":"expensive","ipa":"/ɪkˈspen.sɪv/","pos":"adjective","level":"A2","ru":"дорогой","theme":"money","examples":[{"en":"This hotel is too expensive.","ru":"Этот отель слишком дорогой."},{"en":"Fresh fish is expensive here.","ru":"Свежая рыба здесь дорогая."}]},
-{"word":"cheap","ipa":"/tʃiːp/","pos":"adjective","level":"A2","ru":"дешёвый","theme":"money","examples":[{"en":"We found a cheap flight.","ru":"Мы нашли дешёвый рейс."},{"en":"This café is cheap and tasty.","ru":"Это кафе дешёвое и вкусное."}]},
-{"word":"clothes","ipa":"/kləʊðz/","pos":"noun","level":"A2","ru":"одежда","theme":"clothes","examples":[{"en":"I need to buy warm clothes.","ru":"Мне нужно купить тёплую одежду."},{"en":"She likes bright clothes.","ru":"Ей нравится яркая одежда."}]},
-{"word":"shirt","ipa":"/ʃɜːt/","pos":"noun","level":"A2","ru":"рубашка","theme":"clothes","examples":[{"en":"He wore a white shirt.","ru":"Он был в белой рубашке."},{"en":"This shirt needs ironing.","ru":"Эту рубашку нужно погладить."}]},
-{"word":"holiday","ipa":"/ˈhɒl.ə.deɪ/","pos":"noun","level":"A2","ru":"отпуск, праздник","theme":"travel","examples":[{"en":"We are going on holiday in July.","ru":"Мы едем в отпуск в июле."},{"en":"New Year is my favourite holiday.","ru":"Новый год — мой любимый праздник."}]},
-{"word":"weathered","ipa":"/ˈweð.əd/","pos":"adjective","level":"C1","ru":"обветренный, потрёпанный","theme":"nature","examples":[{"en":"The weathered door creaked open.","ru":"Обветшалая дверь со скрипом открылась."},{"en":"His weathered face told many stories.","ru":"Его обветренное лицо говорило о многом."}]},
-{"word":"learn","ipa":"/lɜːn/","pos":"verb","level":"A2","ru":"учить, узнавать","theme":"education","examples":[{"en":"I learn ten new words every day.","ru":"Я учу десять новых слов каждый день."},{"en":"Children learn fast.","ru":"Дети учатся быстро."}]},
-{"word":"teacher","ipa":"/ˈtiː.tʃər/","pos":"noun","level":"A2","ru":"учитель","theme":"education","examples":[{"en":"Our teacher explains everything clearly.","ru":"Наш учитель объясняет всё понятно."},{"en":"She works as an English teacher.","ru":"Она работает учителем английского."}]},
-{"word":"music","ipa":"/ˈmjuː.zɪk/","pos":"noun","level":"A2","ru":"музыка","theme":"music","examples":[{"en":"He listens to music on the way to work.","ru":"Он слушает музыку по дороге на работу."},{"en":"This music makes me calm.","ru":"Эта музыка меня успокаивает."}]},
-{"word":"movie","ipa":"/ˈmuː.vi/","pos":"noun","level":"A2","ru":"фильм","theme":"art","examples":[{"en":"We watched a funny movie last night.","ru":"Вчера вечером мы посмотрели смешной фильм."},{"en":"The movie starts at nine.","ru":"Фильм начинается в девять."}]},
-{"word":"remember","ipa":"/rɪˈmem.bər/","pos":"verb","level":"A2","ru":"помнить","theme":"communication","examples":[{"en":"I don't remember his name.","ru":"Я не помню его имени."},{"en":"Remember to lock the door.","ru":"Не забудь закрыть дверь."}]},
-{"word":"forget","ipa":"/fəˈɡet/","pos":"verb","level":"A2","ru":"забывать","theme":"communication","examples":[{"en":"Don't forget your umbrella.","ru":"Не забудь зонт."},{"en":"I forgot to call him back.","ru":"Я забыл ему перезвонить."}]},
-{"word":"street","ipa":"/striːt/","pos":"noun","level":"A2","ru":"улица","theme":"city","examples":[{"en":"They live on a quiet street.","ru":"Они живут на тихой улице."},{"en":"The street is full of cafés.","ru":"Улица полна кафе."}]},
-{"word":"bridge","ipa":"/brɪdʒ/","pos":"noun","level":"A2","ru":"мост","theme":"city","examples":[{"en":"We walked across the old bridge.","ru":"Мы перешли по старому мосту."},{"en":"The bridge connects two districts.","ru":"Мост соединяет два района."}]},
-{"word":"early","ipa":"/ˈɜː.li/","pos":"adverb","level":"A2","ru":"рано","theme":"time","examples":[{"en":"I get up early on weekdays.","ru":"В будни я встаю рано."},{"en":"We arrived early for the meeting.","ru":"Мы пришли на встречу рано."}]},
-{"word":"late","ipa":"/leɪt/","pos":"adverb","level":"A2","ru":"поздно","theme":"time","examples":[{"en":"Sorry, I'm late.","ru":"Извини, я опоздал."},{"en":"He works late on Fridays.","ru":"По пятницам он работает допоздна."}]},
-{"word":"improve","ipa":"/ɪmˈpruːv/","pos":"verb","level":"B1","ru":"улучшать","theme":"education","examples":[{"en":"I want to improve my English.","ru":"Я хочу улучшить свой английский."},{"en":"The service has improved a lot.","ru":"Сервис значительно улучшился."}]},
-{"word":"decision","ipa":"/dɪˈsɪʒ.ən/","pos":"noun","level":"B1","ru":"решение","theme":"work","examples":[{"en":"It was a difficult decision.","ru":"Это было трудное решение."},{"en":"We need to make a decision today.","ru":"Нам нужно принять решение сегодня."}]},
-{"word":"experience","ipa":"/ɪkˈspɪə.ri.əns/","pos":"noun","level":"B1","ru":"опыт","theme":"work","examples":[{"en":"She has five years of experience.","ru":"У неё пять лет опыта."},{"en":"Travelling is a great experience.","ru":"Путешествия — отличный опыт."}]},
-{"word":"opportunity","ipa":"/ˌɒp.əˈtʃuː.nə.ti/","pos":"noun","level":"B1","ru":"возможность","theme":"work","examples":[{"en":"This job is a great opportunity.","ru":"Эта работа — отличная возможность."},{"en":"Don't miss the opportunity to learn.","ru":"Не упусти возможность научиться."}]},
-{"word":"suggest","ipa":"/səˈdʒest/","pos":"verb","level":"B1","ru":"предлагать","theme":"communication","examples":[{"en":"I suggest we start earlier.","ru":"Предлагаю начать пораньше."},{"en":"What do you suggest?","ru":"Что ты предлагаешь?"}]},
-{"word":"promise","ipa":"/ˈprɒm.ɪs/","pos":"verb","level":"B1","ru":"обещать","theme":"communication","examples":[{"en":"I promise to be on time.","ru":"Обещаю прийти вовремя."},{"en":"He kept his promise.","ru":"Он сдержал обещание."}]},
-{"word":"environment","ipa":"/ɪnˈvaɪ.rən.mənt/","pos":"noun","level":"B1","ru":"окружающая среда","theme":"nature","examples":[{"en":"We must protect the environment.","ru":"Мы должны защищать окружающую среду."},{"en":"Plastic harms the environment.","ru":"Пластик вредит окружающей среде."}]},
-{"word":"pollution","ipa":"/pəˈluː.ʃən/","pos":"noun","level":"B1","ru":"загрязнение","theme":"nature","examples":[{"en":"Air pollution is a serious problem.","ru":"Загрязнение воздуха — серьёзная проблема."},{"en":"The factory causes water pollution.","ru":"Завод загрязняет воду."}]},
-{"word":"salary","ipa":"/ˈsæl.ər.i/","pos":"noun","level":"B1","ru":"зарплата","theme":"money","examples":[{"en":"The salary is paid monthly.","ru":"Зарплата выплачивается ежемесячно."},{"en":"He asked for a higher salary.","ru":"Он попросил зарплату повыше."}]},
-{"word":"customer","ipa":"/ˈkʌs.tə.mər/","pos":"noun","level":"B1","ru":"клиент, покупатель","theme":"business","examples":[{"en":"The customer is always right.","ru":"Клиент всегда прав."},{"en":"We have many regular customers.","ru":"У нас много постоянных клиентов."}]},
-{"word":"advertise","ipa":"/ˈæd.və.taɪz/","pos":"verb","level":"B1","ru":"рекламировать","theme":"business","examples":[{"en":"They advertise their products online.","ru":"Они рекламируют свои товары в интернете."},{"en":"The company advertises on TV.","ru":"Компания даёт рекламу на ТВ."}]},
-{"word":"confident","ipa":"/ˈkɒn.fɪ.dənt/","pos":"adjective","level":"B1","ru":"уверенный","theme":"feelings","examples":[{"en":"She is confident about the exam.","ru":"Она уверена насчёт экзамена."},{"en":"Speak in a confident voice.","ru":"Говори уверенным голосом."}]},
-{"word":"nervous","ipa":"/ˈnɜː.vəs/","pos":"adjective","level":"B1","ru":"нервный, взволнованный","theme":"feelings","examples":[{"en":"I always feel nervous before flights.","ru":"Я всегда нервничаю перед полётами."},{"en":"He was nervous at the interview.","ru":"Он волновался на собеседовании."}]},
-{"word":"injury","ipa":"/ˈɪn.dʒər.i/","pos":"noun","level":"B1","ru":"травма","theme":"health","examples":[{"en":"The player missed the game because of an injury.","ru":"Игрок пропустил матч из-за травмы."},{"en":"It was a minor injury.","ru":"Это была лёгкая травма."}]},
-{"word":"recover","ipa":"/rɪˈkʌv.ər/","pos":"verb","level":"B1","ru":"восстанавливаться, выздоравливать","theme":"health","examples":[{"en":"She recovered quickly after the operation.","ru":"Она быстро восстановилась после операции."},{"en":"The economy is recovering.","ru":"Экономика восстанавливается."}]},
-{"word":"luggage","ipa":"/ˈlʌɡ.ɪdʒ/","pos":"noun","level":"B1","ru":"багаж","theme":"travel","examples":[{"en":"My luggage was lost at the airport.","ru":"Мой багаж потеряли в аэропорту."},{"en":"You can leave your luggage here.","ru":"Багаж можно оставить здесь."}]},
-{"word":"destination","ipa":"/ˌdes.tɪˈneɪ.ʃən/","pos":"noun","level":"B1","ru":"пункт назначения","theme":"travel","examples":[{"en":"We finally reached our destination.","ru":"Наконец мы добрались до места назначения."},{"en":"Bali is a popular destination.","ru":"Бали — популярное направление."}]},
-{"word":"neighbourhood","ipa":"/ˈneɪ.bə.hʊd/","pos":"noun","level":"B1","ru":"район, соседство","theme":"city","examples":[{"en":"We live in a quiet neighbourhood.","ru":"Мы живём в тихом районе."},{"en":"The neighbourhood has changed a lot.","ru":"Район сильно изменился."}]},
-{"word":"device","ipa":"/dɪˈvaɪs/","pos":"noun","level":"B1","ru":"устройство","theme":"technology","examples":[{"en":"Turn off all electronic devices.","ru":"Выключите все электронные устройства."},{"en":"This device measures temperature.","ru":"Это устройство измеряет температуру."}]},
-{"word":"download","ipa":"/ˌdaʊnˈləʊd/","pos":"verb","level":"B1","ru":"скачивать","theme":"technology","examples":[{"en":"You can download the app for free.","ru":"Приложение можно скачать бесплатно."},{"en":"I downloaded the report yesterday.","ru":"Я скачал отчёт вчера."}]},
-{"word":"achieve","ipa":"/əˈtʃiːv/","pos":"verb","level":"B2","ru":"достигать","theme":"work","examples":[{"en":"She achieved her goal in two years.","ru":"Она достигла своей цели за два года."},{"en":"You can achieve more with a plan.","ru":"С планом можно достичь большего."}]},
-{"word":"negotiate","ipa":"/nəˈɡəʊ.ʃi.eɪt/","pos":"verb","level":"B2","ru":"вести переговоры","theme":"business","examples":[{"en":"We negotiated a better price.","ru":"Мы договорились о лучшей цене."},{"en":"They are negotiating a new contract.","ru":"Они обсуждают новый контракт."}]},
-{"word":"deadline","ipa":"/ˈded.laɪn/","pos":"noun","level":"B2","ru":"крайний срок","theme":"work","examples":[{"en":"The deadline is Friday evening.","ru":"Крайний срок — вечер пятницы."},{"en":"He always meets deadlines.","ru":"Он всегда укладывается в сроки."}]},
-{"word":"efficient","ipa":"/ɪˈfɪʃ.ənt/","pos":"adjective","level":"B2","ru":"эффективный","theme":"work","examples":[{"en":"This is a more efficient method.","ru":"Это более эффективный метод."},{"en":"The new engine is very efficient.","ru":"Новый двигатель очень экономичный."}]},
-{"word":"reliable","ipa":"/rɪˈlaɪ.ə.bəl/","pos":"adjective","level":"B2","ru":"надёжный","theme":"other","examples":[{"en":"He is a reliable partner.","ru":"Он надёжный партнёр."},{"en":"I need a reliable internet connection.","ru":"Мне нужно надёжное интернет-соединение."}]},
-{"word":"witness","ipa":"/ˈwɪt.nəs/","pos":"noun","level":"B2","ru":"свидетель","theme":"law","examples":[{"en":"The witness described the accident.","ru":"Свидетель описал аварию."},{"en":"There were no witnesses.","ru":"Свидетелей не было."}]},
-{"word":"evidence","ipa":"/ˈev.ɪ.dəns/","pos":"noun","level":"B2","ru":"доказательство, улика","theme":"law","examples":[{"en":"There is no evidence against him.","ru":"Против него нет доказательств."},{"en":"The evidence supports her story.","ru":"Улики подтверждают её рассказ."}]},
-{"word":"anxiety","ipa":"/æŋˈzaɪ.ə.ti/","pos":"noun","level":"B2","ru":"тревога","theme":"feelings","examples":[{"en":"Exercise helps reduce anxiety.","ru":"Спорт помогает снизить тревогу."},{"en":"She hid her anxiety well.","ru":"Она хорошо скрывала тревогу."}]},
-{"word":"curious","ipa":"/ˈkjʊə.ri.əs/","pos":"adjective","level":"B2","ru":"любопытный","theme":"feelings","examples":[{"en":"Children are naturally curious.","ru":"Дети от природы любопытны."},{"en":"I'm curious about the results.","ru":"Мне любопытны результаты."}]},
-{"word":"install","ipa":"/ɪnˈstɔːl/","pos":"verb","level":"B2","ru":"устанавливать","theme":"technology","examples":[{"en":"Install the update tonight.","ru":"Установи обновление сегодня вечером."},{"en":"We installed solar panels.","ru":"Мы установили солнечные панели."}]},
-{"word":"sustainable","ipa":"/səˈsteɪ.nə.bəl/","pos":"adjective","level":"B2","ru":"устойчивый, экологичный","theme":"nature","examples":[{"en":"We need sustainable energy sources.","ru":"Нам нужны устойчивые источники энергии."},{"en":"The company promotes sustainable farming.","ru":"Компания продвигает экологичное земледелие."}]},
-{"word":"drought","ipa":"/draʊt/","pos":"noun","level":"B2","ru":"засуха","theme":"weather","examples":[{"en":"The drought destroyed the crops.","ru":"Засуха уничтожила урожай."},{"en":"This summer brought a severe drought.","ru":"Это лето принесло сильную засуху."}]},
-{"word":"appointment","ipa":"/əˈpɔɪnt.mənt/","pos":"noun","level":"B2","ru":"запись, встреча","theme":"health","examples":[{"en":"I have a dentist appointment at three.","ru":"У меня запись к стоматологу в три."},{"en":"Call to make an appointment.","ru":"Позвоните, чтобы записаться."}]},
-{"word":"prescription","ipa":"/prɪˈskrɪp.ʃən/","pos":"noun","level":"B2","ru":"рецепт (врачебный)","theme":"health","examples":[{"en":"This medicine needs a prescription.","ru":"Это лекарство продаётся по рецепту."},{"en":"The doctor wrote me a prescription.","ru":"Врач выписал мне рецепт."}]},
-{"word":"inevitable","ipa":"/ɪˈnev.ɪ.tə.bəl/","pos":"adjective","level":"C1","ru":"неизбежный","theme":"other","examples":[{"en":"Change is inevitable.","ru":"Перемены неизбежны."},{"en":"The conflict seemed inevitable.","ru":"Конфликт казался неизбежным."}]},
-{"word":"ambiguous","ipa":"/æmˈbɪɡ.ju.əs/","pos":"adjective","level":"C1","ru":"двусмысленный, неоднозначный","theme":"communication","examples":[{"en":"His answer was deliberately ambiguous.","ru":"Его ответ был намеренно двусмысленным."},{"en":"The contract contains ambiguous terms.","ru":"В контракте есть неоднозначные формулировки."}]},
-{"word":"scrutiny","ipa":"/ˈskruː.tɪ.ni/","pos":"noun","level":"C1","ru":"пристальное внимание, проверка","theme":"law","examples":[{"en":"The deal came under public scrutiny.","ru":"Сделка попала под пристальное внимание общества."},{"en":"Every claim deserves careful scrutiny.","ru":"Каждое утверждение заслуживает тщательной проверки."}]},
-{"word":"resilient","ipa":"/rɪˈzɪl.i.ənt/","pos":"adjective","level":"C1","ru":"стойкий, жизнестойкий","theme":"feelings","examples":[{"en":"Kids are surprisingly resilient.","ru":"Дети удивительно жизнестойки."},{"en":"The market proved resilient to the crisis.","ru":"Рынок оказался устойчив к кризису."}]},
-{"word":"leverage","ipa":"/ˈliː.vər.ɪdʒ/","pos":"noun","level":"C1","ru":"рычаг влияния; использовать с выгодой","theme":"business","examples":[{"en":"They used their size as leverage in talks.","ru":"Они использовали свой масштаб как рычаг на переговорах."},{"en":"We can leverage this data to grow.","ru":"Мы можем выгодно использовать эти данные для роста."}]},
-{"word":"meticulous","ipa":"/məˈtɪk.jə.ləs/","pos":"adjective","level":"C1","ru":"скрупулёзный","theme":"work","examples":[{"en":"She keeps meticulous records.","ru":"Она ведёт скрупулёзные записи."},{"en":"The restoration required meticulous work.","ru":"Реставрация требовала скрупулёзной работы."}]},
-{"word":"deteriorate","ipa":"/dɪˈtɪə.ri.ə.reɪt/","pos":"verb","level":"C1","ru":"ухудшаться","theme":"health","examples":[{"en":"His health began to deteriorate.","ru":"Его здоровье начало ухудшаться."},{"en":"Relations between the countries deteriorated.","ru":"Отношения между странами ухудшились."}]},
-{"word":"negligible","ipa":"/ˈneɡ.lɪ.dʒə.bəl/","pos":"adjective","level":"C1","ru":"ничтожно малый","theme":"science","examples":[{"en":"The difference in cost is negligible.","ru":"Разница в стоимости ничтожно мала."},{"en":"The side effects are negligible.","ru":"Побочные эффекты незначительны."}]},
-{"word":"table","ipa":"/ˈteɪ.bəl/","pos":"noun","level":"A1","ru":"стол","theme":"home","examples":[{"en":"The keys are on the table.","ru":"Ключи на столе."},{"en":"We need a bigger table.","ru":"Нам нужен стол побольше."}]},
-{"word":"window","ipa":"/ˈwɪn.dəʊ/","pos":"noun","level":"A1","ru":"окно","theme":"home","examples":[{"en":"Open the window, please.","ru":"Открой окно, пожалуйста."},{"en":"The window looks out on the park.","ru":"Окно выходит на парк."}]},
-{"word":"door","ipa":"/dɔːr/","pos":"noun","level":"A1","ru":"дверь","theme":"home","examples":[{"en":"Someone is knocking at the door.","ru":"Кто-то стучит в дверь."},{"en":"Close the door behind you.","ru":"Закрой за собой дверь."}]},
-{"word":"milk","ipa":"/mɪlk/","pos":"noun","level":"A1","ru":"молоко","theme":"drink","examples":[{"en":"I drink coffee with milk.","ru":"Я пью кофе с молоком."},{"en":"The milk is in the fridge.","ru":"Молоко в холодильнике."}]},
-{"word":"tea","ipa":"/tiː/","pos":"noun","level":"A1","ru":"чай","theme":"drink","examples":[{"en":"Would you like some tea?","ru":"Хочешь чаю?"},{"en":"Green tea is good for you.","ru":"Зелёный чай полезен."}]},
-{"word":"coffee","ipa":"/ˈkɒf.i/","pos":"noun","level":"A1","ru":"кофе","theme":"drink","examples":[{"en":"I can't start my day without coffee.","ru":"Я не могу начать день без кофе."},{"en":"Two coffees, please.","ru":"Два кофе, пожалуйста."}]},
-{"word":"fish","ipa":"/fɪʃ/","pos":"noun","level":"A1","ru":"рыба","theme":"food","examples":[{"en":"We had fish for dinner.","ru":"На ужин у нас была рыба."},{"en":"He caught a big fish.","ru":"Он поймал большую рыбу."}]},
-{"word":"tree","ipa":"/triː/","pos":"noun","level":"A1","ru":"дерево","theme":"nature","examples":[{"en":"There is an old tree near our house.","ru":"Возле нашего дома старое дерево."},{"en":"Birds sing in the trees.","ru":"Птицы поют на деревьях."}]},
-{"word":"flower","ipa":"/ˈflaʊ.ər/","pos":"noun","level":"A1","ru":"цветок","theme":"nature","examples":[{"en":"He gave her a flower.","ru":"Он подарил ей цветок."},{"en":"These flowers smell wonderful.","ru":"Эти цветы чудесно пахнут."}]},
-{"word":"bird","ipa":"/bɜːd/","pos":"noun","level":"A1","ru":"птица","theme":"animals","examples":[{"en":"A small bird sat on the fence.","ru":"Маленькая птица села на забор."},{"en":"Birds fly south in autumn.","ru":"Осенью птицы летят на юг."}]},
-{"word":"run","ipa":"/rʌn/","pos":"verb","level":"A1","ru":"бегать","theme":"sport","examples":[{"en":"I run in the park every morning.","ru":"Я бегаю в парке каждое утро."},{"en":"He runs faster than me.","ru":"Он бегает быстрее меня."}]},
-{"word":"play","ipa":"/pleɪ/","pos":"verb","level":"A1","ru":"играть","theme":"sport","examples":[{"en":"The kids play football after school.","ru":"Дети играют в футбол после школы."},{"en":"She plays the piano.","ru":"Она играет на пианино."}]},
-{"word":"walk","ipa":"/wɔːk/","pos":"verb","level":"A1","ru":"гулять, идти пешком","theme":"sport","examples":[{"en":"We walk to work together.","ru":"Мы вместе ходим на работу пешком."},{"en":"Let's walk along the river.","ru":"Давай прогуляемся вдоль реки."}]},
-{"word":"sleep","ipa":"/sliːp/","pos":"verb","level":"A1","ru":"спать","theme":"health","examples":[{"en":"I sleep eight hours a night.","ru":"Я сплю восемь часов в сутки."},{"en":"The baby is sleeping.","ru":"Малыш спит."}]},
-{"word":"buy","ipa":"/baɪ/","pos":"verb","level":"A1","ru":"покупать","theme":"money","examples":[{"en":"Where did you buy this jacket?","ru":"Где ты купил эту куртку?"},{"en":"We buy vegetables at the market.","ru":"Мы покупаем овощи на рынке."}]},
-{"word":"borrow","ipa":"/ˈbɒr.əʊ/","pos":"verb","level":"A2","ru":"брать взаймы","theme":"money","examples":[{"en":"Can I borrow your pen?","ru":"Можно взять твою ручку?"},{"en":"He borrowed money from the bank.","ru":"Он взял кредит в банке."}]},
-{"word":"invite","ipa":"/ɪnˈvaɪt/","pos":"verb","level":"A2","ru":"приглашать","theme":"communication","examples":[{"en":"They invited us to dinner.","ru":"Они пригласили нас на ужин."},{"en":"I'll invite all my friends.","ru":"Я приглашу всех своих друзей."}]},
-{"word":"arrive","ipa":"/əˈraɪv/","pos":"verb","level":"A2","ru":"прибывать","theme":"travel","examples":[{"en":"The train arrives at noon.","ru":"Поезд прибывает в полдень."},{"en":"We arrived home very late.","ru":"Мы приехали домой очень поздно."}]},
-{"word":"decide","ipa":"/dɪˈsaɪd/","pos":"verb","level":"A2","ru":"решать","theme":"communication","examples":[{"en":"We decided to stay home.","ru":"Мы решили остаться дома."},{"en":"It's hard to decide.","ru":"Трудно решить."}]},
-{"word":"win","ipa":"/wɪn/","pos":"verb","level":"A2","ru":"выигрывать","theme":"sport","examples":[{"en":"Our team won the match.","ru":"Наша команда выиграла матч."},{"en":"She wants to win the prize.","ru":"Она хочет выиграть приз."}]},
-{"word":"lose","ipa":"/luːz/","pos":"verb","level":"A2","ru":"терять, проигрывать","theme":"sport","examples":[{"en":"Don't lose your keys.","ru":"Не потеряй ключи."},{"en":"They lost the game by one point.","ru":"Они проиграли с разницей в одно очко."}]},
-{"word":"science","ipa":"/ˈsaɪ.əns/","pos":"noun","level":"A2","ru":"наука","theme":"science","examples":[{"en":"Science explains how the world works.","ru":"Наука объясняет, как устроен мир."},{"en":"She loves science lessons.","ru":"Она любит уроки естествознания."}]},
-{"word":"experiment","ipa":"/ɪkˈsper.ɪ.mənt/","pos":"noun","level":"B1","ru":"эксперимент","theme":"science","examples":[{"en":"The experiment confirmed the theory.","ru":"Эксперимент подтвердил теорию."},{"en":"We did an experiment in class.","ru":"Мы провели эксперимент на уроке."}]},
-{"word":"discover","ipa":"/dɪˈskʌv.ər/","pos":"verb","level":"B1","ru":"открывать, обнаруживать","theme":"science","examples":[{"en":"Scientists discovered a new species.","ru":"Учёные открыли новый вид."},{"en":"I discovered a great café nearby.","ru":"Я обнаружил отличное кафе неподалёку."}]},
-{"word":"invent","ipa":"/ɪnˈvent/","pos":"verb","level":"B1","ru":"изобретать","theme":"science","examples":[{"en":"Who invented the telephone?","ru":"Кто изобрёл телефон?"},{"en":"They invented a new game.","ru":"Они придумали новую игру."}]},
-{"word":"knowledge","ipa":"/ˈnɒl.ɪdʒ/","pos":"noun","level":"B1","ru":"знания","theme":"education","examples":[{"en":"Knowledge is power.","ru":"Знание — сила."},{"en":"He has deep knowledge of history.","ru":"У него глубокие знания истории."}]},
-{"word":"skill","ipa":"/skɪl/","pos":"noun","level":"B1","ru":"навык","theme":"work","examples":[{"en":"Coding is a useful skill.","ru":"Программирование — полезный навык."},{"en":"This job requires communication skills.","ru":"Эта работа требует навыков общения."}]},
-{"word":"argue","ipa":"/ˈɑːɡ.juː/","pos":"verb","level":"B1","ru":"спорить","theme":"communication","examples":[{"en":"They often argue about money.","ru":"Они часто спорят о деньгах."},{"en":"I don't want to argue with you.","ru":"Я не хочу с тобой спорить."}]},
-{"word":"apologize","ipa":"/əˈpɒl.ə.dʒaɪz/","pos":"verb","level":"B1","ru":"извиняться","theme":"communication","examples":[{"en":"He apologized for being late.","ru":"Он извинился за опоздание."},{"en":"You should apologize to her.","ru":"Тебе стоит извиниться перед ней."}]},
-{"word":"trust","ipa":"/trʌst/","pos":"verb","level":"B1","ru":"доверять","theme":"feelings","examples":[{"en":"I trust my old friends.","ru":"Я доверяю старым друзьям."},{"en":"Trust takes years to build.","ru":"Доверие строится годами."}]},
-{"word":"proud","ipa":"/praʊd/","pos":"adjective","level":"B1","ru":"гордый","theme":"feelings","examples":[{"en":"I'm proud of your progress.","ru":"Я горжусь твоим прогрессом."},{"en":"She was proud of her team.","ru":"Она гордилась своей командой."}]},
-{"word":"generous","ipa":"/ˈdʒen.ər.əs/","pos":"adjective","level":"B2","ru":"щедрый","theme":"feelings","examples":[{"en":"He left a generous tip.","ru":"Он оставил щедрые чаевые."},{"en":"She is generous with her time.","ru":"Она щедра на своё время."}]},
-{"word":"budget","ipa":"/ˈbʌdʒ.ɪt/","pos":"noun","level":"B2","ru":"бюджет","theme":"money","examples":[{"en":"We planned the trip on a small budget.","ru":"Мы спланировали поездку с небольшим бюджетом."},{"en":"The project went over budget.","ru":"Проект вышел за рамки бюджета."}]},
-{"word":"invest","ipa":"/ɪnˈvest/","pos":"verb","level":"B2","ru":"инвестировать","theme":"money","examples":[{"en":"He invests in index funds.","ru":"Он инвестирует в индексные фонды."},{"en":"Invest time in learning.","ru":"Вкладывай время в обучение."}]},
-{"word":"profit","ipa":"/ˈprɒf.ɪt/","pos":"noun","level":"B2","ru":"прибыль","theme":"business","examples":[{"en":"The company doubled its profit.","ru":"Компания удвоила прибыль."},{"en":"They sold the house at a profit.","ru":"Они продали дом с прибылью."}]},
-{"word":"employee","ipa":"/ɪmˈplɔɪ.iː/","pos":"noun","level":"B2","ru":"сотрудник","theme":"work","examples":[{"en":"The firm has fifty employees.","ru":"В фирме пятьдесят сотрудников."},{"en":"Every employee gets a bonus.","ru":"Каждый сотрудник получает бонус."}]},
-{"word":"apply","ipa":"/əˈplaɪ/","pos":"verb","level":"B2","ru":"подавать заявку; применять","theme":"work","examples":[{"en":"I applied for the job online.","ru":"Я подал заявку на работу онлайн."},{"en":"Apply this rule to every case.","ru":"Применяй это правило к каждому случаю."}]},
-{"word":"schedule","ipa":"/ˈʃedʒ.uːl/","pos":"noun","level":"B2","ru":"расписание, график","theme":"work","examples":[{"en":"My schedule is full this week.","ru":"Мой график на этой неделе забит."},{"en":"The project is behind schedule.","ru":"Проект отстаёт от графика."}]},
-{"word":"vaccine","ipa":"/ˈvæk.siːn/","pos":"noun","level":"B2","ru":"вакцина","theme":"health","examples":[{"en":"The vaccine protects against the flu.","ru":"Вакцина защищает от гриппа."},{"en":"A new vaccine was developed.","ru":"Разработали новую вакцину."}]},
-{"word":"emphasize","ipa":"/ˈem.fə.saɪz/","pos":"verb","level":"C1","ru":"подчёркивать","theme":"communication","examples":[{"en":"The report emphasizes safety.","ru":"Отчёт подчёркивает важность безопасности."},{"en":"He emphasized every word.","ru":"Он подчёркивал каждое слово."}]},
-{"word":"comprehensive","ipa":"/ˌkɒm.prɪˈhen.sɪv/","pos":"adjective","level":"C1","ru":"всеобъемлющий, полный","theme":"education","examples":[{"en":"We need a comprehensive review.","ru":"Нам нужен всесторонний обзор."},{"en":"The guide is comprehensive and clear.","ru":"Руководство полное и понятное."}]},
-{"word":"allegedly","ipa":"/əˈledʒ.ɪd.li/","pos":"adverb","level":"C1","ru":"якобы, предположительно","theme":"law","examples":[{"en":"He allegedly broke the agreement.","ru":"Он якобы нарушил соглашение."},{"en":"The money was allegedly stolen.","ru":"Деньги предположительно были украдены."}]},
-{"word":"volatile","ipa":"/ˈvɒl.ə.taɪl/","pos":"adjective","level":"C1","ru":"нестабильный, изменчивый","theme":"business","examples":[{"en":"Crypto markets are volatile.","ru":"Криптовалютные рынки нестабильны."},{"en":"The situation remains volatile.","ru":"Ситуация остаётся изменчивой."}]}
+{
+"word": "apple",
+"ipa": "/ˈæp.əl/",
+"pos": "noun",
+"level": "A1",
+"ru": "яблоко",
+"theme": "food",
+"examples": [
+{
+"en": "I eat an apple every morning.",
+"ru": "Я ем яблоко каждое утро."
+},
+{
+"en": "This apple is very sweet.",
+"ru": "Это яблоко очень сладкое."
+}
+]
+},
+{
+"word": "water",
+"ipa": "/ˈwɔː.tər/",
+"pos": "noun",
+"level": "A1",
+"ru": "вода",
+"theme": "drink",
+"examples": [
+{
+"en": "Can I have a glass of water?",
+"ru": "Можно мне стакан воды?"
+},
+{
+"en": "The water in the lake is cold.",
+"ru": "Вода в озере холодная."
+}
+]
+},
+{
+"word": "bread",
+"ipa": "/bred/",
+"pos": "noun",
+"level": "A1",
+"ru": "хлеб",
+"theme": "food",
+"examples": [
+{
+"en": "We need to buy bread.",
+"ru": "Нам нужно купить хлеб."
+},
+{
+"en": "She makes fresh bread at home.",
+"ru": "Она печёт свежий хлеб дома."
+}
+]
+},
+{
+"word": "house",
+"ipa": "/haʊs/",
+"pos": "noun",
+"level": "A1",
+"ru": "дом",
+"theme": "home",
+"examples": [
+{
+"en": "Their house has a big garden.",
+"ru": "У их дома большой сад."
+},
+{
+"en": "We stayed in the house all day.",
+"ru": "Мы весь день были дома."
+}
+]
+},
+{
+"word": "family",
+"ipa": "/ˈfæm.əl.i/",
+"pos": "noun",
+"level": "A1",
+"ru": "семья",
+"theme": "family",
+"examples": [
+{
+"en": "My family lives in a small town.",
+"ru": "Моя семья живёт в маленьком городе."
+},
+{
+"en": "Family is the most important thing.",
+"ru": "Семья — самое важное."
+}
+]
+},
+{
+"word": "mother",
+"ipa": "/ˈmʌð.ər/",
+"pos": "noun",
+"level": "A1",
+"ru": "мама, мать",
+"theme": "family",
+"examples": [
+{
+"en": "My mother cooks very well.",
+"ru": "Моя мама очень хорошо готовит."
+},
+{
+"en": "Her mother is a doctor.",
+"ru": "Её мама — врач."
+}
+]
+},
+{
+"word": "father",
+"ipa": "/ˈfɑː.ðər/",
+"pos": "noun",
+"level": "A1",
+"ru": "папа, отец",
+"theme": "family",
+"examples": [
+{
+"en": "My father works in a bank.",
+"ru": "Мой отец работает в банке."
+},
+{
+"en": "His father taught him to swim.",
+"ru": "Его отец научил его плавать."
+}
+]
+},
+{
+"word": "friend",
+"ipa": "/frend/",
+"pos": "noun",
+"level": "A1",
+"ru": "друг",
+"theme": "people",
+"examples": [
+{
+"en": "He is my best friend.",
+"ru": "Он мой лучший друг."
+},
+{
+"en": "I met an old friend yesterday.",
+"ru": "Вчера я встретил старого друга."
+}
+]
+},
+{
+"word": "work",
+"ipa": "/wɜːk/",
+"pos": "verb",
+"level": "A1",
+"ru": "работать; работа",
+"theme": "work",
+"examples": [
+{
+"en": "I work from nine to five.",
+"ru": "Я работаю с девяти до пяти."
+},
+{
+"en": "She loves her work.",
+"ru": "Она любит свою работу."
+}
+]
+},
+{
+"word": "school",
+"ipa": "/skuːl/",
+"pos": "noun",
+"level": "A1",
+"ru": "школа",
+"theme": "education",
+"examples": [
+{
+"en": "The children go to school by bus.",
+"ru": "Дети ездят в школу на автобусе."
+},
+{
+"en": "Our school is near the park.",
+"ru": "Наша школа рядом с парком."
+}
+]
+},
+{
+"word": "book",
+"ipa": "/bʊk/",
+"pos": "noun",
+"level": "A1",
+"ru": "книга",
+"theme": "education",
+"examples": [
+{
+"en": "I am reading a good book.",
+"ru": "Я читаю хорошую книгу."
+},
+{
+"en": "This book has many pictures.",
+"ru": "В этой книге много картинок."
+}
+]
+},
+{
+"word": "cat",
+"ipa": "/kæt/",
+"pos": "noun",
+"level": "A1",
+"ru": "кот, кошка",
+"theme": "animals",
+"examples": [
+{
+"en": "The cat sleeps on the sofa.",
+"ru": "Кот спит на диване."
+},
+{
+"en": "Our cat likes fish.",
+"ru": "Наша кошка любит рыбу."
+}
+]
+},
+{
+"word": "dog",
+"ipa": "/dɒɡ/",
+"pos": "noun",
+"level": "A1",
+"ru": "собака",
+"theme": "animals",
+"examples": [
+{
+"en": "The dog runs in the yard.",
+"ru": "Собака бегает во дворе."
+},
+{
+"en": "I walk my dog twice a day.",
+"ru": "Я гуляю с собакой два раза в день."
+}
+]
+},
+{
+"word": "sun",
+"ipa": "/sʌn/",
+"pos": "noun",
+"level": "A1",
+"ru": "солнце",
+"theme": "nature",
+"examples": [
+{
+"en": "The sun is very bright today.",
+"ru": "Солнце сегодня очень яркое."
+},
+{
+"en": "We sat in the sun for an hour.",
+"ru": "Мы час сидели на солнце."
+}
+]
+},
+{
+"word": "rain",
+"ipa": "/reɪn/",
+"pos": "noun",
+"level": "A1",
+"ru": "дождь",
+"theme": "weather",
+"examples": [
+{
+"en": "The rain stopped in the evening.",
+"ru": "Дождь прекратился вечером."
+},
+{
+"en": "I love the sound of rain.",
+"ru": "Я люблю звук дождя."
+}
+]
+},
+{
+"word": "day",
+"ipa": "/deɪ/",
+"pos": "noun",
+"level": "A1",
+"ru": "день",
+"theme": "time",
+"examples": [
+{
+"en": "Have a nice day!",
+"ru": "Хорошего дня!"
+},
+{
+"en": "It was a long day.",
+"ru": "Это был длинный день."
+}
+]
+},
+{
+"word": "night",
+"ipa": "/naɪt/",
+"pos": "noun",
+"level": "A1",
+"ru": "ночь",
+"theme": "time",
+"examples": [
+{
+"en": "The city is beautiful at night.",
+"ru": "Город красив ночью."
+},
+{
+"en": "Good night, see you tomorrow.",
+"ru": "Спокойной ночи, до завтра."
+}
+]
+},
+{
+"word": "eat",
+"ipa": "/iːt/",
+"pos": "verb",
+"level": "A1",
+"ru": "есть, кушать",
+"theme": "food",
+"examples": [
+{
+"en": "We eat dinner at seven.",
+"ru": "Мы ужинаем в семь."
+},
+{
+"en": "What do you want to eat?",
+"ru": "Что ты хочешь поесть?"
+}
+]
+},
+{
+"word": "drink",
+"ipa": "/drɪŋk/",
+"pos": "verb",
+"level": "A1",
+"ru": "пить; напиток",
+"theme": "drink",
+"examples": [
+{
+"en": "Drink more water in summer.",
+"ru": "Летом пей больше воды."
+},
+{
+"en": "Would you like a cold drink?",
+"ru": "Хочешь холодный напиток?"
+}
+]
+},
+{
+"word": "go",
+"ipa": "/ɡəʊ/",
+"pos": "verb",
+"level": "A1",
+"ru": "идти, ехать",
+"theme": "transport",
+"examples": [
+{
+"en": "Let's go home.",
+"ru": "Пойдём домой."
+},
+{
+"en": "They go to the sea every year.",
+"ru": "Они ездят на море каждый год."
+}
+]
+},
+{
+"word": "come",
+"ipa": "/kʌm/",
+"pos": "verb",
+"level": "A1",
+"ru": "приходить",
+"theme": "communication",
+"examples": [
+{
+"en": "Come to my birthday party.",
+"ru": "Приходи на мой день рождения."
+},
+{
+"en": "The bus comes at eight.",
+"ru": "Автобус приходит в восемь."
+}
+]
+},
+{
+"word": "see",
+"ipa": "/siː/",
+"pos": "verb",
+"level": "A1",
+"ru": "видеть",
+"theme": "communication",
+"examples": [
+{
+"en": "I can see the mountains from here.",
+"ru": "Отсюда я вижу горы."
+},
+{
+"en": "See you later!",
+"ru": "Увидимся позже!"
+}
+]
+},
+{
+"word": "big",
+"ipa": "/bɪɡ/",
+"pos": "adjective",
+"level": "A1",
+"ru": "большой",
+"theme": "other",
+"examples": [
+{
+"en": "They live in a big city.",
+"ru": "Они живут в большом городе."
+},
+{
+"en": "This box is too big.",
+"ru": "Эта коробка слишком большая."
+}
+]
+},
+{
+"word": "small",
+"ipa": "/smɔːl/",
+"pos": "adjective",
+"level": "A1",
+"ru": "маленький",
+"theme": "other",
+"examples": [
+{
+"en": "She has a small dog.",
+"ru": "У неё маленькая собака."
+},
+{
+"en": "The room is small but cozy.",
+"ru": "Комната маленькая, но уютная."
+}
+]
+},
+{
+"word": "good",
+"ipa": "/ɡʊd/",
+"pos": "adjective",
+"level": "A1",
+"ru": "хороший",
+"theme": "other",
+"examples": [
+{
+"en": "That is a good idea.",
+"ru": "Это хорошая идея."
+},
+{
+"en": "The food here is very good.",
+"ru": "Еда здесь очень хорошая."
+}
+]
+},
+{
+"word": "happy",
+"ipa": "/ˈhæp.i/",
+"pos": "adjective",
+"level": "A1",
+"ru": "счастливый",
+"theme": "feelings",
+"examples": [
+{
+"en": "She looks very happy today.",
+"ru": "Она выглядит очень счастливой сегодня."
+},
+{
+"en": "Happy birthday!",
+"ru": "С днём рождения!"
+}
+]
+},
+{
+"word": "money",
+"ipa": "/ˈmʌn.i/",
+"pos": "noun",
+"level": "A1",
+"ru": "деньги",
+"theme": "money",
+"examples": [
+{
+"en": "I don't have enough money.",
+"ru": "У меня недостаточно денег."
+},
+{
+"en": "He saves money for a car.",
+"ru": "Он копит деньги на машину."
+}
+]
+},
+{
+"word": "car",
+"ipa": "/kɑːr/",
+"pos": "noun",
+"level": "A1",
+"ru": "машина",
+"theme": "transport",
+"examples": [
+{
+"en": "Our car is old but reliable.",
+"ru": "Наша машина старая, но надёжная."
+},
+{
+"en": "She drives her car to work.",
+"ru": "Она ездит на работу на машине."
+}
+]
+},
+{
+"word": "city",
+"ipa": "/ˈsɪt.i/",
+"pos": "noun",
+"level": "A1",
+"ru": "город",
+"theme": "city",
+"examples": [
+{
+"en": "Moscow is a very big city.",
+"ru": "Москва — очень большой город."
+},
+{
+"en": "The city center is busy.",
+"ru": "Центр города оживлённый."
+}
+]
+},
+{
+"word": "shop",
+"ipa": "/ʃɒp/",
+"pos": "noun",
+"level": "A1",
+"ru": "магазин",
+"theme": "city",
+"examples": [
+{
+"en": "The shop opens at nine.",
+"ru": "Магазин открывается в девять."
+},
+{
+"en": "I bought milk in the shop.",
+"ru": "Я купил молоко в магазине."
+}
+]
+},
+{
+"word": "time",
+"ipa": "/taɪm/",
+"pos": "noun",
+"level": "A1",
+"ru": "время",
+"theme": "time",
+"examples": [
+{
+"en": "What time is it?",
+"ru": "Который час?"
+},
+{
+"en": "We have no time to wait.",
+"ru": "У нас нет времени ждать."
+}
+]
+},
+{
+"word": "year",
+"ipa": "/jɪər/",
+"pos": "noun",
+"level": "A1",
+"ru": "год",
+"theme": "time",
+"examples": [
+{
+"en": "I started this job last year.",
+"ru": "Я начал эту работу в прошлом году."
+},
+{
+"en": "A year has twelve months.",
+"ru": "В году двенадцать месяцев."
+}
+]
+},
+{
+"word": "hand",
+"ipa": "/hænd/",
+"pos": "noun",
+"level": "A1",
+"ru": "рука (кисть)",
+"theme": "body",
+"examples": [
+{
+"en": "Wash your hands before dinner.",
+"ru": "Мой руки перед ужином."
+},
+{
+"en": "He held the ticket in his hand.",
+"ru": "Он держал билет в руке."
+}
+]
+},
+{
+"word": "head",
+"ipa": "/hed/",
+"pos": "noun",
+"level": "A1",
+"ru": "голова",
+"theme": "body",
+"examples": [
+{
+"en": "My head hurts.",
+"ru": "У меня болит голова."
+},
+{
+"en": "He shook his head.",
+"ru": "Он покачал головой."
+}
+]
+},
+{
+"word": "phone",
+"ipa": "/fəʊn/",
+"pos": "noun",
+"level": "A1",
+"ru": "телефон",
+"theme": "technology",
+"examples": [
+{
+"en": "My phone is almost dead.",
+"ru": "Мой телефон почти разрядился."
+},
+{
+"en": "She left her phone at home.",
+"ru": "Она оставила телефон дома."
+}
+]
+},
+{
+"word": "weather",
+"ipa": "/ˈweð.ər/",
+"pos": "noun",
+"level": "A2",
+"ru": "погода",
+"theme": "weather",
+"examples": [
+{
+"en": "The weather is getting warmer.",
+"ru": "Погода становится теплее."
+},
+{
+"en": "What's the weather like today?",
+"ru": "Какая сегодня погода?"
+}
+]
+},
+{
+"word": "travel",
+"ipa": "/ˈtræv.əl/",
+"pos": "verb",
+"level": "A2",
+"ru": "путешествовать",
+"theme": "travel",
+"examples": [
+{
+"en": "They travel abroad every summer.",
+"ru": "Они ездят за границу каждое лето."
+},
+{
+"en": "I like to travel by train.",
+"ru": "Мне нравится путешествовать на поезде."
+}
+]
+},
+{
+"word": "ticket",
+"ipa": "/ˈtɪk.ɪt/",
+"pos": "noun",
+"level": "A2",
+"ru": "билет",
+"theme": "travel",
+"examples": [
+{
+"en": "I bought two tickets to the concert.",
+"ru": "Я купил два билета на концерт."
+},
+{
+"en": "Keep your ticket until the end of the trip.",
+"ru": "Сохраняйте билет до конца поездки."
+}
+]
+},
+{
+"word": "airport",
+"ipa": "/ˈeə.pɔːt/",
+"pos": "noun",
+"level": "A2",
+"ru": "аэропорт",
+"theme": "travel",
+"examples": [
+{
+"en": "We arrived at the airport early.",
+"ru": "Мы приехали в аэропорт рано."
+},
+{
+"en": "The airport is far from the city.",
+"ru": "Аэропорт далеко от города."
+}
+]
+},
+{
+"word": "breakfast",
+"ipa": "/ˈbrek.fəst/",
+"pos": "noun",
+"level": "A2",
+"ru": "завтрак",
+"theme": "food",
+"examples": [
+{
+"en": "I usually have breakfast at eight.",
+"ru": "Я обычно завтракаю в восемь."
+},
+{
+"en": "Breakfast is included in the price.",
+"ru": "Завтрак включён в стоимость."
+}
+]
+},
+{
+"word": "kitchen",
+"ipa": "/ˈkɪtʃ.ən/",
+"pos": "noun",
+"level": "A2",
+"ru": "кухня",
+"theme": "home",
+"examples": [
+{
+"en": "She is cooking in the kitchen.",
+"ru": "Она готовит на кухне."
+},
+{
+"en": "Our kitchen is small but bright.",
+"ru": "Наша кухня маленькая, но светлая."
+}
+]
+},
+{
+"word": "healthy",
+"ipa": "/ˈhel.θi/",
+"pos": "adjective",
+"level": "A2",
+"ru": "здоровый, полезный",
+"theme": "health",
+"examples": [
+{
+"en": "Vegetables are healthy food.",
+"ru": "Овощи — полезная еда."
+},
+{
+"en": "He leads a healthy lifestyle.",
+"ru": "Он ведёт здоровый образ жизни."
+}
+]
+},
+{
+"word": "doctor",
+"ipa": "/ˈdɒk.tər/",
+"pos": "noun",
+"level": "A2",
+"ru": "врач",
+"theme": "health",
+"examples": [
+{
+"en": "You should see a doctor.",
+"ru": "Тебе стоит сходить к врачу."
+},
+{
+"en": "The doctor gave me some pills.",
+"ru": "Врач дал мне таблетки."
+}
+]
+},
+{
+"word": "weekend",
+"ipa": "/ˌwiːkˈend/",
+"pos": "noun",
+"level": "A2",
+"ru": "выходные",
+"theme": "time",
+"examples": [
+{
+"en": "What are your plans for the weekend?",
+"ru": "Какие у тебя планы на выходные?"
+},
+{
+"en": "We spent the weekend at the lake.",
+"ru": "Мы провели выходные на озере."
+}
+]
+},
+{
+"word": "expensive",
+"ipa": "/ɪkˈspen.sɪv/",
+"pos": "adjective",
+"level": "A2",
+"ru": "дорогой",
+"theme": "money",
+"examples": [
+{
+"en": "This hotel is too expensive.",
+"ru": "Этот отель слишком дорогой."
+},
+{
+"en": "Fresh fish is expensive here.",
+"ru": "Свежая рыба здесь дорогая."
+}
+]
+},
+{
+"word": "cheap",
+"ipa": "/tʃiːp/",
+"pos": "adjective",
+"level": "A2",
+"ru": "дешёвый",
+"theme": "money",
+"examples": [
+{
+"en": "We found a cheap flight.",
+"ru": "Мы нашли дешёвый рейс."
+},
+{
+"en": "This café is cheap and tasty.",
+"ru": "Это кафе дешёвое и вкусное."
+}
+]
+},
+{
+"word": "clothes",
+"ipa": "/kləʊðz/",
+"pos": "noun",
+"level": "A2",
+"ru": "одежда",
+"theme": "clothes",
+"examples": [
+{
+"en": "I need to buy warm clothes.",
+"ru": "Мне нужно купить тёплую одежду."
+},
+{
+"en": "She likes bright clothes.",
+"ru": "Ей нравится яркая одежда."
+}
+]
+},
+{
+"word": "shirt",
+"ipa": "/ʃɜːt/",
+"pos": "noun",
+"level": "A2",
+"ru": "рубашка",
+"theme": "clothes",
+"examples": [
+{
+"en": "He wore a white shirt.",
+"ru": "Он был в белой рубашке."
+},
+{
+"en": "This shirt needs ironing.",
+"ru": "Эту рубашку нужно погладить."
+}
+]
+},
+{
+"word": "holiday",
+"ipa": "/ˈhɒl.ə.deɪ/",
+"pos": "noun",
+"level": "A2",
+"ru": "отпуск, праздник",
+"theme": "travel",
+"examples": [
+{
+"en": "We are going on holiday in July.",
+"ru": "Мы едем в отпуск в июле."
+},
+{
+"en": "New Year is my favourite holiday.",
+"ru": "Новый год — мой любимый праздник."
+}
+]
+},
+{
+"word": "weathered",
+"ipa": "/ˈweð.əd/",
+"pos": "adjective",
+"level": "C1",
+"ru": "обветренный, потрёпанный",
+"theme": "nature",
+"examples": [
+{
+"en": "The weathered door creaked open.",
+"ru": "Обветшалая дверь со скрипом открылась."
+},
+{
+"en": "His weathered face told many stories.",
+"ru": "Его обветренное лицо говорило о многом."
+}
+]
+},
+{
+"word": "learn",
+"ipa": "/lɜːn/",
+"pos": "verb",
+"level": "A2",
+"ru": "учить, узнавать",
+"theme": "education",
+"examples": [
+{
+"en": "I learn ten new words every day.",
+"ru": "Я учу десять новых слов каждый день."
+},
+{
+"en": "Children learn fast.",
+"ru": "Дети учатся быстро."
+}
+]
+},
+{
+"word": "teacher",
+"ipa": "/ˈtiː.tʃər/",
+"pos": "noun",
+"level": "A2",
+"ru": "учитель",
+"theme": "education",
+"examples": [
+{
+"en": "Our teacher explains everything clearly.",
+"ru": "Наш учитель объясняет всё понятно."
+},
+{
+"en": "She works as an English teacher.",
+"ru": "Она работает учителем английского."
+}
+]
+},
+{
+"word": "music",
+"ipa": "/ˈmjuː.zɪk/",
+"pos": "noun",
+"level": "A2",
+"ru": "музыка",
+"theme": "music",
+"examples": [
+{
+"en": "He listens to music on the way to work.",
+"ru": "Он слушает музыку по дороге на работу."
+},
+{
+"en": "This music makes me calm.",
+"ru": "Эта музыка меня успокаивает."
+}
+]
+},
+{
+"word": "movie",
+"ipa": "/ˈmuː.vi/",
+"pos": "noun",
+"level": "A2",
+"ru": "фильм",
+"theme": "art",
+"examples": [
+{
+"en": "We watched a funny movie last night.",
+"ru": "Вчера вечером мы посмотрели смешной фильм."
+},
+{
+"en": "The movie starts at nine.",
+"ru": "Фильм начинается в девять."
+}
+]
+},
+{
+"word": "remember",
+"ipa": "/rɪˈmem.bər/",
+"pos": "verb",
+"level": "A2",
+"ru": "помнить",
+"theme": "communication",
+"examples": [
+{
+"en": "I don't remember his name.",
+"ru": "Я не помню его имени."
+},
+{
+"en": "Remember to lock the door.",
+"ru": "Не забудь закрыть дверь."
+}
+]
+},
+{
+"word": "forget",
+"ipa": "/fəˈɡet/",
+"pos": "verb",
+"level": "A2",
+"ru": "забывать",
+"theme": "communication",
+"examples": [
+{
+"en": "Don't forget your umbrella.",
+"ru": "Не забудь зонт."
+},
+{
+"en": "I forgot to call him back.",
+"ru": "Я забыл ему перезвонить."
+}
+]
+},
+{
+"word": "street",
+"ipa": "/striːt/",
+"pos": "noun",
+"level": "A2",
+"ru": "улица",
+"theme": "city",
+"examples": [
+{
+"en": "They live on a quiet street.",
+"ru": "Они живут на тихой улице."
+},
+{
+"en": "The street is full of cafés.",
+"ru": "Улица полна кафе."
+}
+]
+},
+{
+"word": "bridge",
+"ipa": "/brɪdʒ/",
+"pos": "noun",
+"level": "A2",
+"ru": "мост",
+"theme": "city",
+"examples": [
+{
+"en": "We walked across the old bridge.",
+"ru": "Мы перешли по старому мосту."
+},
+{
+"en": "The bridge connects two districts.",
+"ru": "Мост соединяет два района."
+}
+]
+},
+{
+"word": "early",
+"ipa": "/ˈɜː.li/",
+"pos": "adverb",
+"level": "A2",
+"ru": "рано",
+"theme": "time",
+"examples": [
+{
+"en": "I get up early on weekdays.",
+"ru": "В будни я встаю рано."
+},
+{
+"en": "We arrived early for the meeting.",
+"ru": "Мы пришли на встречу рано."
+}
+]
+},
+{
+"word": "late",
+"ipa": "/leɪt/",
+"pos": "adverb",
+"level": "A2",
+"ru": "поздно",
+"theme": "time",
+"examples": [
+{
+"en": "Sorry, I'm late.",
+"ru": "Извини, я опоздал."
+},
+{
+"en": "He works late on Fridays.",
+"ru": "По пятницам он работает допоздна."
+}
+]
+},
+{
+"word": "improve",
+"ipa": "/ɪmˈpruːv/",
+"pos": "verb",
+"level": "B1",
+"ru": "улучшать",
+"theme": "education",
+"examples": [
+{
+"en": "I want to improve my English.",
+"ru": "Я хочу улучшить свой английский."
+},
+{
+"en": "The service has improved a lot.",
+"ru": "Сервис значительно улучшился."
+}
+]
+},
+{
+"word": "decision",
+"ipa": "/dɪˈsɪʒ.ən/",
+"pos": "noun",
+"level": "B1",
+"ru": "решение",
+"theme": "work",
+"examples": [
+{
+"en": "It was a difficult decision.",
+"ru": "Это было трудное решение."
+},
+{
+"en": "We need to make a decision today.",
+"ru": "Нам нужно принять решение сегодня."
+}
+]
+},
+{
+"word": "experience",
+"ipa": "/ɪkˈspɪə.ri.əns/",
+"pos": "noun",
+"level": "B1",
+"ru": "опыт",
+"theme": "work",
+"examples": [
+{
+"en": "She has five years of experience.",
+"ru": "У неё пять лет опыта."
+},
+{
+"en": "Travelling is a great experience.",
+"ru": "Путешествия — отличный опыт."
+}
+]
+},
+{
+"word": "opportunity",
+"ipa": "/ˌɒp.əˈtʃuː.nə.ti/",
+"pos": "noun",
+"level": "B1",
+"ru": "возможность",
+"theme": "work",
+"examples": [
+{
+"en": "This job is a great opportunity.",
+"ru": "Эта работа — отличная возможность."
+},
+{
+"en": "Don't miss the opportunity to learn.",
+"ru": "Не упусти возможность научиться."
+}
+]
+},
+{
+"word": "suggest",
+"ipa": "/səˈdʒest/",
+"pos": "verb",
+"level": "B1",
+"ru": "предлагать",
+"theme": "communication",
+"examples": [
+{
+"en": "I suggest we start earlier.",
+"ru": "Предлагаю начать пораньше."
+},
+{
+"en": "What do you suggest?",
+"ru": "Что ты предлагаешь?"
+}
+]
+},
+{
+"word": "promise",
+"ipa": "/ˈprɒm.ɪs/",
+"pos": "verb",
+"level": "B1",
+"ru": "обещать",
+"theme": "communication",
+"examples": [
+{
+"en": "I promise to be on time.",
+"ru": "Обещаю прийти вовремя."
+},
+{
+"en": "He kept his promise.",
+"ru": "Он сдержал обещание."
+}
+]
+},
+{
+"word": "environment",
+"ipa": "/ɪnˈvaɪ.rən.mənt/",
+"pos": "noun",
+"level": "B1",
+"ru": "окружающая среда",
+"theme": "nature",
+"examples": [
+{
+"en": "We must protect the environment.",
+"ru": "Мы должны защищать окружающую среду."
+},
+{
+"en": "Plastic harms the environment.",
+"ru": "Пластик вредит окружающей среде."
+}
+]
+},
+{
+"word": "pollution",
+"ipa": "/pəˈluː.ʃən/",
+"pos": "noun",
+"level": "B1",
+"ru": "загрязнение",
+"theme": "nature",
+"examples": [
+{
+"en": "Air pollution is a serious problem.",
+"ru": "Загрязнение воздуха — серьёзная проблема."
+},
+{
+"en": "The factory causes water pollution.",
+"ru": "Завод загрязняет воду."
+}
+]
+},
+{
+"word": "salary",
+"ipa": "/ˈsæl.ər.i/",
+"pos": "noun",
+"level": "B1",
+"ru": "зарплата",
+"theme": "money",
+"examples": [
+{
+"en": "The salary is paid monthly.",
+"ru": "Зарплата выплачивается ежемесячно."
+},
+{
+"en": "He asked for a higher salary.",
+"ru": "Он попросил зарплату повыше."
+}
+]
+},
+{
+"word": "customer",
+"ipa": "/ˈkʌs.tə.mər/",
+"pos": "noun",
+"level": "B1",
+"ru": "клиент, покупатель",
+"theme": "business",
+"examples": [
+{
+"en": "The customer is always right.",
+"ru": "Клиент всегда прав."
+},
+{
+"en": "We have many regular customers.",
+"ru": "У нас много постоянных клиентов."
+}
+]
+},
+{
+"word": "advertise",
+"ipa": "/ˈæd.və.taɪz/",
+"pos": "verb",
+"level": "B1",
+"ru": "рекламировать",
+"theme": "business",
+"examples": [
+{
+"en": "They advertise their products online.",
+"ru": "Они рекламируют свои товары в интернете."
+},
+{
+"en": "The company advertises on TV.",
+"ru": "Компания даёт рекламу на ТВ."
+}
+]
+},
+{
+"word": "confident",
+"ipa": "/ˈkɒn.fɪ.dənt/",
+"pos": "adjective",
+"level": "B1",
+"ru": "уверенный",
+"theme": "feelings",
+"examples": [
+{
+"en": "She is confident about the exam.",
+"ru": "Она уверена насчёт экзамена."
+},
+{
+"en": "Speak in a confident voice.",
+"ru": "Говори уверенным голосом."
+}
+]
+},
+{
+"word": "nervous",
+"ipa": "/ˈnɜː.vəs/",
+"pos": "adjective",
+"level": "B1",
+"ru": "нервный, взволнованный",
+"theme": "feelings",
+"examples": [
+{
+"en": "I always feel nervous before flights.",
+"ru": "Я всегда нервничаю перед полётами."
+},
+{
+"en": "He was nervous at the interview.",
+"ru": "Он волновался на собеседовании."
+}
+]
+},
+{
+"word": "injury",
+"ipa": "/ˈɪn.dʒər.i/",
+"pos": "noun",
+"level": "B1",
+"ru": "травма",
+"theme": "health",
+"examples": [
+{
+"en": "The player missed the game because of an injury.",
+"ru": "Игрок пропустил матч из-за травмы."
+},
+{
+"en": "It was a minor injury.",
+"ru": "Это была лёгкая травма."
+}
+]
+},
+{
+"word": "recover",
+"ipa": "/rɪˈkʌv.ər/",
+"pos": "verb",
+"level": "B1",
+"ru": "восстанавливаться, выздоравливать",
+"theme": "health",
+"examples": [
+{
+"en": "She recovered quickly after the operation.",
+"ru": "Она быстро восстановилась после операции."
+},
+{
+"en": "The economy is recovering.",
+"ru": "Экономика восстанавливается."
+}
+]
+},
+{
+"word": "luggage",
+"ipa": "/ˈlʌɡ.ɪdʒ/",
+"pos": "noun",
+"level": "B1",
+"ru": "багаж",
+"theme": "travel",
+"examples": [
+{
+"en": "My luggage was lost at the airport.",
+"ru": "Мой багаж потеряли в аэропорту."
+},
+{
+"en": "You can leave your luggage here.",
+"ru": "Багаж можно оставить здесь."
+}
+]
+},
+{
+"word": "destination",
+"ipa": "/ˌdes.tɪˈneɪ.ʃən/",
+"pos": "noun",
+"level": "B1",
+"ru": "пункт назначения",
+"theme": "travel",
+"examples": [
+{
+"en": "We finally reached our destination.",
+"ru": "Наконец мы добрались до места назначения."
+},
+{
+"en": "Bali is a popular destination.",
+"ru": "Бали — популярное направление."
+}
+]
+},
+{
+"word": "neighbourhood",
+"ipa": "/ˈneɪ.bə.hʊd/",
+"pos": "noun",
+"level": "B1",
+"ru": "район, соседство",
+"theme": "city",
+"examples": [
+{
+"en": "We live in a quiet neighbourhood.",
+"ru": "Мы живём в тихом районе."
+},
+{
+"en": "The neighbourhood has changed a lot.",
+"ru": "Район сильно изменился."
+}
+]
+},
+{
+"word": "device",
+"ipa": "/dɪˈvaɪs/",
+"pos": "noun",
+"level": "B1",
+"ru": "устройство",
+"theme": "technology",
+"examples": [
+{
+"en": "Turn off all electronic devices.",
+"ru": "Выключите все электронные устройства."
+},
+{
+"en": "This device measures temperature.",
+"ru": "Это устройство измеряет температуру."
+}
+]
+},
+{
+"word": "download",
+"ipa": "/ˌdaʊnˈləʊd/",
+"pos": "verb",
+"level": "B1",
+"ru": "скачивать",
+"theme": "technology",
+"examples": [
+{
+"en": "You can download the app for free.",
+"ru": "Приложение можно скачать бесплатно."
+},
+{
+"en": "I downloaded the report yesterday.",
+"ru": "Я скачал отчёт вчера."
+}
+]
+},
+{
+"word": "achieve",
+"ipa": "/əˈtʃiːv/",
+"pos": "verb",
+"level": "B2",
+"ru": "достигать",
+"theme": "work",
+"examples": [
+{
+"en": "She achieved her goal in two years.",
+"ru": "Она достигла своей цели за два года."
+},
+{
+"en": "You can achieve more with a plan.",
+"ru": "С планом можно достичь большего."
+}
+]
+},
+{
+"word": "negotiate",
+"ipa": "/nəˈɡəʊ.ʃi.eɪt/",
+"pos": "verb",
+"level": "B2",
+"ru": "вести переговоры",
+"theme": "business",
+"examples": [
+{
+"en": "We negotiated a better price.",
+"ru": "Мы договорились о лучшей цене."
+},
+{
+"en": "They are negotiating a new contract.",
+"ru": "Они обсуждают новый контракт."
+}
+]
+},
+{
+"word": "deadline",
+"ipa": "/ˈded.laɪn/",
+"pos": "noun",
+"level": "B2",
+"ru": "крайний срок",
+"theme": "work",
+"examples": [
+{
+"en": "The deadline is Friday evening.",
+"ru": "Крайний срок — вечер пятницы."
+},
+{
+"en": "He always meets deadlines.",
+"ru": "Он всегда укладывается в сроки."
+}
+]
+},
+{
+"word": "efficient",
+"ipa": "/ɪˈfɪʃ.ənt/",
+"pos": "adjective",
+"level": "B2",
+"ru": "эффективный",
+"theme": "work",
+"examples": [
+{
+"en": "This is a more efficient method.",
+"ru": "Это более эффективный метод."
+},
+{
+"en": "The new engine is very efficient.",
+"ru": "Новый двигатель очень экономичный."
+}
+]
+},
+{
+"word": "reliable",
+"ipa": "/rɪˈlaɪ.ə.bəl/",
+"pos": "adjective",
+"level": "B2",
+"ru": "надёжный",
+"theme": "other",
+"examples": [
+{
+"en": "He is a reliable partner.",
+"ru": "Он надёжный партнёр."
+},
+{
+"en": "I need a reliable internet connection.",
+"ru": "Мне нужно надёжное интернет-соединение."
+}
+]
+},
+{
+"word": "witness",
+"ipa": "/ˈwɪt.nəs/",
+"pos": "noun",
+"level": "B2",
+"ru": "свидетель",
+"theme": "law",
+"examples": [
+{
+"en": "The witness described the accident.",
+"ru": "Свидетель описал аварию."
+},
+{
+"en": "There were no witnesses.",
+"ru": "Свидетелей не было."
+}
+]
+},
+{
+"word": "evidence",
+"ipa": "/ˈev.ɪ.dəns/",
+"pos": "noun",
+"level": "B2",
+"ru": "доказательство, улика",
+"theme": "law",
+"examples": [
+{
+"en": "There is no evidence against him.",
+"ru": "Против него нет доказательств."
+},
+{
+"en": "The evidence supports her story.",
+"ru": "Улики подтверждают её рассказ."
+}
+]
+},
+{
+"word": "anxiety",
+"ipa": "/æŋˈzaɪ.ə.ti/",
+"pos": "noun",
+"level": "B2",
+"ru": "тревога",
+"theme": "feelings",
+"examples": [
+{
+"en": "Exercise helps reduce anxiety.",
+"ru": "Спорт помогает снизить тревогу."
+},
+{
+"en": "She hid her anxiety well.",
+"ru": "Она хорошо скрывала тревогу."
+}
+]
+},
+{
+"word": "curious",
+"ipa": "/ˈkjʊə.ri.əs/",
+"pos": "adjective",
+"level": "B2",
+"ru": "любопытный",
+"theme": "feelings",
+"examples": [
+{
+"en": "Children are naturally curious.",
+"ru": "Дети от природы любопытны."
+},
+{
+"en": "I'm curious about the results.",
+"ru": "Мне любопытны результаты."
+}
+]
+},
+{
+"word": "install",
+"ipa": "/ɪnˈstɔːl/",
+"pos": "verb",
+"level": "B2",
+"ru": "устанавливать",
+"theme": "technology",
+"examples": [
+{
+"en": "Install the update tonight.",
+"ru": "Установи обновление сегодня вечером."
+},
+{
+"en": "We installed solar panels.",
+"ru": "Мы установили солнечные панели."
+}
+]
+},
+{
+"word": "sustainable",
+"ipa": "/səˈsteɪ.nə.bəl/",
+"pos": "adjective",
+"level": "B2",
+"ru": "устойчивый, экологичный",
+"theme": "nature",
+"examples": [
+{
+"en": "We need sustainable energy sources.",
+"ru": "Нам нужны устойчивые источники энергии."
+},
+{
+"en": "The company promotes sustainable farming.",
+"ru": "Компания продвигает экологичное земледелие."
+}
+]
+},
+{
+"word": "drought",
+"ipa": "/draʊt/",
+"pos": "noun",
+"level": "B2",
+"ru": "засуха",
+"theme": "weather",
+"examples": [
+{
+"en": "The drought destroyed the crops.",
+"ru": "Засуха уничтожила урожай."
+},
+{
+"en": "This summer brought a severe drought.",
+"ru": "Это лето принесло сильную засуху."
+}
+]
+},
+{
+"word": "appointment",
+"ipa": "/əˈpɔɪnt.mənt/",
+"pos": "noun",
+"level": "B2",
+"ru": "запись, встреча",
+"theme": "health",
+"examples": [
+{
+"en": "I have a dentist appointment at three.",
+"ru": "У меня запись к стоматологу в три."
+},
+{
+"en": "Call to make an appointment.",
+"ru": "Позвоните, чтобы записаться."
+}
+]
+},
+{
+"word": "prescription",
+"ipa": "/prɪˈskrɪp.ʃən/",
+"pos": "noun",
+"level": "B2",
+"ru": "рецепт (врачебный)",
+"theme": "health",
+"examples": [
+{
+"en": "This medicine needs a prescription.",
+"ru": "Это лекарство продаётся по рецепту."
+},
+{
+"en": "The doctor wrote me a prescription.",
+"ru": "Врач выписал мне рецепт."
+}
+]
+},
+{
+"word": "inevitable",
+"ipa": "/ɪˈnev.ɪ.tə.bəl/",
+"pos": "adjective",
+"level": "C1",
+"ru": "неизбежный",
+"theme": "other",
+"examples": [
+{
+"en": "Change is inevitable.",
+"ru": "Перемены неизбежны."
+},
+{
+"en": "The conflict seemed inevitable.",
+"ru": "Конфликт казался неизбежным."
+}
+]
+},
+{
+"word": "ambiguous",
+"ipa": "/æmˈbɪɡ.ju.əs/",
+"pos": "adjective",
+"level": "C1",
+"ru": "двусмысленный, неоднозначный",
+"theme": "communication",
+"examples": [
+{
+"en": "His answer was deliberately ambiguous.",
+"ru": "Его ответ был намеренно двусмысленным."
+},
+{
+"en": "The contract contains ambiguous terms.",
+"ru": "В контракте есть неоднозначные формулировки."
+}
+]
+},
+{
+"word": "scrutiny",
+"ipa": "/ˈskruː.tɪ.ni/",
+"pos": "noun",
+"level": "C1",
+"ru": "пристальное внимание, проверка",
+"theme": "law",
+"examples": [
+{
+"en": "The deal came under public scrutiny.",
+"ru": "Сделка попала под пристальное внимание общества."
+},
+{
+"en": "Every claim deserves careful scrutiny.",
+"ru": "Каждое утверждение заслуживает тщательной проверки."
+}
+]
+},
+{
+"word": "resilient",
+"ipa": "/rɪˈzɪl.i.ənt/",
+"pos": "adjective",
+"level": "C1",
+"ru": "стойкий, жизнестойкий",
+"theme": "feelings",
+"examples": [
+{
+"en": "Kids are surprisingly resilient.",
+"ru": "Дети удивительно жизнестойки."
+},
+{
+"en": "The market proved resilient to the crisis.",
+"ru": "Рынок оказался устойчив к кризису."
+}
+]
+},
+{
+"word": "leverage",
+"ipa": "/ˈliː.vər.ɪdʒ/",
+"pos": "noun",
+"level": "C1",
+"ru": "рычаг влияния; использовать с выгодой",
+"theme": "business",
+"examples": [
+{
+"en": "They used their size as leverage in talks.",
+"ru": "Они использовали свой масштаб как рычаг на переговорах."
+},
+{
+"en": "We can leverage this data to grow.",
+"ru": "Мы можем выгодно использовать эти данные для роста."
+}
+]
+},
+{
+"word": "meticulous",
+"ipa": "/məˈtɪk.jə.ləs/",
+"pos": "adjective",
+"level": "C1",
+"ru": "скрупулёзный",
+"theme": "work",
+"examples": [
+{
+"en": "She keeps meticulous records.",
+"ru": "Она ведёт скрупулёзные записи."
+},
+{
+"en": "The restoration required meticulous work.",
+"ru": "Реставрация требовала скрупулёзной работы."
+}
+]
+},
+{
+"word": "deteriorate",
+"ipa": "/dɪˈtɪə.ri.ə.reɪt/",
+"pos": "verb",
+"level": "C1",
+"ru": "ухудшаться",
+"theme": "health",
+"examples": [
+{
+"en": "His health began to deteriorate.",
+"ru": "Его здоровье начало ухудшаться."
+},
+{
+"en": "Relations between the countries deteriorated.",
+"ru": "Отношения между странами ухудшились."
+}
+]
+},
+{
+"word": "negligible",
+"ipa": "/ˈneɡ.lɪ.dʒə.bəl/",
+"pos": "adjective",
+"level": "C1",
+"ru": "ничтожно малый",
+"theme": "science",
+"examples": [
+{
+"en": "The difference in cost is negligible.",
+"ru": "Разница в стоимости ничтожно мала."
+},
+{
+"en": "The side effects are negligible.",
+"ru": "Побочные эффекты незначительны."
+}
+]
+},
+{
+"word": "table",
+"ipa": "/ˈteɪ.bəl/",
+"pos": "noun",
+"level": "A1",
+"ru": "стол",
+"theme": "home",
+"examples": [
+{
+"en": "The keys are on the table.",
+"ru": "Ключи на столе."
+},
+{
+"en": "We need a bigger table.",
+"ru": "Нам нужен стол побольше."
+}
+]
+},
+{
+"word": "window",
+"ipa": "/ˈwɪn.dəʊ/",
+"pos": "noun",
+"level": "A1",
+"ru": "окно",
+"theme": "home",
+"examples": [
+{
+"en": "Open the window, please.",
+"ru": "Открой окно, пожалуйста."
+},
+{
+"en": "The window looks out on the park.",
+"ru": "Окно выходит на парк."
+}
+]
+},
+{
+"word": "door",
+"ipa": "/dɔːr/",
+"pos": "noun",
+"level": "A1",
+"ru": "дверь",
+"theme": "home",
+"examples": [
+{
+"en": "Someone is knocking at the door.",
+"ru": "Кто-то стучит в дверь."
+},
+{
+"en": "Close the door behind you.",
+"ru": "Закрой за собой дверь."
+}
+]
+},
+{
+"word": "milk",
+"ipa": "/mɪlk/",
+"pos": "noun",
+"level": "A1",
+"ru": "молоко",
+"theme": "drink",
+"examples": [
+{
+"en": "I drink coffee with milk.",
+"ru": "Я пью кофе с молоком."
+},
+{
+"en": "The milk is in the fridge.",
+"ru": "Молоко в холодильнике."
+}
+]
+},
+{
+"word": "tea",
+"ipa": "/tiː/",
+"pos": "noun",
+"level": "A1",
+"ru": "чай",
+"theme": "drink",
+"examples": [
+{
+"en": "Would you like some tea?",
+"ru": "Хочешь чаю?"
+},
+{
+"en": "Green tea is good for you.",
+"ru": "Зелёный чай полезен."
+}
+]
+},
+{
+"word": "coffee",
+"ipa": "/ˈkɒf.i/",
+"pos": "noun",
+"level": "A1",
+"ru": "кофе",
+"theme": "drink",
+"examples": [
+{
+"en": "I can't start my day without coffee.",
+"ru": "Я не могу начать день без кофе."
+},
+{
+"en": "Two coffees, please.",
+"ru": "Два кофе, пожалуйста."
+}
+]
+},
+{
+"word": "fish",
+"ipa": "/fɪʃ/",
+"pos": "noun",
+"level": "A1",
+"ru": "рыба",
+"theme": "food",
+"examples": [
+{
+"en": "We had fish for dinner.",
+"ru": "На ужин у нас была рыба."
+},
+{
+"en": "He caught a big fish.",
+"ru": "Он поймал большую рыбу."
+}
+]
+},
+{
+"word": "tree",
+"ipa": "/triː/",
+"pos": "noun",
+"level": "A1",
+"ru": "дерево",
+"theme": "nature",
+"examples": [
+{
+"en": "There is an old tree near our house.",
+"ru": "Возле нашего дома старое дерево."
+},
+{
+"en": "Birds sing in the trees.",
+"ru": "Птицы поют на деревьях."
+}
+]
+},
+{
+"word": "flower",
+"ipa": "/ˈflaʊ.ər/",
+"pos": "noun",
+"level": "A1",
+"ru": "цветок",
+"theme": "nature",
+"examples": [
+{
+"en": "He gave her a flower.",
+"ru": "Он подарил ей цветок."
+},
+{
+"en": "These flowers smell wonderful.",
+"ru": "Эти цветы чудесно пахнут."
+}
+]
+},
+{
+"word": "bird",
+"ipa": "/bɜːd/",
+"pos": "noun",
+"level": "A1",
+"ru": "птица",
+"theme": "animals",
+"examples": [
+{
+"en": "A small bird sat on the fence.",
+"ru": "Маленькая птица села на забор."
+},
+{
+"en": "Birds fly south in autumn.",
+"ru": "Осенью птицы летят на юг."
+}
+]
+},
+{
+"word": "run",
+"ipa": "/rʌn/",
+"pos": "verb",
+"level": "A1",
+"ru": "бегать",
+"theme": "sport",
+"examples": [
+{
+"en": "I run in the park every morning.",
+"ru": "Я бегаю в парке каждое утро."
+},
+{
+"en": "He runs faster than me.",
+"ru": "Он бегает быстрее меня."
+}
+]
+},
+{
+"word": "play",
+"ipa": "/pleɪ/",
+"pos": "verb",
+"level": "A1",
+"ru": "играть",
+"theme": "sport",
+"examples": [
+{
+"en": "The kids play football after school.",
+"ru": "Дети играют в футбол после школы."
+},
+{
+"en": "She plays the piano.",
+"ru": "Она играет на пианино."
+}
+]
+},
+{
+"word": "walk",
+"ipa": "/wɔːk/",
+"pos": "verb",
+"level": "A1",
+"ru": "гулять, идти пешком",
+"theme": "sport",
+"examples": [
+{
+"en": "We walk to work together.",
+"ru": "Мы вместе ходим на работу пешком."
+},
+{
+"en": "Let's walk along the river.",
+"ru": "Давай прогуляемся вдоль реки."
+}
+]
+},
+{
+"word": "sleep",
+"ipa": "/sliːp/",
+"pos": "verb",
+"level": "A1",
+"ru": "спать",
+"theme": "health",
+"examples": [
+{
+"en": "I sleep eight hours a night.",
+"ru": "Я сплю восемь часов в сутки."
+},
+{
+"en": "The baby is sleeping.",
+"ru": "Малыш спит."
+}
+]
+},
+{
+"word": "buy",
+"ipa": "/baɪ/",
+"pos": "verb",
+"level": "A1",
+"ru": "покупать",
+"theme": "money",
+"examples": [
+{
+"en": "Where did you buy this jacket?",
+"ru": "Где ты купил эту куртку?"
+},
+{
+"en": "We buy vegetables at the market.",
+"ru": "Мы покупаем овощи на рынке."
+}
+]
+},
+{
+"word": "borrow",
+"ipa": "/ˈbɒr.əʊ/",
+"pos": "verb",
+"level": "A2",
+"ru": "брать взаймы",
+"theme": "money",
+"examples": [
+{
+"en": "Can I borrow your pen?",
+"ru": "Можно взять твою ручку?"
+},
+{
+"en": "He borrowed money from the bank.",
+"ru": "Он взял кредит в банке."
+}
+]
+},
+{
+"word": "invite",
+"ipa": "/ɪnˈvaɪt/",
+"pos": "verb",
+"level": "A2",
+"ru": "приглашать",
+"theme": "communication",
+"examples": [
+{
+"en": "They invited us to dinner.",
+"ru": "Они пригласили нас на ужин."
+},
+{
+"en": "I'll invite all my friends.",
+"ru": "Я приглашу всех своих друзей."
+}
+]
+},
+{
+"word": "arrive",
+"ipa": "/əˈraɪv/",
+"pos": "verb",
+"level": "A2",
+"ru": "прибывать",
+"theme": "travel",
+"examples": [
+{
+"en": "The train arrives at noon.",
+"ru": "Поезд прибывает в полдень."
+},
+{
+"en": "We arrived home very late.",
+"ru": "Мы приехали домой очень поздно."
+}
+]
+},
+{
+"word": "decide",
+"ipa": "/dɪˈsaɪd/",
+"pos": "verb",
+"level": "A2",
+"ru": "решать",
+"theme": "communication",
+"examples": [
+{
+"en": "We decided to stay home.",
+"ru": "Мы решили остаться дома."
+},
+{
+"en": "It's hard to decide.",
+"ru": "Трудно решить."
+}
+]
+},
+{
+"word": "win",
+"ipa": "/wɪn/",
+"pos": "verb",
+"level": "A2",
+"ru": "выигрывать",
+"theme": "sport",
+"examples": [
+{
+"en": "Our team won the match.",
+"ru": "Наша команда выиграла матч."
+},
+{
+"en": "She wants to win the prize.",
+"ru": "Она хочет выиграть приз."
+}
+]
+},
+{
+"word": "lose",
+"ipa": "/luːz/",
+"pos": "verb",
+"level": "A2",
+"ru": "терять, проигрывать",
+"theme": "sport",
+"examples": [
+{
+"en": "Don't lose your keys.",
+"ru": "Не потеряй ключи."
+},
+{
+"en": "They lost the game by one point.",
+"ru": "Они проиграли с разницей в одно очко."
+}
+]
+},
+{
+"word": "science",
+"ipa": "/ˈsaɪ.əns/",
+"pos": "noun",
+"level": "A2",
+"ru": "наука",
+"theme": "science",
+"examples": [
+{
+"en": "Science explains how the world works.",
+"ru": "Наука объясняет, как устроен мир."
+},
+{
+"en": "She loves science lessons.",
+"ru": "Она любит уроки естествознания."
+}
+]
+},
+{
+"word": "experiment",
+"ipa": "/ɪkˈsper.ɪ.mənt/",
+"pos": "noun",
+"level": "B1",
+"ru": "эксперимент",
+"theme": "science",
+"examples": [
+{
+"en": "The experiment confirmed the theory.",
+"ru": "Эксперимент подтвердил теорию."
+},
+{
+"en": "We did an experiment in class.",
+"ru": "Мы провели эксперимент на уроке."
+}
+]
+},
+{
+"word": "discover",
+"ipa": "/dɪˈskʌv.ər/",
+"pos": "verb",
+"level": "B1",
+"ru": "открывать, обнаруживать",
+"theme": "science",
+"examples": [
+{
+"en": "Scientists discovered a new species.",
+"ru": "Учёные открыли новый вид."
+},
+{
+"en": "I discovered a great café nearby.",
+"ru": "Я обнаружил отличное кафе неподалёку."
+}
+]
+},
+{
+"word": "invent",
+"ipa": "/ɪnˈvent/",
+"pos": "verb",
+"level": "B1",
+"ru": "изобретать",
+"theme": "science",
+"examples": [
+{
+"en": "Who invented the telephone?",
+"ru": "Кто изобрёл телефон?"
+},
+{
+"en": "They invented a new game.",
+"ru": "Они придумали новую игру."
+}
+]
+},
+{
+"word": "knowledge",
+"ipa": "/ˈnɒl.ɪdʒ/",
+"pos": "noun",
+"level": "B1",
+"ru": "знания",
+"theme": "education",
+"examples": [
+{
+"en": "Knowledge is power.",
+"ru": "Знание — сила."
+},
+{
+"en": "He has deep knowledge of history.",
+"ru": "У него глубокие знания истории."
+}
+]
+},
+{
+"word": "skill",
+"ipa": "/skɪl/",
+"pos": "noun",
+"level": "B1",
+"ru": "навык",
+"theme": "work",
+"examples": [
+{
+"en": "Coding is a useful skill.",
+"ru": "Программирование — полезный навык."
+},
+{
+"en": "This job requires communication skills.",
+"ru": "Эта работа требует навыков общения."
+}
+]
+},
+{
+"word": "argue",
+"ipa": "/ˈɑːɡ.juː/",
+"pos": "verb",
+"level": "B1",
+"ru": "спорить",
+"theme": "communication",
+"examples": [
+{
+"en": "They often argue about money.",
+"ru": "Они часто спорят о деньгах."
+},
+{
+"en": "I don't want to argue with you.",
+"ru": "Я не хочу с тобой спорить."
+}
+]
+},
+{
+"word": "apologize",
+"ipa": "/əˈpɒl.ə.dʒaɪz/",
+"pos": "verb",
+"level": "B1",
+"ru": "извиняться",
+"theme": "communication",
+"examples": [
+{
+"en": "He apologized for being late.",
+"ru": "Он извинился за опоздание."
+},
+{
+"en": "You should apologize to her.",
+"ru": "Тебе стоит извиниться перед ней."
+}
+]
+},
+{
+"word": "trust",
+"ipa": "/trʌst/",
+"pos": "verb",
+"level": "B1",
+"ru": "доверять",
+"theme": "feelings",
+"examples": [
+{
+"en": "I trust my old friends.",
+"ru": "Я доверяю старым друзьям."
+},
+{
+"en": "Trust takes years to build.",
+"ru": "Доверие строится годами."
+}
+]
+},
+{
+"word": "proud",
+"ipa": "/praʊd/",
+"pos": "adjective",
+"level": "B1",
+"ru": "гордый",
+"theme": "feelings",
+"examples": [
+{
+"en": "I'm proud of your progress.",
+"ru": "Я горжусь твоим прогрессом."
+},
+{
+"en": "She was proud of her team.",
+"ru": "Она гордилась своей командой."
+}
+]
+},
+{
+"word": "generous",
+"ipa": "/ˈdʒen.ər.əs/",
+"pos": "adjective",
+"level": "B2",
+"ru": "щедрый",
+"theme": "feelings",
+"examples": [
+{
+"en": "He left a generous tip.",
+"ru": "Он оставил щедрые чаевые."
+},
+{
+"en": "She is generous with her time.",
+"ru": "Она щедра на своё время."
+}
+]
+},
+{
+"word": "budget",
+"ipa": "/ˈbʌdʒ.ɪt/",
+"pos": "noun",
+"level": "B2",
+"ru": "бюджет",
+"theme": "money",
+"examples": [
+{
+"en": "We planned the trip on a small budget.",
+"ru": "Мы спланировали поездку с небольшим бюджетом."
+},
+{
+"en": "The project went over budget.",
+"ru": "Проект вышел за рамки бюджета."
+}
+]
+},
+{
+"word": "invest",
+"ipa": "/ɪnˈvest/",
+"pos": "verb",
+"level": "B2",
+"ru": "инвестировать",
+"theme": "money",
+"examples": [
+{
+"en": "He invests in index funds.",
+"ru": "Он инвестирует в индексные фонды."
+},
+{
+"en": "Invest time in learning.",
+"ru": "Вкладывай время в обучение."
+}
+]
+},
+{
+"word": "profit",
+"ipa": "/ˈprɒf.ɪt/",
+"pos": "noun",
+"level": "B2",
+"ru": "прибыль",
+"theme": "business",
+"examples": [
+{
+"en": "The company doubled its profit.",
+"ru": "Компания удвоила прибыль."
+},
+{
+"en": "They sold the house at a profit.",
+"ru": "Они продали дом с прибылью."
+}
+]
+},
+{
+"word": "employee",
+"ipa": "/ɪmˈplɔɪ.iː/",
+"pos": "noun",
+"level": "B2",
+"ru": "сотрудник",
+"theme": "work",
+"examples": [
+{
+"en": "The firm has fifty employees.",
+"ru": "В фирме пятьдесят сотрудников."
+},
+{
+"en": "Every employee gets a bonus.",
+"ru": "Каждый сотрудник получает бонус."
+}
+]
+},
+{
+"word": "apply",
+"ipa": "/əˈplaɪ/",
+"pos": "verb",
+"level": "B2",
+"ru": "подавать заявку; применять",
+"theme": "work",
+"examples": [
+{
+"en": "I applied for the job online.",
+"ru": "Я подал заявку на работу онлайн."
+},
+{
+"en": "Apply this rule to every case.",
+"ru": "Применяй это правило к каждому случаю."
+}
+]
+},
+{
+"word": "schedule",
+"ipa": "/ˈʃedʒ.uːl/",
+"pos": "noun",
+"level": "B2",
+"ru": "расписание, график",
+"theme": "work",
+"examples": [
+{
+"en": "My schedule is full this week.",
+"ru": "Мой график на этой неделе забит."
+},
+{
+"en": "The project is behind schedule.",
+"ru": "Проект отстаёт от графика."
+}
+]
+},
+{
+"word": "vaccine",
+"ipa": "/ˈvæk.siːn/",
+"pos": "noun",
+"level": "B2",
+"ru": "вакцина",
+"theme": "health",
+"examples": [
+{
+"en": "The vaccine protects against the flu.",
+"ru": "Вакцина защищает от гриппа."
+},
+{
+"en": "A new vaccine was developed.",
+"ru": "Разработали новую вакцину."
+}
+]
+},
+{
+"word": "emphasize",
+"ipa": "/ˈem.fə.saɪz/",
+"pos": "verb",
+"level": "C1",
+"ru": "подчёркивать",
+"theme": "communication",
+"examples": [
+{
+"en": "The report emphasizes safety.",
+"ru": "Отчёт подчёркивает важность безопасности."
+},
+{
+"en": "He emphasized every word.",
+"ru": "Он подчёркивал каждое слово."
+}
+]
+},
+{
+"word": "comprehensive",
+"ipa": "/ˌkɒm.prɪˈhen.sɪv/",
+"pos": "adjective",
+"level": "C1",
+"ru": "всеобъемлющий, полный",
+"theme": "education",
+"examples": [
+{
+"en": "We need a comprehensive review.",
+"ru": "Нам нужен всесторонний обзор."
+},
+{
+"en": "The guide is comprehensive and clear.",
+"ru": "Руководство полное и понятное."
+}
+]
+},
+{
+"word": "allegedly",
+"ipa": "/əˈledʒ.ɪd.li/",
+"pos": "adverb",
+"level": "C1",
+"ru": "якобы, предположительно",
+"theme": "law",
+"examples": [
+{
+"en": "He allegedly broke the agreement.",
+"ru": "Он якобы нарушил соглашение."
+},
+{
+"en": "The money was allegedly stolen.",
+"ru": "Деньги предположительно были украдены."
+}
+]
+},
+{
+"word": "volatile",
+"ipa": "/ˈvɒl.ə.taɪl/",
+"pos": "adjective",
+"level": "C1",
+"ru": "нестабильный, изменчивый",
+"theme": "business",
+"examples": [
+{
+"en": "Crypto markets are volatile.",
+"ru": "Криптовалютные рынки нестабильны."
+},
+{
+"en": "The situation remains volatile.",
+"ru": "Ситуация остаётся изменчивой."
+}
+]
+},
+{
+"word": "hello",
+"ipa": "/həˈloʊ/",
+"pos": "phrase",
+"level": "A1",
+"ru": "привет",
+"theme": "communication",
+"examples": [
+{
+"en": "Hello! How are you?",
+"ru": "Привет! Как дела?"
+},
+{
+"en": "Hello, my name is John.",
+"ru": "Привет, меня зовут Джон."
+}
+]
+},
+{
+"word": "goodbye",
+"ipa": "/ɡʊdˈbaɪ/",
+"pos": "phrase",
+"level": "A1",
+"ru": "до свидания",
+"theme": "communication",
+"examples": [
+{
+"en": "Goodbye! See you soon.",
+"ru": "До свидания! До встречи."
+},
+{
+"en": "Goodbye, everyone!",
+"ru": "До свидания, все!"
+}
+]
+},
+{
+"word": "yes",
+"ipa": "/jɛs/",
+"pos": "adverb",
+"level": "A1",
+"ru": "да",
+"theme": "communication",
+"examples": [
+{
+"en": "Do you like juice? Yes, I do.",
+"ru": "Ты любишь сок? Да, люблю."
+},
+{
+"en": "Yes, please.",
+"ru": "Да, пожалуйста."
+}
+]
+},
+{
+"word": "no",
+"ipa": "/noʊ/",
+"pos": "adverb",
+"level": "A1",
+"ru": "нет",
+"theme": "communication",
+"examples": [
+{
+"en": "Do you like cola? No, I don't.",
+"ru": "Ты любишь колу? Нет, не люблю."
+},
+{
+"en": "No, thank you.",
+"ru": "Нет, спасибо."
+}
+]
+},
+{
+"word": "please",
+"ipa": "/pliːz/",
+"pos": "adverb",
+"level": "A1",
+"ru": "пожалуйста",
+"theme": "communication",
+"examples": [
+{
+"en": "Juice, please.",
+"ru": "Сок, пожалуйста."
+},
+{
+"en": "Please sit down.",
+"ru": "Пожалуйста, садитесь."
+}
+]
+},
+{
+"word": "thank",
+"ipa": "/θæŋk/",
+"pos": "verb",
+"level": "A1",
+"ru": "благодарить",
+"theme": "communication",
+"examples": [
+{
+"en": "I thank you for your help.",
+"ru": "Я благодарю тебя за помощь."
+},
+{
+"en": "Thank you very much.",
+"ru": "Спасибо большое."
+}
+]
+},
+{
+"word": "thanks",
+"ipa": "/θæŋks/",
+"pos": "noun",
+"level": "A1",
+"ru": "спасибо",
+"theme": "communication",
+"examples": [
+{
+"en": "Thanks for your help!",
+"ru": "Спасибо за помощь!"
+},
+{
+"en": "Thanks, that's very kind.",
+"ru": "Спасибо, это очень мило."
+}
+]
+},
+{
+"word": "sorry",
+"ipa": "/ˈsɑːri/",
+"pos": "adjective",
+"level": "A1",
+"ru": "извини, прошу прощения",
+"theme": "communication",
+"examples": [
+{
+"en": "Sorry, I'm delayed.",
+"ru": "Извини, я припоздал."
+},
+{
+"en": "I'm sorry, I didn't understand.",
+"ru": "Прошу прощения, я не понял."
+}
+]
+},
+{
+"word": "excuse",
+"ipa": "/ɪkˈskjuːz/",
+"pos": "verb",
+"level": "A1",
+"ru": "извинять",
+"theme": "communication",
+"examples": [
+{
+"en": "Excuse me, where is the toilet?",
+"ru": "Извините, где туалет?"
+},
+{
+"en": "Excuse me, I need to pass.",
+"ru": "Извините, мне нужно пройти."
+}
+]
+},
+{
+"word": "name",
+"ipa": "/neɪm/",
+"pos": "noun",
+"level": "A1",
+"ru": "имя",
+"theme": "people",
+"examples": [
+{
+"en": "What is your name?",
+"ru": "Как тебя зовут?"
+},
+{
+"en": "My name is Sarah.",
+"ru": "Меня зовут Сара."
+}
+]
+},
+{
+"word": "person",
+"ipa": "/ˈpɜːrsən/",
+"pos": "noun",
+"level": "A1",
+"ru": "человек, люди",
+"theme": "people",
+"examples": [
+{
+"en": "She is a nice person.",
+"ru": "Она хороший человек."
+},
+{
+"en": "There are five people here.",
+"ru": "Здесь пять человек."
+}
+]
+},
+{
+"word": "man",
+"ipa": "/mæn/",
+"pos": "noun",
+"level": "A1",
+"ru": "мужчина",
+"theme": "people",
+"examples": [
+{
+"en": "The man is tall.",
+"ru": "Мужчина высокий."
+},
+{
+"en": "A man and a woman are talking.",
+"ru": "Мужчина и женщина разговаривают."
+}
+]
+},
+{
+"word": "woman",
+"ipa": "/ˈwʊmən/",
+"pos": "noun",
+"level": "A1",
+"ru": "женщина",
+"theme": "people",
+"examples": [
+{
+"en": "The woman is young.",
+"ru": "Женщина молодая."
+},
+{
+"en": "The woman works in a hospital.",
+"ru": "Женщина работает в больнице."
+}
+]
+},
+{
+"word": "child",
+"ipa": "/tʃaɪld/",
+"pos": "noun",
+"level": "A1",
+"ru": "ребенок",
+"theme": "people",
+"examples": [
+{
+"en": "The child is in the park.",
+"ru": "Ребенок в парке."
+},
+{
+"en": "Children like toys.",
+"ru": "Дети любят игрушки."
+}
+]
+},
+{
+"word": "boy",
+"ipa": "/bɔɪ/",
+"pos": "noun",
+"level": "A1",
+"ru": "мальчик",
+"theme": "people",
+"examples": [
+{
+"en": "The boy is ten years old.",
+"ru": "Мальчику десять лет."
+},
+{
+"en": "A boy and a girl are partners.",
+"ru": "Мальчик и девочка - партнеры."
+}
+]
+},
+{
+"word": "girl",
+"ipa": "/ɡɜːrl/",
+"pos": "noun",
+"level": "A1",
+"ru": "девочка",
+"theme": "people",
+"examples": [
+{
+"en": "The girl likes to read.",
+"ru": "Девочка любит читать."
+},
+{
+"en": "She is a girl.",
+"ru": "Она девочка."
+}
+]
+},
+{
+"word": "baby",
+"ipa": "/ˈbeɪbi/",
+"pos": "noun",
+"level": "A1",
+"ru": "младенец, малыш",
+"theme": "people",
+"examples": [
+{
+"en": "The baby is sleeping.",
+"ru": "Младенец спит."
+},
+{
+"en": "She has a baby.",
+"ru": "У нее есть малыш."
+}
+]
+},
+{
+"word": "student",
+"ipa": "/ˈstjuːdənt/",
+"pos": "noun",
+"level": "A1",
+"ru": "студент, ученик",
+"theme": "people",
+"examples": [
+{
+"en": "I am a student.",
+"ru": "Я студент."
+},
+{
+"en": "The student studies English.",
+"ru": "Студент изучает английский."
+}
+]
+},
+{
+"word": "sister",
+"ipa": "/ˈsɪstər/",
+"pos": "noun",
+"level": "A1",
+"ru": "сестра",
+"theme": "family",
+"examples": [
+{
+"en": "My sister is a doctor.",
+"ru": "Моя сестра - врач."
+},
+{
+"en": "I have two sisters.",
+"ru": "У меня есть две сестры."
+}
+]
+},
+{
+"word": "brother",
+"ipa": "/ˈbrʌðər/",
+"pos": "noun",
+"level": "A1",
+"ru": "брат",
+"theme": "family",
+"examples": [
+{
+"en": "My brother likes football.",
+"ru": "Мой брат любит футбол."
+},
+{
+"en": "Do you have a brother?",
+"ru": "У тебя есть брат?"
+}
+]
+},
+{
+"word": "aunt",
+"ipa": "/ænt/",
+"pos": "noun",
+"level": "A1",
+"ru": "тетя",
+"theme": "family",
+"examples": [
+{
+"en": "My aunt lives in London.",
+"ru": "Моя тетя живет в Лондоне."
+},
+{
+"en": "I visit my aunt sometimes.",
+"ru": "Я навещаю тетю иногда."
+}
+]
+},
+{
+"word": "uncle",
+"ipa": "/ˈʌŋkəl/",
+"pos": "noun",
+"level": "A1",
+"ru": "дядя",
+"theme": "family",
+"examples": [
+{
+"en": "My uncle is a teacher.",
+"ru": "Мой дядя - учитель."
+},
+{
+"en": "Uncle John is very funny.",
+"ru": "Дядя Джон очень смешной."
+}
+]
+},
+{
+"word": "grandmother",
+"ipa": "/ˈɡrænmʌðər/",
+"pos": "noun",
+"level": "A1",
+"ru": "бабушка",
+"theme": "family",
+"examples": [
+{
+"en": "My grandmother is 80 years old.",
+"ru": "Моей бабушке 80 лет."
+},
+{
+"en": "Grandmother makes delicious cakes.",
+"ru": "Бабушка готовит вкусные торты."
+}
+]
+},
+{
+"word": "grandfather",
+"ipa": "/ˈɡrænfɑːðər/",
+"pos": "noun",
+"level": "A1",
+"ru": "дедушка",
+"theme": "family",
+"examples": [
+{
+"en": "My grandfather likes fishing.",
+"ru": "Мой дедушка любит рыбалку."
+},
+{
+"en": "Grandfather is retired.",
+"ru": "Дедушка в отставке."
+}
+]
+},
+{
+"word": "husband",
+"ipa": "/ˈhʌzbənd/",
+"pos": "noun",
+"level": "A1",
+"ru": "муж",
+"theme": "family",
+"examples": [
+{
+"en": "Her husband is a businessman.",
+"ru": "Ее муж - бизнесмен."
+},
+{
+"en": "My husband and I like to explore places.",
+"ru": "Мой муж и я любим исследовать места."
+}
+]
+},
+{
+"word": "wife",
+"ipa": "/waɪf/",
+"pos": "noun",
+"level": "A1",
+"ru": "жена",
+"theme": "family",
+"examples": [
+{
+"en": "His wife is a nurse.",
+"ru": "Его жена - медсестра."
+},
+{
+"en": "My wife works in an office.",
+"ru": "Моя жена работает в офисе."
+}
+]
+},
+{
+"word": "color",
+"ipa": "/ˈkʌlər/",
+"pos": "noun",
+"level": "A1",
+"ru": "цвет",
+"theme": "other",
+"examples": [
+{
+"en": "What is your favorite color?",
+"ru": "Какой твой любимый цвет?"
+},
+{
+"en": "The color is blue.",
+"ru": "Цвет синий."
+}
+]
+},
+{
+"word": "red",
+"ipa": "/rɛd/",
+"pos": "adjective",
+"level": "A1",
+"ru": "красный",
+"theme": "other",
+"examples": [
+{
+"en": "The ball is red.",
+"ru": "Мяч красный."
+},
+{
+"en": "I like red things.",
+"ru": "Мне нравятся красные вещи."
+}
+]
+},
+{
+"word": "blue",
+"ipa": "/bluː/",
+"pos": "adjective",
+"level": "A1",
+"ru": "синий",
+"theme": "other",
+"examples": [
+{
+"en": "The sky is blue.",
+"ru": "Небо синее."
+},
+{
+"en": "I have a blue coat.",
+"ru": "У меня есть синее пальто."
+}
+]
+},
+{
+"word": "green",
+"ipa": "/ɡriːn/",
+"pos": "adjective",
+"level": "A1",
+"ru": "зеленый",
+"theme": "nature",
+"examples": [
+{
+"en": "The grass is green.",
+"ru": "Трава зеленая."
+},
+{
+"en": "Green is a beautiful color.",
+"ru": "Зеленый - красивый цвет."
+}
+]
+},
+{
+"word": "yellow",
+"ipa": "/ˈjɛloʊ/",
+"pos": "adjective",
+"level": "A1",
+"ru": "желтый",
+"theme": "other",
+"examples": [
+{
+"en": "The star is yellow.",
+"ru": "Звезда желтая."
+},
+{
+"en": "I like yellow lemons.",
+"ru": "Мне нравятся желтые лимоны."
+}
+]
+},
+{
+"word": "white",
+"ipa": "/waɪt/",
+"pos": "adjective",
+"level": "A1",
+"ru": "белый",
+"theme": "other",
+"examples": [
+{
+"en": "The snow is white.",
+"ru": "Снег белый."
+},
+{
+"en": "I have a white hat.",
+"ru": "У меня есть белая шапка."
+}
+]
+},
+{
+"word": "black",
+"ipa": "/blæk/",
+"pos": "adjective",
+"level": "A1",
+"ru": "черный",
+"theme": "other",
+"examples": [
+{
+"en": "The horse is black.",
+"ru": "Лошадь черная."
+},
+{
+"en": "I like black things.",
+"ru": "Мне нравятся черные вещи."
+}
+]
+},
+{
+"word": "orange",
+"ipa": "/ˈɔːrɪndʒ/",
+"pos": "adjective",
+"level": "A1",
+"ru": "оранжевый",
+"theme": "other",
+"examples": [
+{
+"en": "The orange is ripe.",
+"ru": "Апельсин спелый."
+},
+{
+"en": "I like orange juice.",
+"ru": "Мне нравится апельсиновый сок."
+}
+]
+},
+{
+"word": "pink",
+"ipa": "/pɪŋk/",
+"pos": "adjective",
+"level": "A1",
+"ru": "розовый",
+"theme": "other",
+"examples": [
+{
+"en": "The dress is pink.",
+"ru": "Платье розовое."
+},
+{
+"en": "She likes pink color.",
+"ru": "Ей нравится розовый цвет."
+}
+]
+},
+{
+"word": "number",
+"ipa": "/ˈnʌmbər/",
+"pos": "noun",
+"level": "A1",
+"ru": "число, номер",
+"theme": "other",
+"examples": [
+{
+"en": "What is your ID number?",
+"ru": "Какой твой номер ID?"
+},
+{
+"en": "The number is five.",
+"ru": "Число пять."
+}
+]
+},
+{
+"word": "one",
+"ipa": "/wʌn/",
+"pos": "number",
+"level": "A1",
+"ru": "один",
+"theme": "other",
+"examples": [
+{
+"en": "I have one sister.",
+"ru": "У меня есть одна сестра."
+},
+{
+"en": "One plus one is two.",
+"ru": "Один плюс один равно два."
+}
+]
+},
+{
+"word": "two",
+"ipa": "/tuː/",
+"pos": "number",
+"level": "A1",
+"ru": "два",
+"theme": "other",
+"examples": [
+{
+"en": "I have two brothers.",
+"ru": "У меня есть два брата."
+},
+{
+"en": "Two and two is four.",
+"ru": "Два плюс два равно четыре."
+}
+]
+},
+{
+"word": "three",
+"ipa": "/θriː/",
+"pos": "number",
+"level": "A1",
+"ru": "три",
+"theme": "other",
+"examples": [
+{
+"en": "There are three oranges.",
+"ru": "Здесь три апельсина."
+},
+{
+"en": "The hour is three.",
+"ru": "Сейчас три часа."
+}
+]
+},
+{
+"word": "four",
+"ipa": "/fɔːr/",
+"pos": "number",
+"level": "A1",
+"ru": "четыре",
+"theme": "other",
+"examples": [
+{
+"en": "There are four people.",
+"ru": "Здесь четыре человека."
+},
+{
+"en": "I have four pens.",
+"ru": "У меня есть четыре ручки."
+}
+]
+},
+{
+"word": "five",
+"ipa": "/faɪv/",
+"pos": "number",
+"level": "A1",
+"ru": "пять",
+"theme": "other",
+"examples": [
+{
+"en": "The hour is five.",
+"ru": "Сейчас пять часов."
+},
+{
+"en": "I have five fingers.",
+"ru": "У меня пять пальцев."
+}
+]
+},
+{
+"word": "six",
+"ipa": "/sɪks/",
+"pos": "number",
+"level": "A1",
+"ru": "шесть",
+"theme": "other",
+"examples": [
+{
+"en": "There are six eggs in the box.",
+"ru": "В коробке шесть яиц."
+},
+{
+"en": "It is six in the morning.",
+"ru": "Сейчас шесть утра."
+}
+]
+},
+{
+"word": "seven",
+"ipa": "/ˈsɛvən/",
+"pos": "number",
+"level": "A1",
+"ru": "семь",
+"theme": "other",
+"examples": [
+{
+"en": "There are seven days in a week.",
+"ru": "В неделе семь дней."
+},
+{
+"en": "I start my day at seven o'clock.",
+"ru": "Я начинаю день в семь часов."
+}
+]
+},
+{
+"word": "eight",
+"ipa": "/eɪt/",
+"pos": "number",
+"level": "A1",
+"ru": "восемь",
+"theme": "other",
+"examples": [
+{
+"en": "I have eight pencils.",
+"ru": "У меня есть восемь карандашей."
+},
+{
+"en": "The class starts at eight o'clock.",
+"ru": "Урок начинается в восемь часов."
+}
+]
+},
+{
+"word": "nine",
+"ipa": "/naɪn/",
+"pos": "number",
+"level": "A1",
+"ru": "девять",
+"theme": "other",
+"examples": [
+{
+"en": "There are nine students in the class.",
+"ru": "В классе девять студентов."
+},
+{
+"en": "I wake up at nine o'clock.",
+"ru": "Я просыпаюсь в девять часов."
+}
+]
+},
+{
+"word": "ten",
+"ipa": "/tɛn/",
+"pos": "number",
+"level": "A1",
+"ru": "десять",
+"theme": "other",
+"examples": [
+{
+"en": "I have ten dollars.",
+"ru": "У меня есть десять долларов."
+},
+{
+"en": "The meeting is at ten o'clock.",
+"ru": "Встреча в десять часов."
+}
+]
+},
+{
+"word": "room",
+"ipa": "/ruːm/",
+"pos": "noun",
+"level": "A1",
+"ru": "комната",
+"theme": "home",
+"examples": [
+{
+"en": "This is a large room.",
+"ru": "Это большая комната."
+},
+{
+"en": "I rest in my room.",
+"ru": "Я отдыхаю в своей комнате."
+}
+]
+},
+{
+"word": "bed",
+"ipa": "/bɛd/",
+"pos": "noun",
+"level": "A1",
+"ru": "кровать",
+"theme": "home",
+"examples": [
+{
+"en": "I rest at nine o'clock.",
+"ru": "Я отдыхаю в девять часов."
+},
+{
+"en": "The bed is comfortable.",
+"ru": "Кровать удобная."
+}
+]
+},
+{
+"word": "chair",
+"ipa": "/tʃɛr/",
+"pos": "noun",
+"level": "A1",
+"ru": "стул",
+"theme": "home",
+"examples": [
+{
+"en": "Please sit on the chair.",
+"ru": "Пожалуйста, садись на стул."
+},
+{
+"en": "There are four chairs at the desk.",
+"ru": "У стола четыре стула."
+}
+]
+},
+{
+"word": "picture",
+"ipa": "/ˈpɪktʃər/",
+"pos": "noun",
+"level": "A1",
+"ru": "картина, фотография",
+"theme": "home",
+"examples": [
+{
+"en": "There is a picture on the wall.",
+"ru": "На стене картина."
+},
+{
+"en": "I like this picture.",
+"ru": "Мне нравится эта картина."
+}
+]
+},
+{
+"word": "wall",
+"ipa": "/wɔːl/",
+"pos": "noun",
+"level": "A1",
+"ru": "стена",
+"theme": "home",
+"examples": [
+{
+"en": "The wall is white.",
+"ru": "Стена белая."
+},
+{
+"en": "I painted the wall blue.",
+"ru": "Я покрасил стену в синий цвет."
+}
+]
+},
+{
+"word": "floor",
+"ipa": "/flɔːr/",
+"pos": "noun",
+"level": "A1",
+"ru": "пол",
+"theme": "home",
+"examples": [
+{
+"en": "The floor is clean.",
+"ru": "Пол чистый."
+},
+{
+"en": "The toy is on the floor.",
+"ru": "Игрушка на полу."
+}
+]
+},
+{
+"word": "ceiling",
+"ipa": "/ˈsiːlɪŋ/",
+"pos": "noun",
+"level": "A1",
+"ru": "потолок",
+"theme": "home",
+"examples": [
+{
+"en": "The ceiling is high.",
+"ru": "Потолок высокий."
+},
+{
+"en": "The light is on the ceiling.",
+"ru": "Лампа на потолке."
+}
+]
+},
+{
+"word": "light",
+"ipa": "/laɪt/",
+"pos": "noun",
+"level": "A1",
+"ru": "свет, лампа",
+"theme": "home",
+"examples": [
+{
+"en": "Turn on the light, please.",
+"ru": "Включи свет, пожалуйста."
+},
+{
+"en": "The light is very bright.",
+"ru": "Свет очень яркий."
+}
+]
+},
+{
+"word": "eye",
+"ipa": "/aɪ/",
+"pos": "noun",
+"level": "A1",
+"ru": "глаз",
+"theme": "body",
+"examples": [
+{
+"en": "I have two eyes.",
+"ru": "У меня два глаза."
+},
+{
+"en": "My eyes are blue.",
+"ru": "Мои глаза синие."
+}
+]
+},
+{
+"word": "ear",
+"ipa": "/ɪr/",
+"pos": "noun",
+"level": "A1",
+"ru": "ухо",
+"theme": "body",
+"examples": [
+{
+"en": "I listen with my ears.",
+"ru": "Я слушаю ушами."
+},
+{
+"en": "She has nice ears.",
+"ru": "У нее красивые уши."
+}
+]
+},
+{
+"word": "nose",
+"ipa": "/noʊz/",
+"pos": "noun",
+"level": "A1",
+"ru": "нос",
+"theme": "body",
+"examples": [
+{
+"en": "The baby's nose is cute.",
+"ru": "Нос младенца милый."
+},
+{
+"en": "I smell with my nose.",
+"ru": "Я чувствую запах носом."
+}
+]
+},
+{
+"word": "mouth",
+"ipa": "/maʊθ/",
+"pos": "noun",
+"level": "A1",
+"ru": "рот",
+"theme": "body",
+"examples": [
+{
+"en": "I speak with my mouth.",
+"ru": "Я говорю ртом."
+},
+{
+"en": "She has a large mouth.",
+"ru": "У нее большой рот."
+}
+]
+},
+{
+"word": "heart",
+"ipa": "/hɑːrt/",
+"pos": "noun",
+"level": "A1",
+"ru": "сердце",
+"theme": "body",
+"examples": [
+{
+"en": "The heart beats.",
+"ru": "Сердце бьется."
+},
+{
+"en": "I love you with all my heart.",
+"ru": "Я люблю тебя всем сердцем."
+}
+]
+},
+{
+"word": "minute",
+"ipa": "/ˈmɪnɪt/",
+"pos": "noun",
+"level": "A1",
+"ru": "минута",
+"theme": "time",
+"examples": [
+{
+"en": "Wait a minute, please.",
+"ru": "Подождите минуту, пожалуйста."
+},
+{
+"en": "It takes five minutes to reach there.",
+"ru": "Туда идти пять минут."
+}
+]
+},
+{
+"word": "juice",
+"ipa": "/dʒuːs/",
+"pos": "noun",
+"level": "A2",
+"ru": "сок",
+"theme": "drink",
+"examples": [
+{
+"en": "I drink juice every morning.",
+"ru": "Я пью сок каждое утро."
+},
+{
+"en": "Do you like orange juice?",
+"ru": "Тебе нравится апельсиновый сок?"
+}
+]
+},
+{
+"word": "rice",
+"ipa": "/raɪs/",
+"pos": "noun",
+"level": "A2",
+"ru": "рис",
+"theme": "food",
+"examples": [
+{
+"en": "We eat rice with vegetables.",
+"ru": "Мы едим рис с овощами."
+},
+{
+"en": "Do you want white or brown rice?",
+"ru": "Тебе белый или коричневый рис?"
+}
+]
+},
+{
+"word": "meat",
+"ipa": "/miːt/",
+"pos": "noun",
+"level": "A2",
+"ru": "мясо",
+"theme": "food",
+"examples": [
+{
+"en": "I don't eat much meat.",
+"ru": "Я не ем много мяса."
+},
+{
+"en": "This meat is very tender.",
+"ru": "Это мясо очень нежное."
+}
+]
+},
+{
+"word": "chicken",
+"ipa": "/ˈtʃɪkɪn/",
+"pos": "noun",
+"level": "A2",
+"ru": "курица",
+"theme": "food",
+"examples": [
+{
+"en": "I cook chicken for dinner.",
+"ru": "Я готовлю курицу на ужин."
+},
+{
+"en": "Fried chicken is very popular.",
+"ru": "Жареная курица очень популярна."
+}
+]
+},
+{
+"word": "salt",
+"ipa": "/sɔːlt/",
+"pos": "noun",
+"level": "A2",
+"ru": "соль",
+"theme": "food",
+"examples": [
+{
+"en": "Can you pass the salt?",
+"ru": "Ты можешь подать соль?"
+},
+{
+"en": "This food has too much salt.",
+"ru": "Эта еда содержит слишком много соли."
+}
+]
+},
+{
+"word": "plate",
+"ipa": "/pleɪt/",
+"pos": "noun",
+"level": "A2",
+"ru": "тарелка",
+"theme": "food",
+"examples": [
+{
+"en": "Put your food on a clean plate.",
+"ru": "Положи свою еду на чистую тарелку."
+},
+{
+"en": "I need a small plate.",
+"ru": "Мне нужна маленькая тарелка."
+}
+]
+},
+{
+"word": "fork",
+"ipa": "/fɔːrk/",
+"pos": "noun",
+"level": "A2",
+"ru": "вилка",
+"theme": "food",
+"examples": [
+{
+"en": "Use a fork to eat your salad.",
+"ru": "Используй вилку, чтобы есть салат."
+},
+{
+"en": "Where is the fork?",
+"ru": "Где вилка?"
+}
+]
+},
+{
+"word": "knife",
+"ipa": "/naɪf/",
+"pos": "noun",
+"level": "A2",
+"ru": "нож",
+"theme": "food",
+"examples": [
+{
+"en": "I need a sharp knife for cutting.",
+"ru": "Мне нужен острый нож для резки."
+},
+{
+"en": "Be careful with that knife!",
+"ru": "Будь осторожен с этим ножом!"
+}
+]
+},
+{
+"word": "spoon",
+"ipa": "/spuːn/",
+"pos": "noun",
+"level": "A2",
+"ru": "ложка",
+"theme": "food",
+"examples": [
+{
+"en": "I eat soup with a spoon.",
+"ru": "Я ем суп ложкой."
+},
+{
+"en": "Can I have another spoon?",
+"ru": "Я могу получить еще одну ложку?"
+}
+]
+},
+{
+"word": "restaurant",
+"ipa": "/ˈrestrɑːnt/",
+"pos": "noun",
+"level": "A2",
+"ru": "ресторан",
+"theme": "food",
+"examples": [
+{
+"en": "We often eat at this restaurant.",
+"ru": "Мы часто едим в этом ресторане."
+},
+{
+"en": "Is there a good restaurant near here?",
+"ru": "Есть ли хороший ресторан рядом?"
+}
+]
+},
+{
+"word": "menu",
+"ipa": "/ˈmenjuː/",
+"pos": "noun",
+"level": "A2",
+"ru": "меню",
+"theme": "food",
+"examples": [
+{
+"en": "Can I see the menu?",
+"ru": "Я могу посмотреть меню?"
+},
+{
+"en": "The menu has many options.",
+"ru": "В меню много вариантов."
+}
+]
+},
+{
+"word": "delicious",
+"ipa": "/dɪˈlɪʃəs/",
+"pos": "adjective",
+"level": "A2",
+"ru": "вкусный",
+"theme": "food",
+"examples": [
+{
+"en": "This cake is delicious!",
+"ru": "Этот торт вкусный!"
+},
+{
+"en": "The food was absolutely delicious.",
+"ru": "Еда была абсолютно вкусной."
+}
+]
+},
+{
+"word": "train",
+"ipa": "/treɪn/",
+"pos": "noun",
+"level": "A2",
+"ru": "поезд",
+"theme": "transport",
+"examples": [
+{
+"en": "I take the train to work.",
+"ru": "Я езжу на поезде на работу."
+},
+{
+"en": "The train leaves at 8 o'clock.",
+"ru": "Поезд отходит в 8 часов."
+}
+]
+},
+{
+"word": "bus",
+"ipa": "/bʌs/",
+"pos": "noun",
+"level": "A2",
+"ru": "автобус",
+"theme": "transport",
+"examples": [
+{
+"en": "I wait for the bus every morning.",
+"ru": "Я жду автобус каждое утро."
+},
+{
+"en": "How much is the bus ticket?",
+"ru": "Сколько стоит билет на автобус?"
+}
+]
+},
+{
+"word": "plane",
+"ipa": "/pleɪn/",
+"pos": "noun",
+"level": "A2",
+"ru": "самолет",
+"theme": "transport",
+"examples": [
+{
+"en": "I fly by plane to Europe.",
+"ru": "Я летаю на самолете в Европу."
+},
+{
+"en": "The plane landed on time.",
+"ru": "Самолет приземлился вовремя."
+}
+]
+},
+{
+"word": "bicycle",
+"ipa": "/ˈbaɪsɪkl/",
+"pos": "noun",
+"level": "A2",
+"ru": "велосипед",
+"theme": "transport",
+"examples": [
+{
+"en": "I ride my bicycle to school.",
+"ru": "Я езжу на велосипеде в школу."
+},
+{
+"en": "Do you have a bicycle?",
+"ru": "У тебя есть велосипед?"
+}
+]
+},
+{
+"word": "boat",
+"ipa": "/boʊt/",
+"pos": "noun",
+"level": "A2",
+"ru": "лодка",
+"theme": "transport",
+"examples": [
+{
+"en": "We sailed in a boat on the lake.",
+"ru": "Мы плыли на лодке на озере."
+},
+{
+"en": "Is the boat safe?",
+"ru": "Лодка безопасна?"
+}
+]
+},
+{
+"word": "station",
+"ipa": "/ˈsteɪʃn/",
+"pos": "noun",
+"level": "A2",
+"ru": "станция",
+"theme": "transport",
+"examples": [
+{
+"en": "The station is near my house.",
+"ru": "Станция рядом с моим домом."
+},
+{
+"en": "What time does the train leave the station?",
+"ru": "Во сколько поезд отходит от станции?"
+}
+]
+},
+{
+"word": "road",
+"ipa": "/roʊd/",
+"pos": "noun",
+"level": "A2",
+"ru": "дорога",
+"theme": "transport",
+"examples": [
+{
+"en": "Be careful on the road!",
+"ru": "Будь осторожен на дороге!"
+},
+{
+"en": "This road goes to the city.",
+"ru": "Эта дорога ведет в город."
+}
+]
+},
+{
+"word": "shoe",
+"ipa": "/ʃuː/",
+"pos": "noun",
+"level": "A2",
+"ru": "обувь",
+"theme": "clothes",
+"examples": [
+{
+"en": "I need new shoes.",
+"ru": "Мне нужна новая обувь."
+},
+{
+"en": "These shoes are very comfortable.",
+"ru": "Эта обувь очень удобная."
+}
+]
+},
+{
+"word": "hat",
+"ipa": "/hæt/",
+"pos": "noun",
+"level": "A2",
+"ru": "шляпа",
+"theme": "clothes",
+"examples": [
+{
+"en": "Wear a hat in the sun.",
+"ru": "Надень шляпу на солнце."
+},
+{
+"en": "I like your hat!",
+"ru": "Мне нравится твоя шляпа!"
+}
+]
+},
+{
+"word": "coat",
+"ipa": "/koʊt/",
+"pos": "noun",
+"level": "A2",
+"ru": "пальто",
+"theme": "clothes",
+"examples": [
+{
+"en": "Put on your coat, it's cold.",
+"ru": "Надень пальто, холодно."
+},
+{
+"en": "Where is my winter coat?",
+"ru": "Где мое зимнее пальто?"
+}
+]
+},
+{
+"word": "pants",
+"ipa": "/pænts/",
+"pos": "noun",
+"level": "A2",
+"ru": "штаны",
+"theme": "clothes",
+"examples": [
+{
+"en": "I bought new pants yesterday.",
+"ru": "Я купил новые штаны вчера."
+},
+{
+"en": "These pants are too long.",
+"ru": "Эти штаны слишком длинные."
+}
+]
+},
+{
+"word": "dress",
+"ipa": "/dres/",
+"pos": "noun",
+"level": "A2",
+"ru": "платье",
+"theme": "clothes",
+"examples": [
+{
+"en": "She wears a beautiful dress.",
+"ru": "Она носит красивое платье."
+},
+{
+"en": "I need a new dress for the party.",
+"ru": "Мне нужно новое платье на вечеринку."
+}
+]
+},
+{
+"word": "jacket",
+"ipa": "/ˈdʒækɪt/",
+"pos": "noun",
+"level": "A2",
+"ru": "куртка",
+"theme": "clothes",
+"examples": [
+{
+"en": "I wear a leather jacket.",
+"ru": "Я ношу кожаную куртку."
+},
+{
+"en": "Take your jacket with you.",
+"ru": "Возьми свою куртку с собой."
+}
+]
+},
+{
+"word": "sock",
+"ipa": "/sɑːk/",
+"pos": "noun",
+"level": "A2",
+"ru": "носок",
+"theme": "clothes",
+"examples": [
+{
+"en": "I can't find my socks!",
+"ru": "Я не могу найти свои носки!"
+},
+{
+"en": "These socks are warm.",
+"ru": "Эти носки теплые."
+}
+]
+},
+{
+"word": "hotel",
+"ipa": "/hoʊˈtel/",
+"pos": "noun",
+"level": "A2",
+"ru": "отель",
+"theme": "travel",
+"examples": [
+{
+"en": "Where is a good hotel?",
+"ru": "Где хороший отель?"
+},
+{
+"en": "We stayed in a luxury hotel.",
+"ru": "Мы останавливались в роскошном отеле."
+}
+]
+},
+{
+"word": "beach",
+"ipa": "/biːtʃ/",
+"pos": "noun",
+"level": "A2",
+"ru": "пляж",
+"theme": "travel",
+"examples": [
+{
+"en": "Let's go to the beach!",
+"ru": "Давай пойдем на пляж!"
+},
+{
+"en": "The beach is very crowded today.",
+"ru": "Пляж очень переполнен сегодня."
+}
+]
+},
+{
+"word": "mountain",
+"ipa": "/ˈmaʊntən/",
+"pos": "noun",
+"level": "A2",
+"ru": "гора",
+"theme": "travel",
+"examples": [
+{
+"en": "We climbed a high mountain.",
+"ru": "Мы поднялись на высокую гору."
+},
+{
+"en": "The mountain has snow on top.",
+"ru": "На вершине горы снег."
+}
+]
+},
+{
+"word": "sea",
+"ipa": "/siː/",
+"pos": "noun",
+"level": "A2",
+"ru": "море",
+"theme": "travel",
+"examples": [
+{
+"en": "I love swimming in the sea.",
+"ru": "Я люблю плавать в море."
+},
+{
+"en": "The sea is calm today.",
+"ru": "Море спокойно сегодня."
+}
+]
+},
+{
+"word": "map",
+"ipa": "/mæp/",
+"pos": "noun",
+"level": "A2",
+"ru": "карта",
+"theme": "travel",
+"examples": [
+{
+"en": "I need a map to find the way.",
+"ru": "Мне нужна карта, чтобы найти путь."
+},
+{
+"en": "Can you show me the map?",
+"ru": "Ты можешь показать мне карту?"
+}
+]
+},
+{
+"word": "passport",
+"ipa": "/ˈpæspɔːrt/",
+"pos": "noun",
+"level": "A2",
+"ru": "паспорт",
+"theme": "travel",
+"examples": [
+{
+"en": "Don't forget your passport!",
+"ru": "Не забудь свой паспорт!"
+},
+{
+"en": "I need to renew my passport.",
+"ru": "Мне нужно обновить свой паспорт."
+}
+]
+},
+{
+"word": "suitcase",
+"ipa": "/ˈsuːtkeɪs/",
+"pos": "noun",
+"level": "A2",
+"ru": "чемодан",
+"theme": "travel",
+"examples": [
+{
+"en": "I packed my suitcase yesterday.",
+"ru": "Я собрал свой чемодан вчера."
+},
+{
+"en": "This suitcase is too heavy.",
+"ru": "Этот чемодан слишком тяжелый."
+}
+]
+},
+{
+"word": "bathroom",
+"ipa": "/ˈbæθruːm/",
+"pos": "noun",
+"level": "A2",
+"ru": "ванная комната",
+"theme": "home",
+"examples": [
+{
+"en": "The bathroom is upstairs.",
+"ru": "Ванная комната наверху."
+},
+{
+"en": "I need to use the bathroom.",
+"ru": "Мне нужно использовать ванную."
+}
+]
+},
+{
+"word": "sofa",
+"ipa": "/ˈsoʊfə/",
+"pos": "noun",
+"level": "A2",
+"ru": "диван",
+"theme": "home",
+"examples": [
+{
+"en": "We sit on the sofa to watch TV.",
+"ru": "Мы сидим на диване, чтобы смотреть телевизор."
+},
+{
+"en": "This sofa is very comfortable.",
+"ru": "Этот диван очень удобный."
+}
+]
+},
+{
+"word": "lamp",
+"ipa": "/læmp/",
+"pos": "noun",
+"level": "A2",
+"ru": "лампа",
+"theme": "home",
+"examples": [
+{
+"en": "Turn on the lamp, it's dark.",
+"ru": "Включи лампу, темно."
+},
+{
+"en": "The lamp on the table is broken.",
+"ru": "Лампа на столе сломана."
+}
+]
+},
+{
+"word": "mirror",
+"ipa": "/ˈmɪrər/",
+"pos": "noun",
+"level": "A2",
+"ru": "зеркало",
+"theme": "home",
+"examples": [
+{
+"en": "Look in the mirror.",
+"ru": "Посмотри в зеркало."
+},
+{
+"en": "There is a big mirror in the bedroom.",
+"ru": "В спальне есть большое зеркало."
+}
+]
+},
+{
+"word": "key",
+"ipa": "/kiː/",
+"pos": "noun",
+"level": "A2",
+"ru": "ключ",
+"theme": "home",
+"examples": [
+{
+"en": "Where is the key to the door?",
+"ru": "Где ключ от двери?"
+},
+{
+"en": "I lost my house key.",
+"ru": "Я потерял свой ключ от дома."
+}
+]
+},
+{
+"word": "arm",
+"ipa": "/ɑːrm/",
+"pos": "noun",
+"level": "A2",
+"ru": "рука",
+"theme": "body",
+"examples": [
+{
+"en": "I have a pain in my arm.",
+"ru": "У меня боль в руке."
+},
+{
+"en": "Raise your arm, please.",
+"ru": "Подними свою руку, пожалуйста."
+}
+]
+},
+{
+"word": "leg",
+"ipa": "/leg/",
+"pos": "noun",
+"level": "A2",
+"ru": "нога",
+"theme": "body",
+"examples": [
+{
+"en": "I hurt my leg playing football.",
+"ru": "Я повредил свою ногу, играя в футбол."
+},
+{
+"en": "My legs are tired.",
+"ru": "Мои ноги устали."
+}
+]
+},
+{
+"word": "foot",
+"ipa": "/fʊt/",
+"pos": "noun",
+"level": "A2",
+"ru": "стопа",
+"theme": "body",
+"examples": [
+{
+"en": "I have a blister on my foot.",
+"ru": "У меня волдырь на стопе."
+},
+{
+"en": "My foot hurts.",
+"ru": "Моя стопа болит."
+}
+]
+},
+{
+"word": "face",
+"ipa": "/feɪs/",
+"pos": "noun",
+"level": "A2",
+"ru": "лицо",
+"theme": "body",
+"examples": [
+{
+"en": "She has a beautiful face.",
+"ru": "У нее красивое лицо."
+},
+{
+"en": "Wash your face with soap.",
+"ru": "Помой свое лицо мылом."
+}
+]
+},
+{
+"word": "hair",
+"ipa": "/her/",
+"pos": "noun",
+"level": "A2",
+"ru": "волосы",
+"theme": "body",
+"examples": [
+{
+"en": "I cut my hair yesterday.",
+"ru": "Я подстригся вчера."
+},
+{
+"en": "Your hair is very long.",
+"ru": "Твои волосы очень длинные."
+}
+]
+},
+{
+"word": "tooth",
+"ipa": "/tuːθ/",
+"pos": "noun",
+"level": "A2",
+"ru": "зуб",
+"theme": "body",
+"examples": [
+{
+"en": "I have a pain in my tooth.",
+"ru": "У меня боль в зубе."
+},
+{
+"en": "Brush your teeth every day.",
+"ru": "Чисти зубы каждый день."
+}
+]
+},
+{
+"word": "skin",
+"ipa": "/skɪn/",
+"pos": "noun",
+"level": "A2",
+"ru": "кожа",
+"theme": "body",
+"examples": [
+{
+"en": "My skin is very dry.",
+"ru": "Моя кожа очень сухая."
+},
+{
+"en": "Use sunscreen to protect your skin.",
+"ru": "Используй крем от солнца, чтобы защитить кожу."
+}
+]
+},
+{
+"word": "hospital",
+"ipa": "/ˈhɑːspɪtl/",
+"pos": "noun",
+"level": "A2",
+"ru": "больница",
+"theme": "health",
+"examples": [
+{
+"en": "He is in the hospital.",
+"ru": "Он в больнице."
+},
+{
+"en": "The hospital is near the station.",
+"ru": "Больница рядом со станцией."
+}
+]
+},
+{
+"word": "medicine",
+"ipa": "/ˈmedɪsɪn/",
+"pos": "noun",
+"level": "A2",
+"ru": "лекарство",
+"theme": "health",
+"examples": [
+{
+"en": "Take this medicine three times a day.",
+"ru": "Принимай это лекарство три раза в день."
+},
+{
+"en": "I need medicine for my headache.",
+"ru": "Мне нужно лекарство от головной боли."
+}
+]
+},
+{
+"word": "sick",
+"ipa": "/sɪk/",
+"pos": "adjective",
+"level": "A2",
+"ru": "больной",
+"theme": "health",
+"examples": [
+{
+"en": "I feel sick today.",
+"ru": "Я чувствую себя больным сегодня."
+},
+{
+"en": "My son is sick with the flu.",
+"ru": "Мой сын болеет гриппом."
+}
+]
+},
+{
+"word": "pain",
+"ipa": "/peɪn/",
+"pos": "noun",
+"level": "A2",
+"ru": "боль",
+"theme": "health",
+"examples": [
+{
+"en": "I have a pain in my back.",
+"ru": "У меня боль в спине."
+},
+{
+"en": "The pain is getting worse.",
+"ru": "Боль становится все хуже."
+}
+]
+},
+{
+"word": "nurse",
+"ipa": "/nɜːrs/",
+"pos": "noun",
+"level": "A2",
+"ru": "медсестра",
+"theme": "health",
+"examples": [
+{
+"en": "The nurse helped me.",
+"ru": "Медсестра помогла мне."
+},
+{
+"en": "My sister is a nurse.",
+"ru": "Моя сестра медсестра."
+}
+]
+},
+{
+"word": "sad",
+"ipa": "/sæd/",
+"pos": "adjective",
+"level": "A2",
+"ru": "грустный",
+"theme": "feelings",
+"examples": [
+{
+"en": "Why are you sad?",
+"ru": "Почему ты грустный?"
+},
+{
+"en": "The sad movie made me cry.",
+"ru": "Грустный фильм заставил меня плакать."
+}
+]
+},
+{
+"word": "angry",
+"ipa": "/ˈæŋɡri/",
+"pos": "adjective",
+"level": "A2",
+"ru": "злой",
+"theme": "feelings",
+"examples": [
+{
+"en": "Don't be angry with me.",
+"ru": "Не злись на меня."
+},
+{
+"en": "He looks angry.",
+"ru": "Он выглядит сердитым."
+}
+]
+},
+{
+"word": "afraid",
+"ipa": "/əˈfreɪd/",
+"pos": "adjective",
+"level": "A2",
+"ru": "испуганный",
+"theme": "feelings",
+"examples": [
+{
+"en": "Are you afraid of spiders?",
+"ru": "Ты боишься пауков?"
+},
+{
+"en": "I'm afraid of the dark.",
+"ru": "Я боюсь темноты."
+}
+]
+},
+{
+"word": "surprised",
+"ipa": "/sərˈpraɪzd/",
+"pos": "adjective",
+"level": "A2",
+"ru": "удивленный",
+"theme": "feelings",
+"examples": [
+{
+"en": "I'm surprised to see you!",
+"ru": "Я удивлен видеть тебя!"
+},
+{
+"en": "She looked surprised.",
+"ru": "Она выглядела удивленной."
+}
+]
+},
+{
+"word": "tired",
+"ipa": "/ˈtaɪərd/",
+"pos": "adjective",
+"level": "A2",
+"ru": "усталый",
+"theme": "feelings",
+"examples": [
+{
+"en": "I'm very tired today.",
+"ru": "Я очень устал сегодня."
+},
+{
+"en": "He looks tired after work.",
+"ru": "Он выглядит усталым после работы."
+}
+]
+},
+{
+"word": "excited",
+"ipa": "/ɪkˈsaɪtɪd/",
+"pos": "adjective",
+"level": "A2",
+"ru": "взволнованный",
+"theme": "feelings",
+"examples": [
+{
+"en": "I'm excited about the trip!",
+"ru": "Я взволнован поездкой!"
+},
+{
+"en": "The children are excited.",
+"ru": "Дети взволнованы."
+}
+]
+},
+{
+"word": "office",
+"ipa": "/ˈɔːfɪs/",
+"pos": "noun",
+"level": "A2",
+"ru": "офис",
+"theme": "work",
+"examples": [
+{
+"en": "I work in an office.",
+"ru": "Я работаю в офисе."
+},
+{
+"en": "The office is closed on Sunday.",
+"ru": "Офис закрыт в воскресенье."
+}
+]
+},
+{
+"word": "boss",
+"ipa": "/bɔːs/",
+"pos": "noun",
+"level": "A2",
+"ru": "босс",
+"theme": "work",
+"examples": [
+{
+"en": "My boss is very nice.",
+"ru": "Мой босс очень добрый."
+},
+{
+"en": "I need to talk to my boss.",
+"ru": "Мне нужно поговорить с моим боссом."
+}
+]
+},
+{
+"word": "job",
+"ipa": "/dʒɑːb/",
+"pos": "noun",
+"level": "A2",
+"ru": "работа",
+"theme": "work",
+"examples": [
+{
+"en": "I have a good job.",
+"ru": "У меня хорошая работа."
+},
+{
+"en": "She got a new job last month.",
+"ru": "Она получила новую работу в прошлом месяце."
+}
+]
+},
+{
+"word": "team",
+"ipa": "/tiːm/",
+"pos": "noun",
+"level": "A2",
+"ru": "команда",
+"theme": "work",
+"examples": [
+{
+"en": "I work with a great team.",
+"ru": "Я работаю с отличной командой."
+},
+{
+"en": "Our team won the competition.",
+"ru": "Наша команда выиграла конкурс."
+}
+]
+},
+{
+"word": "address",
+"ipa": "/əˈdres/",
+"pos": "noun",
+"level": "B1",
+"ru": "адрес",
+"theme": "communication",
+"examples": [
+{
+"en": "What is your address?",
+"ru": "Какой твой адрес?"
+},
+{
+"en": "Send it to my home address.",
+"ru": "Отправь на мой домашний адрес."
+}
+]
+},
+{
+"word": "adult",
+"ipa": "/ˈædʌlt/",
+"pos": "noun",
+"level": "B1",
+"ru": "взрослый",
+"theme": "people",
+"examples": [
+{
+"en": "Only adults can enter here.",
+"ru": "Только взрослые могут входить."
+},
+{
+"en": "She became an adult at 18.",
+"ru": "Она стала взрослой в 18 лет."
+}
+]
+},
+{
+"word": "advice",
+"ipa": "/ədˈvaɪs/",
+"pos": "noun",
+"level": "B1",
+"ru": "совет",
+"theme": "communication",
+"examples": [
+{
+"en": "Can you give me advice?",
+"ru": "Ты можешь дать мне совет?"
+},
+{
+"en": "My teacher gave me good advice.",
+"ru": "Мой учитель дал мне хороший совет."
+}
+]
+},
+{
+"word": "appear",
+"ipa": "/əˈpɪr/",
+"pos": "verb",
+"level": "B1",
+"ru": "появляться",
+"theme": "other",
+"examples": [
+{
+"en": "The sun appears in the morning.",
+"ru": "Солнце появляется утром."
+},
+{
+"en": "She appeared at the door.",
+"ru": "Она появилась в дверях."
+}
+]
+},
+{
+"word": "area",
+"ipa": "/ˈeəriə/",
+"pos": "noun",
+"level": "B1",
+"ru": "область, зона",
+"theme": "city",
+"examples": [
+{
+"en": "This is a nice area for shopping.",
+"ru": "Это хороший район для покупок."
+},
+{
+"en": "The kitchen area is small.",
+"ru": "Кухонная зона небольшая."
+}
+]
+},
+{
+"word": "arrange",
+"ipa": "/əˈreɪndʒ/",
+"pos": "verb",
+"level": "B1",
+"ru": "организовать, расставить",
+"theme": "work",
+"examples": [
+{
+"en": "Can you arrange a meeting?",
+"ru": "Ты можешь организовать встречу?"
+},
+{
+"en": "Let me arrange the flowers.",
+"ru": "Позволь мне расставить цветы."
+}
+]
+},
+{
+"word": "attention",
+"ipa": "/əˈtenʃən/",
+"pos": "noun",
+"level": "B1",
+"ru": "внимание",
+"theme": "communication",
+"examples": [
+{
+"en": "Please pay attention!",
+"ru": "Пожалуйста, обрати внимание!"
+},
+{
+"en": "This needs your full attention.",
+"ru": "Это требует твоего полного внимания."
+}
+]
+},
+{
+"word": "audience",
+"ipa": "/ˈɔːdiəns/",
+"pos": "noun",
+"level": "B1",
+"ru": "аудитория, публика",
+"theme": "art",
+"examples": [
+{
+"en": "The audience applauded.",
+"ru": "Публика аплодировала."
+},
+{
+"en": "There was a large audience.",
+"ru": "Была большая аудитория."
+}
+]
+},
+{
+"word": "available",
+"ipa": "/əˈveɪləbl/",
+"pos": "adjective",
+"level": "B1",
+"ru": "доступный, свободный",
+"theme": "business",
+"examples": [
+{
+"en": "Is this item available?",
+"ru": "Этот товар в наличии?"
+},
+{
+"en": "The room is available next week.",
+"ru": "Комната свободна на следующей неделе."
+}
+]
+},
+{
+"word": "average",
+"ipa": "/ˈævərɪdʒ/",
+"pos": "adjective",
+"level": "B1",
+"ru": "средний",
+"theme": "other",
+"examples": [
+{
+"en": "The average temperature is 20°C.",
+"ru": "Средняя температура 20°C."
+},
+{
+"en": "He got an average score.",
+"ru": "Он получил среднюю оценку."
+}
+]
+},
+{
+"word": "balance",
+"ipa": "/ˈbæləns/",
+"pos": "noun",
+"level": "B1",
+"ru": "баланс, равновесие",
+"theme": "money",
+"examples": [
+{
+"en": "Check your bank balance.",
+"ru": "Проверь баланс счета."
+},
+{
+"en": "I need balance in my life.",
+"ru": "Мне нужен баланс в жизни."
+}
+]
+},
+{
+"word": "believe",
+"ipa": "/bɪˈliːv/",
+"pos": "verb",
+"level": "B1",
+"ru": "верить",
+"theme": "feelings",
+"examples": [
+{
+"en": "Do you believe in magic?",
+"ru": "Ты веришь в магию?"
+},
+{
+"en": "I believe you.",
+"ru": "Я тебе верю."
+}
+]
+},
+{
+"word": "benefit",
+"ipa": "/ˈbenɪfɪt/",
+"pos": "noun",
+"level": "B1",
+"ru": "преимущество, выгода",
+"theme": "business",
+"examples": [
+{
+"en": "The main benefit is saving money.",
+"ru": "Главное преимущество — сэкономить деньги."
+},
+{
+"en": "Exercise has many benefits.",
+"ru": "Упражнения дают много преимуществ."
+}
+]
+},
+{
+"word": "blood",
+"ipa": "/blʌd/",
+"pos": "noun",
+"level": "B1",
+"ru": "кровь",
+"theme": "body",
+"examples": [
+{
+"en": "Blood type is important.",
+"ru": "Группа крови важна."
+},
+{
+"en": "He saw blood on his hand.",
+"ru": "Он увидел кровь на руке."
+}
+]
+},
+{
+"word": "border",
+"ipa": "/ˈbɔːrdər/",
+"pos": "noun",
+"level": "B1",
+"ru": "граница",
+"theme": "travel",
+"examples": [
+{
+"en": "We crossed the border yesterday.",
+"ru": "Мы пересекли границу вчера."
+},
+{
+"en": "The border between countries is long.",
+"ru": "Граница между странами длинная."
+}
+]
+},
+{
+"word": "bottle",
+"ipa": "/ˈbɒtl/",
+"pos": "noun",
+"level": "B1",
+"ru": "бутылка",
+"theme": "food",
+"examples": [
+{
+"en": "I need a bottle of juice.",
+"ru": "Мне нужна бутылка сока."
+},
+{
+"en": "Empty the bottle please.",
+"ru": "Опусти бутылку, пожалуйста."
+}
+]
+},
+{
+"word": "boyfriend",
+"ipa": "/ˈbɔɪfrend/",
+"pos": "noun",
+"level": "B1",
+"ru": "парень, любимый",
+"theme": "people",
+"examples": [
+{
+"en": "My boyfriend is a teacher.",
+"ru": "Мой парень — учитель."
+},
+{
+"en": "Does she have a boyfriend?",
+"ru": "У неё есть парень?"
+}
+]
+},
+{
+"word": "breathe",
+"ipa": "/briːð/",
+"pos": "verb",
+"level": "B1",
+"ru": "дышать",
+"theme": "body",
+"examples": [
+{
+"en": "Breathe deeply please.",
+"ru": "Дышите глубоко, пожалуйста."
+},
+{
+"en": "I can't breathe properly.",
+"ru": "Я не могу правильно дышать."
+}
+]
+},
+{
+"word": "brilliant",
+"ipa": "/ˈbrɪljənt/",
+"pos": "adjective",
+"level": "B1",
+"ru": "блестящий, замечательный",
+"theme": "feelings",
+"examples": [
+{
+"en": "That's a brilliant idea!",
+"ru": "Это замечательная идея!"
+},
+{
+"en": "The diamond is brilliant.",
+"ru": "Алмаз блестящий."
+}
+]
+},
+{
+"word": "burn",
+"ipa": "/bɜːrn/",
+"pos": "verb",
+"level": "B1",
+"ru": "гореть, сгорать",
+"theme": "other",
+"examples": [
+{
+"en": "Be careful, don't burn yourself!",
+"ru": "Будь осторожен, не обожгись!"
+},
+{
+"en": "The fire burns brightly.",
+"ru": "Огонь горит ярко."
+}
+]
+},
+{
+"word": "busy",
+"ipa": "/ˈbɪzi/",
+"pos": "adjective",
+"level": "B1",
+"ru": "занятой, загруженный",
+"theme": "work",
+"examples": [
+{
+"en": "I'm very busy today.",
+"ru": "Я очень занят сегодня."
+},
+{
+"en": "The street is busy.",
+"ru": "Улица загруженная."
+}
+]
+},
+{
+"word": "button",
+"ipa": "/ˈbʌtn/",
+"pos": "noun",
+"level": "B1",
+"ru": "кнопка, пуговица",
+"theme": "clothes",
+"examples": [
+{
+"en": "Press the button please.",
+"ru": "Нажми кнопку, пожалуйста."
+},
+{
+"en": "This button is broken.",
+"ru": "Эта пуговица сломана."
+}
+]
+},
+{
+"word": "calculate",
+"ipa": "/ˈkælkjuleɪt/",
+"pos": "verb",
+"level": "B1",
+"ru": "вычислить, рассчитать",
+"theme": "science",
+"examples": [
+{
+"en": "Can you calculate the cost?",
+"ru": "Ты можешь вычислить стоимость?"
+},
+{
+"en": "Let me calculate the total.",
+"ru": "Позволь мне рассчитать сумму."
+}
+]
+},
+{
+"word": "camera",
+"ipa": "/ˈkæmərə/",
+"pos": "noun",
+"level": "B1",
+"ru": "камера, фотоаппарат",
+"theme": "technology",
+"examples": [
+{
+"en": "I have a new camera.",
+"ru": "У меня новая камера."
+},
+{
+"en": "Take a photo with your camera.",
+"ru": "Сделай фото своей камерой."
+}
+]
+},
+{
+"word": "campaign",
+"ipa": "/kæmˈpeɪn/",
+"pos": "noun",
+"level": "B1",
+"ru": "кампания, акция",
+"theme": "business",
+"examples": [
+{
+"en": "The advertising campaign is successful.",
+"ru": "Рекламная кампания успешна."
+},
+{
+"en": "We started a new campaign.",
+"ru": "Мы начали новую кампанию."
+}
+]
+},
+{
+"word": "capable",
+"ipa": "/ˈkeɪpəbl/",
+"pos": "adjective",
+"level": "B1",
+"ru": "способный, компетентный",
+"theme": "people",
+"examples": [
+{
+"en": "She is very capable.",
+"ru": "Она очень способная."
+},
+{
+"en": "Are you capable of doing this?",
+"ru": "Ты способен это сделать?"
+}
+]
+},
+{
+"word": "capital",
+"ipa": "/ˈkæpɪtl/",
+"pos": "noun",
+"level": "B1",
+"ru": "столица, капитал",
+"theme": "city",
+"examples": [
+{
+"en": "Paris is the capital of France.",
+"ru": "Париж — столица Франции."
+},
+{
+"en": "He invested capital in business.",
+"ru": "Он вложил капитал в бизнес."
+}
+]
+},
+{
+"word": "career",
+"ipa": "/kəˈrɪr/",
+"pos": "noun",
+"level": "B1",
+"ru": "карьера",
+"theme": "work",
+"examples": [
+{
+"en": "She has a successful career.",
+"ru": "У неё успешная карьера."
+},
+{
+"en": "What career do you want?",
+"ru": "Какую карьеру ты хочешь?"
+}
+]
+},
+{
+"word": "carry",
+"ipa": "/ˈkæri/",
+"pos": "verb",
+"level": "B1",
+"ru": "нести, носить",
+"theme": "other",
+"examples": [
+{
+"en": "Can you carry this bag?",
+"ru": "Ты можешь нести эту сумку?"
+},
+{
+"en": "I'm carrying groceries.",
+"ru": "Я несу продукты."
+}
+]
+},
+{
+"word": "catch",
+"ipa": "/kætʃ/",
+"pos": "verb",
+"level": "B1",
+"ru": "ловить, успеть",
+"theme": "sport",
+"examples": [
+{
+"en": "Catch the ball!",
+"ru": "Лови мяч!"
+},
+{
+"en": "I caught the train on time.",
+"ru": "Я успел на поезд вовремя."
+}
+]
+},
+{
+"word": "cause",
+"ipa": "/kɔːz/",
+"pos": "noun",
+"level": "B1",
+"ru": "причина, дело",
+"theme": "other",
+"examples": [
+{
+"en": "What is the cause of the problem?",
+"ru": "Какова причина проблемы?"
+},
+{
+"en": "I support this cause.",
+"ru": "Я поддерживаю это дело."
+}
+]
+},
+{
+"word": "celebrate",
+"ipa": "/ˈselɪbreɪt/",
+"pos": "verb",
+"level": "B1",
+"ru": "праздновать, отмечать",
+"theme": "time",
+"examples": [
+{
+"en": "We celebrate our birthday.",
+"ru": "Мы празднуем день рождения."
+},
+{
+"en": "Let's celebrate this success!",
+"ru": "Давайте отметим этот успех!"
+}
+]
+},
+{
+"word": "century",
+"ipa": "/ˈsentʃəri/",
+"pos": "noun",
+"level": "B1",
+"ru": "век, столетие",
+"theme": "time",
+"examples": [
+{
+"en": "In the 21st century.",
+"ru": "В 21-м веке."
+},
+{
+"en": "This happened centuries ago.",
+"ru": "Это произошло века назад."
+}
+]
+},
+{
+"word": "ceremony",
+"ipa": "/ˈserɪmoʊni/",
+"pos": "noun",
+"level": "B1",
+"ru": "церемония, обряд",
+"theme": "time",
+"examples": [
+{
+"en": "The wedding ceremony was beautiful.",
+"ru": "Свадебная церемония была красивой."
+},
+{
+"en": "There's a ceremony tomorrow.",
+"ru": "Завтра есть церемония."
+}
+]
+},
+{
+"word": "challenge",
+"ipa": "/ˈtʃæləndʒ/",
+"pos": "noun",
+"level": "B1",
+"ru": "вызов, испытание",
+"theme": "feelings",
+"examples": [
+{
+"en": "This is a big challenge.",
+"ru": "Это большой вызов."
+},
+{
+"en": "I accept the challenge!",
+"ru": "Я принимаю вызов!"
+}
+]
+},
+{
+"word": "channel",
+"ipa": "/ˈtʃænl/",
+"pos": "noun",
+"level": "B1",
+"ru": "канал",
+"theme": "technology",
+"examples": [
+{
+"en": "What channel are you watching?",
+"ru": "Какой канал ты смотришь?"
+},
+{
+"en": "Subscribe to my channel.",
+"ru": "Подпишись на мой канал."
+}
+]
+},
+{
+"word": "character",
+"ipa": "/ˈkærɪktər/",
+"pos": "noun",
+"level": "B1",
+"ru": "персонаж, характер",
+"theme": "art",
+"examples": [
+{
+"en": "This character is interesting.",
+"ru": "Этот персонаж интересный."
+},
+{
+"en": "She has a strong character.",
+"ru": "У неё сильный характер."
+}
+]
+},
+{
+"word": "charge",
+"ipa": "/tʃɑːrdʒ/",
+"pos": "noun",
+"level": "B1",
+"ru": "плата, заряд",
+"theme": "money",
+"examples": [
+{
+"en": "What is the charge?",
+"ru": "Какова плата?"
+},
+{
+"en": "There's no charge for this.",
+"ru": "За это нет платы."
+}
+]
+},
+{
+"word": "chat",
+"ipa": "/tʃæt/",
+"pos": "verb",
+"level": "B1",
+"ru": "болтать, общаться",
+"theme": "communication",
+"examples": [
+{
+"en": "Let's chat tomorrow.",
+"ru": "Давайте поговорим завтра."
+},
+{
+"en": "I'm chatting with my friend.",
+"ru": "Я говорю с моим другом."
+}
+]
+},
+{
+"word": "check",
+"ipa": "/tʃek/",
+"pos": "verb",
+"level": "B1",
+"ru": "проверить, проверка",
+"theme": "business",
+"examples": [
+{
+"en": "Check your email.",
+"ru": "Проверь свою почту."
+},
+{
+"en": "Let me check the time.",
+"ru": "Позволь мне проверить время."
+}
+]
+},
+{
+"word": "cheese",
+"ipa": "/tʃiːz/",
+"pos": "noun",
+"level": "B1",
+"ru": "сыр",
+"theme": "food",
+"examples": [
+{
+"en": "I like cheese on pizza.",
+"ru": "Я люблю сыр на пицце."
+},
+{
+"en": "This cheese is delicious.",
+"ru": "Этот сыр вкусный."
+}
+]
+},
+{
+"word": "choice",
+"ipa": "/tʃɔɪs/",
+"pos": "noun",
+"level": "B1",
+"ru": "выбор",
+"theme": "other",
+"examples": [
+{
+"en": "You have a choice.",
+"ru": "У тебя есть выбор."
+},
+{
+"en": "Good choice!",
+"ru": "Хороший выбор!"
+}
+]
+},
+{
+"word": "claim",
+"ipa": "/kleɪm/",
+"pos": "verb",
+"level": "B1",
+"ru": "утверждать, требовать",
+"theme": "communication",
+"examples": [
+{
+"en": "She claims she's right.",
+"ru": "Она утверждает, что права."
+},
+{
+"en": "He claimed his luggage.",
+"ru": "Он забрал свой багаж."
+}
+]
+},
+{
+"word": "class",
+"ipa": "/klɑːs/",
+"pos": "noun",
+"level": "B1",
+"ru": "класс, занятие",
+"theme": "education",
+"examples": [
+{
+"en": "The class starts at 9.",
+"ru": "Класс начинается в 9."
+},
+{
+"en": "I have a yoga class.",
+"ru": "У меня есть йога класс."
+}
+]
+},
+{
+"word": "clean",
+"ipa": "/kliːn/",
+"pos": "adjective",
+"level": "B1",
+"ru": "чистый",
+"theme": "home",
+"examples": [
+{
+"en": "This room is very clean.",
+"ru": "Эта комната очень чистая."
+},
+{
+"en": "I need clean clothes.",
+"ru": "Мне нужна чистая одежда."
+}
+]
+},
+{
+"word": "clear",
+"ipa": "/klɪr/",
+"pos": "adjective",
+"level": "B1",
+"ru": "ясный, прозрачный",
+"theme": "other",
+"examples": [
+{
+"en": "The water is clear.",
+"ru": "Вода прозрачная."
+},
+{
+"en": "That's very clear to me.",
+"ru": "Это очень ясно мне."
+}
+]
+},
+{
+"word": "click",
+"ipa": "/klɪk/",
+"pos": "verb",
+"level": "B1",
+"ru": "щелкнуть, кликнуть",
+"theme": "technology",
+"examples": [
+{
+"en": "Click the button.",
+"ru": "Щелкни кнопку."
+},
+{
+"en": "I clicked the link.",
+"ru": "Я кликнул по ссылке."
+}
+]
+},
+{
+"word": "climate",
+"ipa": "/ˈklaɪmət/",
+"pos": "noun",
+"level": "B1",
+"ru": "климат",
+"theme": "nature",
+"examples": [
+{
+"en": "The climate here is warm.",
+"ru": "Климат здесь теплый."
+},
+{
+"en": "Climate change is serious.",
+"ru": "Изменение климата серьезно."
+}
+]
+},
+{
+"word": "climb",
+"ipa": "/klaɪm/",
+"pos": "verb",
+"level": "B1",
+"ru": "подняться, лазить",
+"theme": "sport",
+"examples": [
+{
+"en": "Let's climb the mountain.",
+"ru": "Давайте поднимемся на гору."
+},
+{
+"en": "The child climbs the tree.",
+"ru": "Ребенок лазит по дереву."
+}
+]
+},
+{
+"word": "close",
+"ipa": "/kloʊz/",
+"pos": "verb",
+"level": "B1",
+"ru": "закрывать",
+"theme": "other",
+"examples": [
+{
+"en": "Please close the door.",
+"ru": "Пожалуйста, закрой дверь."
+},
+{
+"en": "The store closes at 6.",
+"ru": "Магазин закрывается в 6."
+}
+]
+},
+{
+"word": "coach",
+"ipa": "/koʊtʃ/",
+"pos": "noun",
+"level": "B1",
+"ru": "тренер",
+"theme": "sport",
+"examples": [
+{
+"en": "My coach is very good.",
+"ru": "Мой тренер очень хороший."
+},
+{
+"en": "The football coach trains us.",
+"ru": "Тренер по футболу тренирует нас."
+}
+]
+},
+{
+"word": "coast",
+"ipa": "/koʊst/",
+"pos": "noun",
+"level": "B1",
+"ru": "побережье, берег",
+"theme": "travel",
+"examples": [
+{
+"en": "We went to the coast.",
+"ru": "Мы поехали на побережье."
+},
+{
+"en": "The coast is beautiful.",
+"ru": "Побережье красивое."
+}
+]
+},
+{
+"word": "code",
+"ipa": "/koʊd/",
+"pos": "noun",
+"level": "B1",
+"ru": "код",
+"theme": "technology",
+"examples": [
+{
+"en": "What is the security code?",
+"ru": "Какой код безопасности?"
+},
+{
+"en": "I write code.",
+"ru": "Я пишу код."
+}
+]
+},
+{
+"word": "cold",
+"ipa": "/koʊld/",
+"pos": "noun",
+"level": "B1",
+"ru": "холод, простуда",
+"theme": "weather",
+"examples": [
+{
+"en": "I have a cold.",
+"ru": "У меня простуда."
+},
+{
+"en": "It's cold today.",
+"ru": "Сегодня холодно."
+}
+]
+},
+{
+"word": "collect",
+"ipa": "/kəˈlekt/",
+"pos": "verb",
+"level": "B1",
+"ru": "собирать, коллекционировать",
+"theme": "other",
+"examples": [
+{
+"en": "She collects stamps.",
+"ru": "Она собирает марки."
+},
+{
+"en": "We collect information.",
+"ru": "Мы собираем информацию."
+}
+]
+},
+{
+"word": "comment",
+"ipa": "/ˈkɑːment/",
+"pos": "noun",
+"level": "B1",
+"ru": "комментарий, замечание",
+"theme": "communication",
+"examples": [
+{
+"en": "Can you leave a comment?",
+"ru": "Ты можешь оставить комментарий?"
+},
+{
+"en": "That's a good comment.",
+"ru": "Это хороший комментарий."
+}
+]
+},
+{
+"word": "common",
+"ipa": "/ˈkɑːmən/",
+"pos": "adjective",
+"level": "B1",
+"ru": "обычный, распространенный",
+"theme": "other",
+"examples": [
+{
+"en": "This is a common mistake.",
+"ru": "Это обычная ошибка."
+},
+{
+"en": "That's common in winter.",
+"ru": "Это распространено зимой."
+}
+]
+},
+{
+"word": "communicate",
+"ipa": "/kəˈmjuːnɪkeɪt/",
+"pos": "verb",
+"level": "B1",
+"ru": "общаться, коммуницировать",
+"theme": "communication",
+"examples": [
+{
+"en": "We communicate by email.",
+"ru": "Мы общаемся по почте."
+},
+{
+"en": "Let's communicate better.",
+"ru": "Давайте лучше общаться."
+}
+]
+},
+{
+"word": "compare",
+"ipa": "/kəmˈper/",
+"pos": "verb",
+"level": "B1",
+"ru": "сравнивать",
+"theme": "science",
+"examples": [
+{
+"en": "Compare these two options.",
+"ru": "Сравни эти два варианта."
+},
+{
+"en": "I compared the prices.",
+"ru": "Я сравнил цены."
+}
+]
+},
+{
+"word": "compete",
+"ipa": "/kəmˈpiːt/",
+"pos": "verb",
+"level": "B1",
+"ru": "конкурировать, состязаться",
+"theme": "sport",
+"examples": [
+{
+"en": "We compete in sports.",
+"ru": "Мы состязаемся в спорте."
+},
+{
+"en": "The teams compete next week.",
+"ru": "Команды состязаются на следующей неделе."
+}
+]
+},
+{
+"word": "complete",
+"ipa": "/kəmˈpliːt/",
+"pos": "verb",
+"level": "B1",
+"ru": "завершить, полный",
+"theme": "work",
+"examples": [
+{
+"en": "Complete the form.",
+"ru": "Заполни форму."
+},
+{
+"en": "I completed the project.",
+"ru": "Я завершил проект."
+}
+]
+},
+{
+"word": "concern",
+"ipa": "/kənˈsɜːrn/",
+"pos": "noun",
+"level": "B1",
+"ru": "забота, беспокойство",
+"theme": "feelings",
+"examples": [
+{
+"en": "That's my main concern.",
+"ru": "Это мое главное беспокойство."
+},
+{
+"en": "He has concerns about it.",
+"ru": "У него есть опасения по этому поводу."
+}
+]
+},
+{
+"word": "condition",
+"ipa": "/kənˈdɪʃən/",
+"pos": "noun",
+"level": "B1",
+"ru": "условие, состояние",
+"theme": "other",
+"examples": [
+{
+"en": "What are the conditions?",
+"ru": "Каковы условия?"
+},
+{
+"en": "The car is in good condition.",
+"ru": "Автомобиль в хорошем состоянии."
+}
+]
+},
+{
+"word": "connect",
+"ipa": "/kəˈnekt/",
+"pos": "verb",
+"level": "B1",
+"ru": "соединить, подключить",
+"theme": "technology",
+"examples": [
+{
+"en": "Connect to the internet.",
+"ru": "Подключись к интернету."
+},
+{
+"en": "These are connected.",
+"ru": "Они соединены."
+}
+]
+},
+{
+"word": "consider",
+"ipa": "/kənˈsɪdər/",
+"pos": "verb",
+"level": "B1",
+"ru": "рассмотреть, подумать",
+"theme": "communication",
+"examples": [
+{
+"en": "Consider this option.",
+"ru": "Рассмотри этот вариант."
+},
+{
+"en": "I considered it.",
+"ru": "Я это рассмотрел."
+}
+]
+},
+{
+"word": "contact",
+"ipa": "/ˈkɑːntækt/",
+"pos": "noun",
+"level": "B1",
+"ru": "контакт, связь",
+"theme": "communication",
+"examples": [
+{
+"en": "What is your contact?",
+"ru": "Какой твой контакт?"
+},
+{
+"en": "I'm in contact with him.",
+"ru": "Я в контакте с ним."
+}
+]
+},
+{
+"word": "continue",
+"ipa": "/kənˈtɪnjuː/",
+"pos": "verb",
+"level": "B1",
+"ru": "продолжить, продолжать",
+"theme": "other",
+"examples": [
+{
+"en": "Please continue.",
+"ru": "Пожалуйста, продолжай."
+},
+{
+"en": "We continued our work.",
+"ru": "Мы продолжили нашу работу."
+}
+]
+},
+{
+"word": "accommodate",
+"ipa": "/əˈkɒmədeɪt/",
+"pos": "verb",
+"level": "B2",
+"ru": "размещать, вмещать",
+"theme": "travel",
+"examples": [
+{
+"en": "The hotel can accommodate 200 guests.",
+"ru": "Отель может разместить 200 гостей."
+},
+{
+"en": "We need to accommodate different time zones.",
+"ru": "Нам нужно учитывать разные часовые пояса."
+}
+]
+},
+{
+"word": "acknowledge",
+"ipa": "/əkˈnɒlɪdʒ/",
+"pos": "verb",
+"level": "B2",
+"ru": "признавать, подтверждать",
+"theme": "communication",
+"examples": [
+{
+"en": "I acknowledge that you're right.",
+"ru": "Я признаю, что ты прав."
+},
+{
+"en": "He acknowledged the email.",
+"ru": "Он подтвердил получение письма."
+}
+]
+},
+{
+"word": "acquire",
+"ipa": "/əˈkwaɪə/",
+"pos": "verb",
+"level": "B2",
+"ru": "приобретать, овладевать",
+"theme": "business",
+"examples": [
+{
+"en": "She acquired new skills during the course.",
+"ru": "Она приобрела новые навыки во время курса."
+},
+{
+"en": "The company acquired a smaller rival.",
+"ru": "Компания приобрела меньшего конкурента."
+}
+]
+},
+{
+"word": "adapt",
+"ipa": "/əˈdæpt/",
+"pos": "verb",
+"level": "B2",
+"ru": "адаптироваться, приспосабливаться",
+"theme": "feelings",
+"examples": [
+{
+"en": "You need to adapt to the new environment.",
+"ru": "Тебе нужно адаптироваться к новой среде."
+},
+{
+"en": "Children adapt quickly to changes.",
+"ru": "Дети быстро адаптируются к изменениям."
+}
+]
+},
+{
+"word": "adequate",
+"ipa": "/ˈædɪkwət/",
+"pos": "adjective",
+"level": "B2",
+"ru": "достаточный, адекватный",
+"theme": "other",
+"examples": [
+{
+"en": "Do we have adequate time for the project?",
+"ru": "У нас есть достаточно времени на проект?"
+},
+{
+"en": "The salary is adequate for living here.",
+"ru": "Зарплата достаточна для жизни здесь."
+}
+]
+},
+{
+"word": "adjust",
+"ipa": "/əˈdʒʌst/",
+"pos": "verb",
+"level": "B2",
+"ru": "регулировать, приспосабливаться",
+"theme": "other",
+"examples": [
+{
+"en": "Adjust the temperature to your liking.",
+"ru": "Отрегулируй температуру по своему вкусу."
+},
+{
+"en": "It took time to adjust to the new job.",
+"ru": "Потребовалось время, чтобы приспособиться к новой работе."
+}
+]
+},
+{
+"word": "admire",
+"ipa": "/ədˈmaɪə/",
+"pos": "verb",
+"level": "B2",
+"ru": "восхищаться, уважать",
+"theme": "feelings",
+"examples": [
+{
+"en": "I admire her dedication to the project.",
+"ru": "Я восхищаюсь её преданностью проекту."
+},
+{
+"en": "We stopped to admire the view.",
+"ru": "Мы остановились, чтобы полюбоваться видом."
+}
+]
+},
+{
+"word": "adolescent",
+"ipa": "/ˌædəˈlesnt/",
+"pos": "noun",
+"level": "B2",
+"ru": "подросток",
+"theme": "people",
+"examples": [
+{
+"en": "Adolescents need support during this phase.",
+"ru": "Подростки нуждаются в поддержке на этом этапе."
+},
+{
+"en": "She's working with adolescent students.",
+"ru": "Она работает с подростками."
+}
+]
+},
+{
+"word": "adopt",
+"ipa": "/əˈdɒpt/",
+"pos": "verb",
+"level": "B2",
+"ru": "усыновлять, принимать",
+"theme": "family",
+"examples": [
+{
+"en": "They decided to adopt a child.",
+"ru": "Они решили усыновить ребёнка."
+},
+{
+"en": "The company adopted a new strategy.",
+"ru": "Компания приняла новую стратегию."
+}
+]
+},
+{
+"word": "advance",
+"ipa": "/ədˈvɑːns/",
+"pos": "verb",
+"level": "B2",
+"ru": "продвигаться, развиваться",
+"theme": "business",
+"examples": [
+{
+"en": "Technology advances every year.",
+"ru": "Технология развивается каждый год."
+},
+{
+"en": "She advanced in her career quickly.",
+"ru": "Она быстро продвинулась по карьере."
+}
+]
+},
+{
+"word": "affectionate",
+"ipa": "/əˈfekʃənət/",
+"pos": "adjective",
+"level": "B2",
+"ru": "ласковый, нежный",
+"theme": "feelings",
+"examples": [
+{
+"en": "He gave her an affectionate hug.",
+"ru": "Он обнял её с лаской."
+},
+{
+"en": "The dog is very affectionate towards children.",
+"ru": "Собака очень ласковая с детьми."
+}
+]
+},
+{
+"word": "afford",
+"ipa": "/əˈfɔːd/",
+"pos": "verb",
+"level": "B2",
+"ru": "позволить себе",
+"theme": "money",
+"examples": [
+{
+"en": "I can't afford a new car right now.",
+"ru": "Я не могу себе позволить новую машину сейчас."
+},
+{
+"en": "Can we afford to take a holiday?",
+"ru": "Мы можем себе позволить отпуск?"
+}
+]
+},
+{
+"word": "agriculture",
+"ipa": "/ˈæɡrɪkʌltʃə/",
+"pos": "noun",
+"level": "B2",
+"ru": "сельское хозяйство",
+"theme": "nature",
+"examples": [
+{
+"en": "Agriculture is important for the economy.",
+"ru": "Сельское хозяйство важно для экономики."
+},
+{
+"en": "Modern agriculture uses advanced technology.",
+"ru": "Современное сельское хозяйство использует передовые технологии."
+}
+]
+},
+{
+"word": "alarm",
+"ipa": "/əˈlɑːm/",
+"pos": "noun",
+"level": "B2",
+"ru": "тревога, сигнал тревоги",
+"theme": "other",
+"examples": [
+{
+"en": "The fire alarm went off at midnight.",
+"ru": "Пожарная сигнализация сработала в полночь."
+},
+{
+"en": "There's no need for alarm—everything is fine.",
+"ru": "Нет причин для тревоги—всё в порядке."
+}
+]
+},
+{
+"word": "alliance",
+"ipa": "/əˈlaɪəns/",
+"pos": "noun",
+"level": "B2",
+"ru": "союз, альянс",
+"theme": "business",
+"examples": [
+{
+"en": "The two countries formed an alliance.",
+"ru": "Две страны сформировали союз."
+},
+{
+"en": "They made an alliance to compete together.",
+"ru": "Они создали союз, чтобы конкурировать вместе."
+}
+]
+},
+{
+"word": "allowance",
+"ipa": "/əˈlaʊəns/",
+"pos": "noun",
+"level": "B2",
+"ru": "пособие, карманные деньги",
+"theme": "money",
+"examples": [
+{
+"en": "Children receive a weekly allowance.",
+"ru": "Дети получают еженедельное пособие."
+},
+{
+"en": "The tax allowance has increased this year.",
+"ru": "Налоговое пособие увеличилось в этом году."
+}
+]
+},
+{
+"word": "alternative",
+"ipa": "/ɔːlˈtɜːnətɪv/",
+"pos": "noun",
+"level": "B2",
+"ru": "альтернатива, вариант",
+"theme": "other",
+"examples": [
+{
+"en": "What are our alternatives?",
+"ru": "Какие у нас есть альтернативы?"
+},
+{
+"en": "Solar power is a good alternative to fossil fuels.",
+"ru": "Солнечная энергия—хорошая альтернатива ископаемому топливу."
+}
+]
+},
+{
+"word": "ambition",
+"ipa": "/æmˈbɪʃn/",
+"pos": "noun",
+"level": "B2",
+"ru": "амбиция, стремление",
+"theme": "feelings",
+"examples": [
+{
+"en": "Her ambition is to become a doctor.",
+"ru": "Её амбиция—стать врачом."
+},
+{
+"en": "He has high ambitions for his career.",
+"ru": "У него большие амбиции в карьере."
+}
+]
+},
+{
+"word": "amendment",
+"ipa": "/əˈmendmənt/",
+"pos": "noun",
+"level": "B2",
+"ru": "поправка, изменение",
+"theme": "law",
+"examples": [
+{
+"en": "The amendment to the contract was approved.",
+"ru": "Поправка к контракту была одобрена."
+},
+{
+"en": "They proposed an amendment to the law.",
+"ru": "Они предложили поправку к закону."
+}
+]
+},
+{
+"word": "amusing",
+"ipa": "/əˈmjuːzɪŋ/",
+"pos": "adjective",
+"level": "B2",
+"ru": "забавный, смешной",
+"theme": "feelings",
+"examples": [
+{
+"en": "That's an amusing story!",
+"ru": "Это забавная история!"
+},
+{
+"en": "The comedian's jokes were very amusing.",
+"ru": "Шутки комика были очень смешными."
+}
+]
+},
+{
+"word": "analyse",
+"ipa": "/ˈænəlaɪz/",
+"pos": "verb",
+"level": "B2",
+"ru": "анализировать, разбирать",
+"theme": "science",
+"examples": [
+{
+"en": "Let's analyse the data carefully.",
+"ru": "Давайте тщательно проанализируем данные."
+},
+{
+"en": "She analysed the results of the experiment.",
+"ru": "Она проанализировала результаты эксперимента."
+}
+]
+},
+{
+"word": "ancestor",
+"ipa": "/ˈænsestə/",
+"pos": "noun",
+"level": "B2",
+"ru": "предок, предшественник",
+"theme": "family",
+"examples": [
+{
+"en": "My ancestors came from Ireland.",
+"ru": "Мои предки приехали из Ирландии."
+},
+{
+"en": "We traced our ancestors back 500 years.",
+"ru": "Мы проследили наших предков на 500 лет назад."
+}
+]
+},
+{
+"word": "ancient",
+"ipa": "/ˈeɪnʃnt/",
+"pos": "adjective",
+"level": "B2",
+"ru": "древний, старинный",
+"theme": "time",
+"examples": [
+{
+"en": "They studied ancient civilizations.",
+"ru": "Они изучали древние цивилизации."
+},
+{
+"en": "The ancient temple is a historical monument.",
+"ru": "Древний храм—исторический памятник."
+}
+]
+},
+{
+"word": "angular",
+"ipa": "/ˈæŋɡjələ/",
+"pos": "adjective",
+"level": "B2",
+"ru": "угловатый, острый",
+"theme": "other",
+"examples": [
+{
+"en": "He has an angular face with sharp features.",
+"ru": "У него угловатое лицо с резкими чертами."
+},
+{
+"en": "The building has an angular design.",
+"ru": "Здание имеет угловатый дизайн."
+}
+]
+},
+{
+"word": "anonymous",
+"ipa": "/əˈnɒnɪməs/",
+"pos": "adjective",
+"level": "B2",
+"ru": "анонимный, безымянный",
+"theme": "communication",
+"examples": [
+{
+"en": "The donor wished to remain anonymous.",
+"ru": "Дарователь хотел остаться в полной анонимности."
+},
+{
+"en": "She left an anonymous message.",
+"ru": "Она оставила анонимное сообщение."
+}
+]
+},
+{
+"word": "anticipate",
+"ipa": "/ænˈtɪsɪpeɪt/",
+"pos": "verb",
+"level": "B2",
+"ru": "предвидеть, ожидать",
+"theme": "feelings",
+"examples": [
+{
+"en": "I anticipate some problems with the project.",
+"ru": "Я предвижу некоторые проблемы с проектом."
+},
+{
+"en": "The team anticipated a difficult match.",
+"ru": "Команда ожидала сложный матч."
+}
+]
+},
+{
+"word": "apathy",
+"ipa": "/ˈæpəθi/",
+"pos": "noun",
+"level": "B2",
+"ru": "апатия, безразличие",
+"theme": "feelings",
+"examples": [
+{
+"en": "He showed apathy towards the situation.",
+"ru": "Он показал безразличие к ситуации."
+},
+{
+"en": "The voter apathy is a concern.",
+"ru": "Избирательское безразличие—проблема."
+}
+]
+},
+{
+"word": "apology",
+"ipa": "/əˈpɒlədʒi/",
+"pos": "noun",
+"level": "B2",
+"ru": "извинение, апология",
+"theme": "communication",
+"examples": [
+{
+"en": "He offered an apology for his behavior.",
+"ru": "Он принёс извинения за своё поведение."
+},
+{
+"en": "No apology is necessary.",
+"ru": "Никаких извинений не требуется."
+}
+]
+},
+{
+"word": "apparent",
+"ipa": "/əˈpærənt/",
+"pos": "adjective",
+"level": "B2",
+"ru": "очевидный, видимый",
+"theme": "other",
+"examples": [
+{
+"en": "It became apparent that he was lying.",
+"ru": "Стало очевидно, что он лгал."
+},
+{
+"en": "The difference is apparent to everyone.",
+"ru": "Разница очевидна для всех."
+}
+]
+},
+{
+"word": "appetite",
+"ipa": "/ˈæpɪtaɪt/",
+"pos": "noun",
+"level": "B2",
+"ru": "аппетит, желание",
+"theme": "food",
+"examples": [
+{
+"en": "The fresh air gave him an appetite.",
+"ru": "Свежий воздух разбудил в нём аппетит."
+},
+{
+"en": "She has a big appetite for learning.",
+"ru": "У неё большой аппетит к знаниям."
+}
+]
+},
+{
+"word": "applause",
+"ipa": "/əˈplɔːz/",
+"pos": "noun",
+"level": "B2",
+"ru": "аплодисменты, одобрение",
+"theme": "art",
+"examples": [
+{
+"en": "The audience gave loud applause.",
+"ru": "Публика дала громкие аплодисменты."
+},
+{
+"en": "She received applause from the crowd.",
+"ru": "Она получила аплодисменты от толпы."
+}
+]
+},
+{
+"word": "appreciate",
+"ipa": "/əˈpriːʃieɪt/",
+"pos": "verb",
+"level": "B2",
+"ru": "ценить, благодарить",
+"theme": "feelings",
+"examples": [
+{
+"en": "I appreciate your help very much.",
+"ru": "Я очень ценю вашу помощь."
+},
+{
+"en": "We appreciate the effort you made.",
+"ru": "Мы благодарны за усилия, которые вы приложили."
+}
+]
+},
+{
+"word": "apprentice",
+"ipa": "/əˈprentɪs/",
+"pos": "noun",
+"level": "B2",
+"ru": "ученик, подмастерье",
+"theme": "work",
+"examples": [
+{
+"en": "He started as an apprentice in the workshop.",
+"ru": "Он начал подмастерьем в мастерской."
+},
+{
+"en": "The apprentice learned the trade from the master.",
+"ru": "Ученик учился ремеслу у мастера."
+}
+]
+},
+{
+"word": "appropriate",
+"ipa": "/əˈproʊpriət/",
+"pos": "adjective",
+"level": "B2",
+"ru": "надлежащий, уместный",
+"theme": "other",
+"examples": [
+{
+"en": "That's not appropriate behaviour.",
+"ru": "Это неуместное поведение."
+},
+{
+"en": "This dress is appropriate for the occasion.",
+"ru": "Это платье подходит для случая."
+}
+]
+},
+{
+"word": "approval",
+"ipa": "/əˈpruːvl/",
+"pos": "noun",
+"level": "B2",
+"ru": "одобрение, согласие",
+"theme": "communication",
+"examples": [
+{
+"en": "The project needs manager approval.",
+"ru": "Проект требует одобрения менеджера."
+},
+{
+"en": "She nodded in approval.",
+"ru": "Она кивнула в знак одобрения."
+}
+]
+},
+{
+"word": "approximately",
+"ipa": "/əˈprɒksɪmətli/",
+"pos": "adverb",
+"level": "B2",
+"ru": "примерно, приблизительно",
+"theme": "time",
+"examples": [
+{
+"en": "The journey takes approximately two hours.",
+"ru": "Путешествие занимает примерно два часа."
+},
+{
+"en": "There are approximately 50 students in the class.",
+"ru": "В классе примерно 50 студентов."
+}
+]
+},
+{
+"word": "arbitrary",
+"ipa": "/ˈɑːrbɪtreri/",
+"pos": "adjective",
+"level": "B2",
+"ru": "произвольный, случайный",
+"theme": "other",
+"examples": [
+{
+"en": "His decision seemed arbitrary and unfair.",
+"ru": "Его решение казалось произвольным и несправедливым."
+},
+{
+"en": "The deadline is somewhat arbitrary.",
+"ru": "Дедлайн несколько произволен."
+}
+]
+},
+{
+"word": "archive",
+"ipa": "/ˈɑːrkaɪv/",
+"pos": "noun",
+"level": "B2",
+"ru": "архив, хранилище",
+"theme": "work",
+"examples": [
+{
+"en": "The letters are stored in the archive.",
+"ru": "Письма хранятся в архиве."
+},
+{
+"en": "You can find historical documents in the archive.",
+"ru": "Вы можете найти исторические документы в архиве."
+}
+]
+},
+{
+"word": "arise",
+"ipa": "/əˈraɪz/",
+"pos": "verb",
+"level": "B2",
+"ru": "возникать, появляться",
+"theme": "other",
+"examples": [
+{
+"en": "Problems arose during the project.",
+"ru": "Проблемы возникли во время проекта."
+},
+{
+"en": "A question arose about the budget.",
+"ru": "Возник вопрос о бюджете."
+}
+]
+},
+{
+"word": "armour",
+"ipa": "/ˈɑːmə/",
+"pos": "noun",
+"level": "B2",
+"ru": "броня, доспехи",
+"theme": "other",
+"examples": [
+{
+"en": "Knights wore heavy armour.",
+"ru": "Рыцари носили тяжелые доспехи."
+},
+{
+"en": "The tank has protective armour.",
+"ru": "Танк имеет защитную броню."
+}
+]
+},
+{
+"word": "arrangement",
+"ipa": "/əˈreɪndʒmənt/",
+"pos": "noun",
+"level": "B2",
+"ru": "договоренность, расположение",
+"theme": "business",
+"examples": [
+{
+"en": "We made an arrangement to meet tomorrow.",
+"ru": "Мы договорились встретиться завтра."
+},
+{
+"en": "The flower arrangement was beautiful.",
+"ru": "Расстановка цветов была красивой."
+}
+]
+},
+{
+"word": "arrival",
+"ipa": "/əˈraɪvl/",
+"pos": "noun",
+"level": "B2",
+"ru": "прибытие, приезд",
+"theme": "travel",
+"examples": [
+{
+"en": "The flight's arrival is delayed.",
+"ru": "Прибытие рейса задержано."
+},
+{
+"en": "Upon arrival, please check in at reception.",
+"ru": "При прибытии, пожалуйста, зарегистрируйтесь на стойке."
+}
+]
+},
+{
+"word": "arrogant",
+"ipa": "/ˈærəɡənt/",
+"pos": "adjective",
+"level": "B2",
+"ru": "высокомерный, надменный",
+"theme": "feelings",
+"examples": [
+{
+"en": "His arrogant attitude annoyed everyone.",
+"ru": "Его высокомерное отношение всех раздражало."
+},
+{
+"en": "Don't be so arrogant about your abilities.",
+"ru": "Не будь так высокомерен в отношении своих способностей."
+}
+]
+},
+{
+"word": "articulate",
+"ipa": "/ɑːrˈtɪkjələt/",
+"pos": "adjective",
+"level": "B2",
+"ru": "четкий, ясный",
+"theme": "communication",
+"examples": [
+{
+"en": "He is an articulate speaker.",
+"ru": "Он четкий и ясный оратор."
+},
+{
+"en": "She articulated her ideas perfectly.",
+"ru": "Она ясно изложила свои идеи."
+}
+]
+},
+{
+"word": "artificial",
+"ipa": "/ɑːrˈtɪfɪʃl/",
+"pos": "adjective",
+"level": "B2",
+"ru": "искусственный, поддельный",
+"theme": "technology",
+"examples": [
+{
+"en": "The flowers are made of artificial material.",
+"ru": "Цветы сделаны из искусственного материала."
+},
+{
+"en": "Artificial intelligence is changing the world.",
+"ru": "Искусственный интеллект меняет мир."
+}
+]
+},
+{
+"word": "ascend",
+"ipa": "/əˈsend/",
+"pos": "verb",
+"level": "B2",
+"ru": "подниматься, взбираться",
+"theme": "movement",
+"examples": [
+{
+"en": "We ascended the mountain slowly.",
+"ru": "Мы медленно взбирались на гору."
+},
+{
+"en": "He ascended to the throne in 2010.",
+"ru": "Он взошел на трон в 2010 году."
+}
+]
+},
+{
+"word": "ashamed",
+"ipa": "/əˈʃeɪmd/",
+"pos": "adjective",
+"level": "B2",
+"ru": "пристыженный, стыдящийся",
+"theme": "feelings",
+"examples": [
+{
+"en": "He felt ashamed of his behaviour.",
+"ru": "Он был пристыжен своим поведением."
+},
+{
+"en": "Don't be ashamed to ask for help.",
+"ru": "Не стыдись просить помощь."
+}
+]
+},
+{
+"word": "assemble",
+"ipa": "/əˈsembl/",
+"pos": "verb",
+"level": "B2",
+"ru": "собирать, собираться",
+"theme": "work",
+"examples": [
+{
+"en": "We assembled the furniture together.",
+"ru": "Мы собрали мебель вместе."
+},
+{
+"en": "The workers assembled at the factory.",
+"ru": "Рабочие собрались на фабрике."
+}
+]
+},
+{
+"word": "assertion",
+"ipa": "/əˈsɜːrʃn/",
+"pos": "noun",
+"level": "B2",
+"ru": "утверждение, настояние",
+"theme": "communication",
+"examples": [
+{
+"en": "His assertion that he was innocent was denied.",
+"ru": "Его утверждение о невиновности было отклонено."
+},
+{
+"en": "She made a bold assertion in her speech.",
+"ru": "Она сделала смелое утверждение в своей речи."
+}
+]
+},
+{
+"word": "assess",
+"ipa": "/əˈses/",
+"pos": "verb",
+"level": "B2",
+"ru": "оценивать, определять",
+"theme": "work",
+"examples": [
+{
+"en": "The teacher will assess your progress.",
+"ru": "Учитель оценит ваш прогресс."
+},
+{
+"en": "We need to assess the damage.",
+"ru": "Нам нужно оценить ущерб."
+}
+]
+},
+{
+"word": "asset",
+"ipa": "/ˈæset/",
+"pos": "noun",
+"level": "B2",
+"ru": "актив, ценность, имущество",
+"theme": "money",
+"examples": [
+{
+"en": "Employees are our company's greatest asset.",
+"ru": "Сотрудники—самый большой актив компании."
+},
+{
+"en": "He declared all his assets to the bank.",
+"ru": "Он объявил все свое имущество в банке."
+}
+]
+},
+{
+"word": "assign",
+"ipa": "/əˈsaɪn/",
+"pos": "verb",
+"level": "B2",
+"ru": "назначить, поручить",
+"theme": "work",
+"examples": [
+{
+"en": "The manager assigned him to the new project.",
+"ru": "Менеджер назначил его на новый проект."
+},
+{
+"en": "Assign each task to a team member.",
+"ru": "Поручи каждое задание члену команды."
+}
+]
+},
+{
+"word": "assimilate",
+"ipa": "/əˈsɪmɪleɪt/",
+"pos": "verb",
+"level": "B2",
+"ru": "ассимилировать, усвоить",
+"theme": "education",
+"examples": [
+{
+"en": "Immigrants need time to assimilate.",
+"ru": "Иммигрантам нужно время, чтобы ассимилироваться."
+},
+{
+"en": "The body assimilates nutrients from food.",
+"ru": "Организм усваивает питательные вещества из пищи."
+}
+]
+},
+{
+"word": "assistance",
+"ipa": "/əˈsɪstəns/",
+"pos": "noun",
+"level": "B2",
+"ru": "помощь, поддержка",
+"theme": "communication",
+"examples": [
+{
+"en": "Do you need any assistance?",
+"ru": "Вам нужна помощь?"
+},
+{
+"en": "Thank you for your assistance.",
+"ru": "Спасибо за вашу помощь."
+}
+]
+},
+{
+"word": "associate",
+"ipa": "/əˈsoʊʃieɪt/",
+"pos": "verb",
+"level": "B2",
+"ru": "ассоциировать, связывать",
+"theme": "work",
+"examples": [
+{
+"en": "People often associate summer with holidays.",
+"ru": "Люди часто связывают лето с отпуском."
+},
+{
+"en": "She's associated with that company.",
+"ru": "Она связана с той компанией."
+}
+]
+},
+{
+"word": "assortment",
+"ipa": "/əˈsɔːrtmənt/",
+"pos": "noun",
+"level": "B2",
+"ru": "ассортимент, набор",
+"theme": "shop",
+"examples": [
+{
+"en": "The store has a good assortment of colours.",
+"ru": "В магазине хороший ассортимент цветов."
+},
+{
+"en": "We offer a wide assortment of products.",
+"ru": "Мы предлагаем широкий ассортимент продуктов."
+}
+]
+},
+{
+"word": "assurance",
+"ipa": "/əˈʃʊrəns/",
+"pos": "noun",
+"level": "B2",
+"ru": "уверенность, гарантия",
+"theme": "feelings",
+"examples": [
+{
+"en": "He spoke with complete assurance.",
+"ru": "Он говорил с полной уверенностью."
+},
+{
+"en": "The company provides assurance of quality.",
+"ru": "Компания гарантирует качество."
+}
+]
+},
+{
+"word": "astonish",
+"ipa": "/əˈstɒnɪʃ/",
+"pos": "verb",
+"level": "B2",
+"ru": "удивлять, изумлять",
+"theme": "feelings",
+"examples": [
+{
+"en": "His talent astonished everyone.",
+"ru": "Его талант удивил всех."
+},
+{
+"en": "I was astonished at the results.",
+"ru": "Я была изумлена результатами."
+}
+]
+},
+{
+"word": "astute",
+"ipa": "/əˈstjuːt/",
+"pos": "adjective",
+"level": "B2",
+"ru": "проницательный, умный",
+"theme": "people",
+"examples": [
+{
+"en": "She's an astute businesswoman.",
+"ru": "Она проницательная бизнесвумен."
+},
+{
+"en": "That was an astute observation.",
+"ru": "Это было умное замечание."
+}
+]
+},
+{
+"word": "atmosphere",
+"ipa": "/ˈætməsfiə/",
+"pos": "noun",
+"level": "B2",
+"ru": "атмосфера, обстановка",
+"theme": "weather",
+"examples": [
+{
+"en": "The atmosphere at the party was great.",
+"ru": "Атмосфера на вечеринке была отличной."
+},
+{
+"en": "Earth's atmosphere contains oxygen.",
+"ru": "Атмосфера Земли содержит кислород."
+}
+]
+},
+{
+"word": "absolve",
+"ipa": "/əbˈzɑːlv/",
+"pos": "verb",
+"level": "C1",
+"ru": "оправдать",
+"theme": "law",
+"examples": [
+{
+"en": "The jury absolved him of all charges.",
+"ru": "Суд оправдал его по всем обвинениям."
+},
+{
+"en": "She absolved herself of any responsibility.",
+"ru": "Она сняла с себя всякую ответственность."
+}
+]
+},
+{
+"word": "abstain",
+"ipa": "/əbˈsteɪn/",
+"pos": "verb",
+"level": "C1",
+"ru": "воздерживаться",
+"theme": "feelings",
+"examples": [
+{
+"en": "He decided to abstain from voting.",
+"ru": "Он решил воздержаться от голосования."
+},
+{
+"en": "Many people abstain from sugar during Lent.",
+"ru": "Многие люди воздерживаются от сахара на Великий пост."
+}
+]
+},
+{
+"word": "abundance",
+"ipa": "/əˈbʌndəns/",
+"pos": "noun",
+"level": "C1",
+"ru": "изобилие",
+"theme": "other",
+"examples": [
+{
+"en": "The region enjoys an abundance of natural resources.",
+"ru": "Регион пользуется изобилием природных ресурсов."
+},
+{
+"en": "There's an abundance of opportunities here.",
+"ru": "Здесь много возможностей."
+}
+]
+},
+{
+"word": "abysmal",
+"ipa": "/əˈbɪzməl/",
+"pos": "adjective",
+"level": "C1",
+"ru": "отвратительный",
+"theme": "other",
+"examples": [
+{
+"en": "The weather was absolutely abysmal yesterday.",
+"ru": "Вчера погода была отвратительная."
+},
+{
+"en": "His exam performance was abysmal.",
+"ru": "Его результат на экзамене был отвратительным."
+}
+]
+},
+{
+"word": "acclaim",
+"ipa": "/əˈkleɪm/",
+"pos": "noun",
+"level": "C1",
+"ru": "признание",
+"theme": "art",
+"examples": [
+{
+"en": "Her work received critical acclaim.",
+"ru": "Её работа получила критическое признание."
+},
+{
+"en": "The film achieved international acclaim.",
+"ru": "Фильм получил международное признание."
+}
+]
+},
+{
+"word": "accrue",
+"ipa": "/əˈkruː/",
+"pos": "verb",
+"level": "C1",
+"ru": "накапливаться",
+"theme": "money",
+"examples": [
+{
+"en": "Interest will accrue on your savings account.",
+"ru": "Проценты будут накапливаться на вашем сберегательном счёте."
+},
+{
+"en": "Benefits accrue to early investors.",
+"ru": "Преимущества накапливаются для ранних инвесторов."
+}
+]
+},
+{
+"word": "acumen",
+"ipa": "/ˈækjuːmən/",
+"pos": "noun",
+"level": "C1",
+"ru": "проницательность",
+"theme": "business",
+"examples": [
+{
+"en": "She showed great business acumen in that deal.",
+"ru": "Она проявила большую деловую проницательность."
+},
+{
+"en": "His legal acumen was widely respected.",
+"ru": "Его юридическая проницательность была уважаема."
+}
+]
+},
+{
+"word": "adolescence",
+"ipa": "/ˌædəˈlesns/",
+"pos": "noun",
+"level": "C1",
+"ru": "подростковый возраст",
+"theme": "people",
+"examples": [
+{
+"en": "Adolescence can be a challenging period.",
+"ru": "Подростковый возраст может быть сложным периодом."
+},
+{
+"en": "Many changes occur during adolescence.",
+"ru": "Во время подросткового возраста происходит много изменений."
+}
+]
+},
+{
+"word": "adorable",
+"ipa": "/əˈdɔːrəbl/",
+"pos": "adjective",
+"level": "C1",
+"ru": "очаровательный",
+"theme": "feelings",
+"examples": [
+{
+"en": "The baby is absolutely adorable.",
+"ru": "Малыш просто очаровательный."
+},
+{
+"en": "Her smile is adorable.",
+"ru": "Её улыбка очаровательна."
+}
+]
+},
+{
+"word": "adoration",
+"ipa": "/ˌædəˈreɪʃn/",
+"pos": "noun",
+"level": "C1",
+"ru": "обожание",
+"theme": "feelings",
+"examples": [
+{
+"en": "She gazed at him with adoration.",
+"ru": "Она смотрела на него с обожанием."
+},
+{
+"en": "The fans expressed adoration for the star.",
+"ru": "Поклонники выражали своё обожание к звезде."
+}
+]
+},
+{
+"word": "adorn",
+"ipa": "/əˈdɔːrn/",
+"pos": "verb",
+"level": "C1",
+"ru": "украшать",
+"theme": "home",
+"examples": [
+{
+"en": "She adorned the room with flowers.",
+"ru": "Она украсила комнату цветами."
+},
+{
+"en": "The tree was adorned with lights.",
+"ru": "Дерево было украшено огнями."
+}
+]
+},
+{
+"word": "adversary",
+"ipa": "/ˈædvərseri/",
+"pos": "noun",
+"level": "C1",
+"ru": "противник",
+"theme": "people",
+"examples": [
+{
+"en": "He faced his adversary in the final match.",
+"ru": "Он встретился со своим противником в финале."
+},
+{
+"en": "A worthy adversary deserves respect.",
+"ru": "Достойный противник заслуживает уважения."
+}
+]
+},
+{
+"word": "adversity",
+"ipa": "/ədˈvɜːrsɪti/",
+"pos": "noun",
+"level": "C1",
+"ru": "невзгода",
+"theme": "feelings",
+"examples": [
+{
+"en": "She remained strong facing adversity.",
+"ru": "Она осталась сильной перед лицом невзгоды."
+},
+{
+"en": "Adversity teaches valuable lessons.",
+"ru": "Невзгода учит ценным урокам."
+}
+]
+},
+{
+"word": "advisable",
+"ipa": "/ədˈvaɪzəbl/",
+"pos": "adjective",
+"level": "C1",
+"ru": "рекомендуемый",
+"theme": "communication",
+"examples": [
+{
+"en": "It's advisable to book in advance.",
+"ru": "Рекомендуется бронировать заранее."
+},
+{
+"en": "Medical checkups are advisable for everyone.",
+"ru": "Медицинские осмотры рекомендуются для всех."
+}
+]
+},
+{
+"word": "adviser",
+"ipa": "/ədˈvaɪzər/",
+"pos": "noun",
+"level": "C1",
+"ru": "консультант",
+"theme": "work",
+"examples": [
+{
+"en": "My financial adviser recommended this investment.",
+"ru": "Мой финансовый консультант рекомендовал инвестицию."
+},
+{
+"en": "She works as an adviser for the company.",
+"ru": "Она работает консультантом в компании."
+}
+]
+},
+{
+"word": "advocate",
+"ipa": "/ˈædvəkeɪt/",
+"pos": "verb",
+"level": "C1",
+"ru": "отстаивать",
+"theme": "communication",
+"examples": [
+{
+"en": "He advocates for environmental protection.",
+"ru": "Он отстаивает защиту окружающей среды."
+},
+{
+"en": "She advocates for equal rights.",
+"ru": "Она отстаивает равные права."
+}
+]
+},
+{
+"word": "aerate",
+"ipa": "/ˈeriːeɪt/",
+"pos": "verb",
+"level": "C1",
+"ru": "насыщать воздухом",
+"theme": "nature",
+"examples": [
+{
+"en": "You should aerate your lawn regularly.",
+"ru": "Вы должны регулярно насыщать газон воздухом."
+},
+{
+"en": "Aerate the soil before planting.",
+"ru": "Насытьте почву воздухом перед посадкой."
+}
+]
+},
+{
+"word": "aerobic",
+"ipa": "/eɪˈroʊbɪk/",
+"pos": "adjective",
+"level": "C1",
+"ru": "аэробный",
+"theme": "sport",
+"examples": [
+{
+"en": "Aerobic exercise is good for your heart.",
+"ru": "Аэробное упражнение полезно для сердца."
+},
+{
+"en": "She does aerobic training three times a week.",
+"ru": "Она занимается аэробной подготовкой три раза в неделю."
+}
+]
+},
+{
+"word": "affable",
+"ipa": "/ˈæfəbl/",
+"pos": "adjective",
+"level": "C1",
+"ru": "общительный",
+"theme": "people",
+"examples": [
+{
+"en": "He has an affable personality.",
+"ru": "У него общительный характер."
+},
+{
+"en": "The waiter was friendly and affable.",
+"ru": "Официант был дружелюбным и общительным."
+}
+]
+},
+{
+"word": "affair",
+"ipa": "/əˈfer/",
+"pos": "noun",
+"level": "C1",
+"ru": "дело",
+"theme": "other",
+"examples": [
+{
+"en": "This is a business affair, not personal.",
+"ru": "Это деловое дело, не личное."
+},
+{
+"en": "The government handled the affair well.",
+"ru": "Правительство хорошо решило дело."
+}
+]
+},
+{
+"word": "affidavit",
+"ipa": "/ˌæfɪˈdeɪvɪt/",
+"pos": "noun",
+"level": "C1",
+"ru": "письменное заявление под присягой",
+"theme": "law",
+"examples": [
+{
+"en": "She signed an affidavit for the court.",
+"ru": "Она подписала письменное заявление для суда."
+},
+{
+"en": "The affidavit was submitted as evidence.",
+"ru": "Письменное заявление было представлено в качестве доказательства."
+}
+]
+},
+{
+"word": "affiliate",
+"ipa": "/əˈfɪlieɪt/",
+"pos": "verb",
+"level": "C1",
+"ru": "присоединяться",
+"theme": "business",
+"examples": [
+{
+"en": "The company will affiliate with a larger corporation.",
+"ru": "Компания присоединится к большей корпорации."
+},
+{
+"en": "They decided to affiliate their organization.",
+"ru": "Они решили присоединить свою организацию."
+}
+]
+},
+{
+"word": "affinity",
+"ipa": "/əˈfɪnɪti/",
+"pos": "noun",
+"level": "C1",
+"ru": "склонность",
+"theme": "feelings",
+"examples": [
+{
+"en": "She has a natural affinity for languages.",
+"ru": "У неё естественная склонность к языкам."
+},
+{
+"en": "He shows affinity for creative work.",
+"ru": "Он проявляет склонность к творческой работе."
+}
+]
+},
+{
+"word": "affirmation",
+"ipa": "/ˌæfərˈmeɪʃn/",
+"pos": "noun",
+"level": "C1",
+"ru": "подтверждение",
+"theme": "communication",
+"examples": [
+{
+"en": "His statement was an affirmation of faith.",
+"ru": "Его заявление было подтверждением веры."
+},
+{
+"en": "She needed affirmation of her decision.",
+"ru": "Ей нужно было подтверждение её решения."
+}
+]
+},
+{
+"word": "affluence",
+"ipa": "/ˈæfluəns/",
+"pos": "noun",
+"level": "C1",
+"ru": "богатство",
+"theme": "money",
+"examples": [
+{
+"en": "They lived in affluence after business success.",
+"ru": "Они жили в богатстве после успеха бизнеса."
+},
+{
+"en": "Affluence doesn't always bring happiness.",
+"ru": "Богатство не всегда приносит счастье."
+}
+]
+},
+{
+"word": "affluent",
+"ipa": "/ˈæfluənt/",
+"pos": "adjective",
+"level": "C1",
+"ru": "богатый",
+"theme": "people",
+"examples": [
+{
+"en": "She comes from an affluent family.",
+"ru": "Она из богатой семьи."
+},
+{
+"en": "The affluent neighborhood has large houses.",
+"ru": "Богатый район имеет большие дома."
+}
+]
+},
+{
+"word": "affront",
+"ipa": "/əˈfrʌnt/",
+"pos": "noun",
+"level": "C1",
+"ru": "оскорбление",
+"theme": "feelings",
+"examples": [
+{
+"en": "They took affront at his rude comment.",
+"ru": "Они были оскорблены его грубым комментарием."
+},
+{
+"en": "It was an affront to her dignity.",
+"ru": "Это было оскорблением её достоинства."
+}
+]
+},
+{
+"word": "agile",
+"ipa": "/ˈædʒaɪl/",
+"pos": "adjective",
+"level": "C1",
+"ru": "ловкий",
+"theme": "sport",
+"examples": [
+{
+"en": "The dancer was agile and graceful.",
+"ru": "Танцор был ловким и грациозным."
+},
+{
+"en": "Agile movements helped him escape danger.",
+"ru": "Ловкие движения помогли ему избежать опасности."
+}
+]
+},
+{
+"word": "agility",
+"ipa": "/əˈdʒɪlɪti/",
+"pos": "noun",
+"level": "C1",
+"ru": "ловкость",
+"theme": "sport",
+"examples": [
+{
+"en": "The cat's agility was impressive.",
+"ru": "Ловкость кошки была впечатляющей."
+},
+{
+"en": "Athletes need agility and strength.",
+"ru": "Спортсменам нужны ловкость и сила."
+}
+]
+},
+{
+"word": "agitate",
+"ipa": "/ˈædʒɪteɪt/",
+"pos": "verb",
+"level": "C1",
+"ru": "волновать",
+"theme": "feelings",
+"examples": [
+{
+"en": "The news agitated everyone at the meeting.",
+"ru": "Новость волновала всех на встречу."
+},
+{
+"en": "Don't agitate him further.",
+"ru": "Не волнуйте его дальше."
+}
+]
+},
+{
+"word": "agony",
+"ipa": "/ˈægəni/",
+"pos": "noun",
+"level": "C1",
+"ru": "мука",
+"theme": "feelings",
+"examples": [
+{
+"en": "She was in agony from the pain.",
+"ru": "Она была в муке от боли."
+},
+{
+"en": "The waiting was agony for him.",
+"ru": "Ожидание было мукой для него."
+}
+]
+},
+{
+"word": "agrarian",
+"ipa": "/əˈɡreriən/",
+"pos": "adjective",
+"level": "C1",
+"ru": "аграрный",
+"theme": "nature",
+"examples": [
+{
+"en": "Agrarian reforms changed the country.",
+"ru": "Аграрные реформы изменили страну."
+},
+{
+"en": "This is an agrarian economy.",
+"ru": "Это аграрная экономика."
+}
+]
+},
+{
+"word": "agribusiness",
+"ipa": "/ˌæɡrɪˈbɪznəs/",
+"pos": "noun",
+"level": "C1",
+"ru": "сельскохозяйственный бизнес",
+"theme": "business",
+"examples": [
+{
+"en": "Modern agribusiness uses advanced technology.",
+"ru": "Современный сельскохозяйственный бизнес использует новые технологии."
+},
+{
+"en": "She works in agribusiness management.",
+"ru": "Она работает в управлении сельскохозяйственным бизнесом."
+}
+]
+},
+{
+"word": "agronomy",
+"ipa": "/əˈɡrɑːnəmi/",
+"pos": "noun",
+"level": "C1",
+"ru": "агрономия",
+"theme": "science",
+"examples": [
+{
+"en": "He studied agronomy in university.",
+"ru": "Он изучал агрономию в университете."
+},
+{
+"en": "Modern agronomy focuses on sustainable farming.",
+"ru": "Современная агрономия сосредотачивается на устойчивом сельском хозяйстве."
+}
+]
+},
+{
+"word": "ailment",
+"ipa": "/ˈeɪlmənt/",
+"pos": "noun",
+"level": "C1",
+"ru": "недуг",
+"theme": "health",
+"examples": [
+{
+"en": "He suffered from a mysterious ailment.",
+"ru": "Он страдал от неизвестного недуга."
+},
+{
+"en": "The doctor treated his ailment effectively.",
+"ru": "Врач эффективно лечил его недуг."
+}
+]
+},
+{
+"word": "akin",
+"ipa": "/əˈkɪn/",
+"pos": "adjective",
+"level": "C1",
+"ru": "похожий",
+"theme": "other",
+"examples": [
+{
+"en": "Her feelings were akin to mine.",
+"ru": "Её чувства были похожи на мои."
+},
+{
+"en": "This situation is akin to madness.",
+"ru": "Эта ситуация похожа на безумие."
+}
+]
+},
+{
+"word": "alabaster",
+"ipa": "/ˈæləˌbæstər/",
+"pos": "noun",
+"level": "C1",
+"ru": "алебастр",
+"theme": "art",
+"examples": [
+{
+"en": "The sculpture was carved from white alabaster.",
+"ru": "Скульптура была вырезана из белого алебастра."
+},
+{
+"en": "Alabaster is valued for its beauty.",
+"ru": "Алебастр ценится за его красоту."
+}
+]
+},
+{
+"word": "alacrity",
+"ipa": "/əˈlækrɪti/",
+"pos": "noun",
+"level": "C1",
+"ru": "готовность",
+"theme": "feelings",
+"examples": [
+{
+"en": "He accepted the offer with alacrity.",
+"ru": "Он принял предложение с готовностью."
+},
+{
+"en": "She responded to the call with alacrity.",
+"ru": "Она ответила на зов с готовностью."
+}
+]
+},
+{
+"word": "alchemy",
+"ipa": "/ˈælkəmi/",
+"pos": "noun",
+"level": "C1",
+"ru": "алхимия",
+"theme": "science",
+"examples": [
+{
+"en": "Medieval alchemy eventually became chemistry.",
+"ru": "Средневековая алхимия в конце концов стала химией."
+},
+{
+"en": "Cooking is a kind of culinary alchemy.",
+"ru": "Кулинария - это своего рода кулинарная алхимия."
+}
+]
+},
+{
+"word": "alcoholic",
+"ipa": "/ˌælkəˈhɑːlɪk/",
+"pos": "adjective",
+"level": "C1",
+"ru": "алкогольный",
+"theme": "food",
+"examples": [
+{
+"en": "She doesn't drink alcoholic beverages.",
+"ru": "Она не пьёт спиртные напитки."
+},
+{
+"en": "The restaurant serves alcoholic and non-alcoholic drinks.",
+"ru": "Ресторан подает спиртные и безалкогольные напитки."
+}
+]
+},
+{
+"word": "alcoholism",
+"ipa": "/ˈælkəˌhɑːlɪzəm/",
+"pos": "noun",
+"level": "C1",
+"ru": "алкоголизм",
+"theme": "health",
+"examples": [
+{
+"en": "Alcoholism is a serious health issue.",
+"ru": "Алкоголизм - это серьезная проблема со здоровьем."
+},
+{
+"en": "Treatment programs help people overcome alcoholism.",
+"ru": "Программы лечения помогают людям преодолеть алкоголизм."
+}
+]
+},
+{
+"word": "alcove",
+"ipa": "/ˈælˌkoʊv/",
+"pos": "noun",
+"level": "C1",
+"ru": "ниша",
+"theme": "home",
+"examples": [
+{
+"en": "The bedroom has a cozy reading alcove.",
+"ru": "В спальне есть уютная нишечка для чтения."
+},
+{
+"en": "She created a small alcove for meditation.",
+"ru": "Она создала небольшую нишу для медитации."
+}
+]
+},
+{
+"word": "alder",
+"ipa": "/ˈɔːldər/",
+"pos": "noun",
+"level": "C1",
+"ru": "ольха",
+"theme": "nature",
+"examples": [
+{
+"en": "Alder trees grow near water.",
+"ru": "Деревья ольхи растут рядом с водой."
+},
+{
+"en": "The forest was full of alder and birch.",
+"ru": "Лес был полон ольхи и берёзы."
+}
+]
+},
+{
+"word": "algorithm",
+"ipa": "/ˈælɡəˌrɪðəm/",
+"pos": "noun",
+"level": "C1",
+"ru": "алгоритм",
+"theme": "technology",
+"examples": [
+{
+"en": "Google uses complex algorithms to search the internet.",
+"ru": "Google использует сложные алгоритмы для поиска."
+},
+{
+"en": "Machine learning relies on algorithms.",
+"ru": "Машинное обучение зависит от алгоритмов."
+}
+]
+},
+{
+"word": "alias",
+"ipa": "/ˈeɪliəs/",
+"pos": "noun",
+"level": "C1",
+"ru": "псевдоним",
+"theme": "people",
+"examples": [
+{
+"en": "He used an alias to protect his identity.",
+"ru": "Он использовал псевдоним, чтобы защитить личность."
+},
+{
+"en": "The criminal had many aliases.",
+"ru": "Преступник имел много псевдонимов."
+}
+]
+},
+{
+"word": "alibi",
+"ipa": "/ˈæləˌbaɪ/",
+"pos": "noun",
+"level": "C1",
+"ru": "алиби",
+"theme": "law",
+"examples": [
+{
+"en": "He provided an alibi for the night of the crime.",
+"ru": "Он предоставил алиби на ночь преступления."
+},
+{
+"en": "The witness confirmed his alibi.",
+"ru": "Свидетель подтвердил его алиби."
+}
+]
+},
+{
+"word": "alien",
+"ipa": "/ˈeɪliən/",
+"pos": "adjective",
+"level": "C1",
+"ru": "чужой",
+"theme": "other",
+"examples": [
+{
+"en": "Her customs were alien to him.",
+"ru": "Её обычаи были ему чужды."
+},
+{
+"en": "The culture seemed alien and strange.",
+"ru": "Культура казалась чужой и странной."
+}
+]
+},
+{
+"word": "alienate",
+"ipa": "/ˈeɪliəˌneɪt/",
+"pos": "verb",
+"level": "C1",
+"ru": "отчуждать",
+"theme": "feelings",
+"examples": [
+{
+"en": "His harsh words alienated many supporters.",
+"ru": "Его резкие слова отчудили многих сторонников."
+},
+{
+"en": "She didn't want to alienate her friends.",
+"ru": "Она не хотела отчуждать своих друзей."
+}
+]
+},
+{
+"word": "alienation",
+"ipa": "/ˌeɪliəˈneɪʃn/",
+"pos": "noun",
+"level": "C1",
+"ru": "отчуждение",
+"theme": "feelings",
+"examples": [
+{
+"en": "Social alienation is a growing problem.",
+"ru": "Социальное отчуждение - растущая проблема."
+},
+{
+"en": "He experienced alienation from society.",
+"ru": "Он испытывал отчуждение от общества."
+}
+]
+},
+{
+"word": "alight",
+"ipa": "/əˈlaɪt/",
+"pos": "verb",
+"level": "C1",
+"ru": "приземляться",
+"theme": "transport",
+"examples": [
+{
+"en": "The bird alighted on the branch.",
+"ru": "Птица приземлилась на ветку."
+},
+{
+"en": "She alighted from the carriage gracefully.",
+"ru": "Она грациозно вышла из кареты."
+}
+]
+},
+{
+"word": "alignment",
+"ipa": "/əˈlaɪnmənt/",
+"pos": "noun",
+"level": "C1",
+"ru": "выравнивание",
+"theme": "other",
+"examples": [
+{
+"en": "The alignment of the wheels was checked.",
+"ru": "Была проверена центровка колёс."
+},
+{
+"en": "Political alignment changed after the election.",
+"ru": "Политическое выравнивание изменилось после выборов."
+}
+]
+},
+{
+"word": "aliment",
+"ipa": "/ˈæləmənt/",
+"pos": "noun",
+"level": "C1",
+"ru": "питание",
+"theme": "food",
+"examples": [
+{
+"en": "Simple aliment is best for recovery.",
+"ru": "Простое питание лучше для выздоровления."
+},
+{
+"en": "She provided basic aliment for the workers.",
+"ru": "Она обеспечила базовое питание для рабочих."
+}
+]
+},
+{
+"word": "alimentary",
+"ipa": "/ˌæləˈmentəri/",
+"pos": "adjective",
+"level": "C1",
+"ru": "пищеварительный",
+"theme": "health",
+"examples": [
+{
+"en": "The alimentary system is complex.",
+"ru": "Пищеварительная система сложна."
+},
+{
+"en": "Alimentary disorders require medical attention.",
+"ru": "Расстройства пищеварительной системы требуют медицинского внимания."
+}
+]
+},
+{
+"word": "alimony",
+"ipa": "/ˈæləˌmoʊni/",
+"pos": "noun",
+"level": "C1",
+"ru": "алименты",
+"theme": "law",
+"examples": [
+{
+"en": "The judge ordered him to pay alimony.",
+"ru": "Судья приказал ему платить алименты."
+},
+{
+"en": "She received alimony after the divorce.",
+"ru": "Она получала алименты после развода."
+}
+]
+},
+{
+"word": "allay",
+"ipa": "/əˈleɪ/",
+"pos": "verb",
+"level": "C1",
+"ru": "успокаивать",
+"theme": "feelings",
+"examples": [
+{
+"en": "Her words allay my concerns.",
+"ru": "Её слова успокаивают мои опасения."
+},
+{
+"en": "The announcement allayed public fears.",
+"ru": "Объявление успокоило опасения общественности."
+}
+]
+},
+{
+"word": "allegory",
+"ipa": "/ˈæləˌɡɔːri/",
+"pos": "noun",
+"level": "C1",
+"ru": "аллегория",
+"theme": "art",
+"examples": [
+{
+"en": "The novel is an allegory for society.",
+"ru": "Роман - это аллегория общества."
+},
+{
+"en": "Medieval literature used allegories extensively.",
+"ru": "Средневековая литература широко использовала аллегории."
+}
+]
+},
+{
+"word": "allele",
+"ipa": "/əˈlil/",
+"pos": "noun",
+"level": "C1",
+"ru": "аллель",
+"theme": "science",
+"examples": [
+{
+"en": "Each gene has different alleles.",
+"ru": "Каждый ген имеет различные аллели."
+},
+{
+"en": "The dominant allele determines the trait.",
+"ru": "Доминантная аллель определяет признак."
+}
+]
+},
+{
+"word": "allergen",
+"ipa": "/ˈælərdʒən/",
+"pos": "noun",
+"level": "C1",
+"ru": "аллерген",
+"theme": "health",
+"examples": [
+{
+"en": "Common allergens include pollen and dust.",
+"ru": "Общие аллергены включают пыльцу и пыль."
+},
+{
+"en": "She avoids food allergens carefully.",
+"ru": "Она осторожно избегает пищевых аллергенов."
+}
+]
+},
+{
+"word": "allergic",
+"ipa": "/əˈlɜːrdʒɪk/",
+"pos": "adjective",
+"level": "C1",
+"ru": "аллергический",
+"theme": "health",
+"examples": [
+{
+"en": "He is allergic to peanuts.",
+"ru": "У него аллергия на арахис."
+},
+{
+"en": "Allergic reactions can be serious.",
+"ru": "Аллергические реакции могут быть серьёзными."
+}
+]
+},
+{
+"word": "alleviate",
+"ipa": "/əˈliːvieɪt/",
+"pos": "verb",
+"level": "C1",
+"ru": "облегчать",
+"theme": "health",
+"examples": [
+{
+"en": "This medicine will alleviate your pain.",
+"ru": "Это лекарство облегчит вашу боль."
+},
+{
+"en": "The policy aims to alleviate poverty.",
+"ru": "Политика направлена на облегчение бедности."
+}
+]
+},
+{
+"word": "alley",
+"ipa": "/ˈæli/",
+"pos": "noun",
+"level": "C1",
+"ru": "переулок",
+"theme": "city",
+"examples": [
+{
+"en": "There's a narrow alley behind the building.",
+"ru": "За зданием есть узкий переулок."
+},
+{
+"en": "They walked down a dark alley.",
+"ru": "Они прошли по тёмному переулку."
+}
+]
+},
+{
+"word": "allied",
+"ipa": "/əˈlaɪd/",
+"pos": "adjective",
+"level": "C1",
+"ru": "союзный",
+"theme": "other",
+"examples": [
+{
+"en": "The allied forces attacked together.",
+"ru": "Союзные войска атаковали вместе."
+},
+{
+"en": "They are allied nations.",
+"ru": "Они союзные нации."
+}
+]
+},
+{
+"word": "alligator",
+"ipa": "/ˈæləˌɡeɪtər/",
+"pos": "noun",
+"level": "C1",
+"ru": "аллигатор",
+"theme": "animals",
+"examples": [
+{
+"en": "Alligators live in swamps and rivers.",
+"ru": "Аллигаторы живут в болотах и реках."
+},
+{
+"en": "The alligator is a dangerous reptile.",
+"ru": "Аллигатор - это опасное пресмыкающееся."
+}
+]
+},
+{
+"word": "alliteration",
+"ipa": "/əˌlɪtəˈreɪʃn/",
+"pos": "noun",
+"level": "C1",
+"ru": "аллитерация",
+"theme": "communication",
+"examples": [
+{
+"en": "The phrase uses alliteration for effect.",
+"ru": "Фраза использует аллитерацию для эффекта."
+},
+{
+"en": "Poetry often employs alliteration.",
+"ru": "Поэзия часто использует аллитерацию."
+}
+]
+},
+{
+"word": "allocate",
+"ipa": "/ˈæləˌkeɪt/",
+"pos": "verb",
+"level": "C1",
+"ru": "выделять",
+"theme": "business",
+"examples": [
+{
+"en": "The budget allocates funds for education.",
+"ru": "Бюджет выделяет средства на образование."
+},
+{
+"en": "They allocated resources wisely.",
+"ru": "Они мудро распределили ресурсы."
+}
+]
+},
+{
+"word": "allot",
+"ipa": "/əˈlɑːt/",
+"pos": "verb",
+"level": "C1",
+"ru": "отпускать",
+"theme": "business",
+"examples": [
+{
+"en": "Each person was allotted an equal share.",
+"ru": "Каждому человеку была отпущена равная доля."
+},
+{
+"en": "Time was allotted for questions.",
+"ru": "Время было отпущено для вопросов."
+}
+]
+},
+{
+"word": "allotment",
+"ipa": "/əˈlɑːtmənt/",
+"pos": "noun",
+"level": "C1",
+"ru": "наделение",
+"theme": "other",
+"examples": [
+{
+"en": "His allotment of land was generous.",
+"ru": "Его наделение земли было щедрым."
+},
+{
+"en": "The allotment of resources is fair.",
+"ru": "Наделение ресурсов справедливо."
+}
+]
+},
+{
+"word": "alloy",
+"ipa": "/ˈæˌlɔɪ/",
+"pos": "noun",
+"level": "C1",
+"ru": "сплав",
+"theme": "science",
+"examples": [
+{
+"en": "Steel is an alloy of iron and carbon.",
+"ru": "Сталь - это сплав железа и углерода."
+},
+{
+"en": "Bronze is an alloy of copper and tin.",
+"ru": "Бронза - это сплав меди и олова."
+}
+]
+},
+{
+"word": "allude",
+"ipa": "/əˈlud/",
+"pos": "verb",
+"level": "C1",
+"ru": "намекать",
+"theme": "communication",
+"examples": [
+{
+"en": "She alluded to the scandal without mentioning it directly.",
+"ru": "Она намекнула на скандал, не упоминая его прямо."
+},
+{
+"en": "The author alluded to Shakespeare in the novel.",
+"ru": "Автор намекнул на Шекспира в романе."
+}
+]
+},
+{
+"word": "allure",
+"ipa": "/əˈlur/",
+"pos": "noun",
+"level": "C1",
+"ru": "привлекательность",
+"theme": "feelings",
+"examples": [
+{
+"en": "The city has great allure for tourists.",
+"ru": "Город имеет большую привлекательность для туристов."
+},
+{
+"en": "The allure of success drove him forward.",
+"ru": "Привлекательность успеха заставляла его идти вперёд."
+}
+]
+},
+{
+"word": "allusion",
+"ipa": "/əˈluʒn/",
+"pos": "noun",
+"level": "C1",
+"ru": "намек",
+"theme": "communication",
+"examples": [
+{
+"en": "The book contains an allusion to classical mythology.",
+"ru": "Книга содержит намек на классическую мифологию."
+},
+{
+"en": "His speech made subtle allusions to recent events.",
+"ru": "Его речь содержала тонкие намеки на недавние события."
+}
+]
+}
 ]

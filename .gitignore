@@ -1,0 +1,22 @@
+# flutter
+app/android/
+app/build/
+app/.dart_tool/
+app/.flutter-plugins*
+app/.packages
+app/pubspec.lock
+app/ios/
+app/linux/
+app/macos/
+app/windows/
+app/web/
+app/test/
+
+# server
+server/.env
+server/venv/
+server/__pycache__/
+
+# misc
+*.pyc
+.DS_Store

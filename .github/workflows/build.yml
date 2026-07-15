@@ -1,0 +1,52 @@
+name: build-apk
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      # android/ не хранится в репо — генерируем на месте
+      - name: Generate android project
+        working-directory: app
+        run: flutter create --platforms=android --org com.fosttt --project-name lang_me .
+
+      - name: Patch AndroidManifest (INTERNET, RECORD_AUDIO, queries)
+        run: python3 tools/patch_android.py
+
+      - name: Build release APK
+        working-directory: app
+        run: |
+          flutter pub get
+          flutter build apk --release
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: lang_me-apk
+          path: app/build/app/outputs/flutter-apk/app-release.apk
+
+      - name: Publish rolling release
+        if: github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: LangMe (latest build)
+          files: app/build/app/outputs/flutter-apk/app-release.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

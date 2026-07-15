@@ -4,7 +4,11 @@
 The android/ folder is not committed — CI runs `flutter create` and then this
 script adds what the plugins need:
 - INTERNET permission (AI server) and RECORD_AUDIO (speech_to_text);
-- <queries> for the speech recognition and TTS services (Android 11+).
+- <queries> for the speech recognition and TTS services (Android 11+);
+- release signing with the persistent keystore, if android/key.properties
+  exists (CI writes it from secrets). Without it the debug key is kept —
+  but then every build has a fresh signature and Android refuses to update
+  the installed app in place.
 """
 
 import re
@@ -12,6 +16,9 @@ import sys
 from pathlib import Path
 
 MANIFEST = Path("app/android/app/src/main/AndroidManifest.xml")
+GRADLE_KTS = Path("app/android/app/build.gradle.kts")
+GRADLE_GROOVY = Path("app/android/app/build.gradle")
+KEY_PROPS = Path("app/android/key.properties")
 
 PERMISSIONS = """    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
@@ -28,6 +35,69 @@ QUERIES = """    <queries>
 """
 
 
+SIGNING_KTS = """
+    val keystoreProperties = java.util.Properties()
+    val keystorePropertiesFile = rootProject.file("key.properties")
+    if (keystorePropertiesFile.exists()) {
+        keystoreProperties.load(java.io.FileInputStream(keystorePropertiesFile))
+    }
+    signingConfigs {
+        create("release") {
+            keyAlias = keystoreProperties["keyAlias"] as String
+            keyPassword = keystoreProperties["keyPassword"] as String
+            storeFile = file(keystoreProperties["storeFile"] as String)
+            storePassword = keystoreProperties["storePassword"] as String
+        }
+    }
+"""
+
+SIGNING_GROOVY = """
+    def keystoreProperties = new Properties()
+    def keystorePropertiesFile = rootProject.file('key.properties')
+    if (keystorePropertiesFile.exists()) {
+        keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+    }
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+"""
+
+
+def patch_signing() -> None:
+    if not KEY_PROPS.exists():
+        print("key.properties absent — keeping debug signing")
+        return
+    if GRADLE_KTS.exists():
+        path, block = GRADLE_KTS, SIGNING_KTS
+        debug_ref = 'signingConfig = signingConfigs.getByName("debug")'
+        release_ref = 'signingConfig = signingConfigs.getByName("release")'
+    elif GRADLE_GROOVY.exists():
+        path, block = GRADLE_GROOVY, SIGNING_GROOVY
+        debug_ref = "signingConfig signingConfigs.debug"
+        release_ref = "signingConfig signingConfigs.release"
+    else:
+        print("no build.gradle(.kts) found", file=sys.stderr)
+        sys.exit(1)
+
+    text = path.read_text()
+    if "key.properties" not in text:
+        # signingConfigs must live inside android {} before buildTypes
+        idx = text.find("buildTypes")
+        if idx < 0:
+            print("buildTypes block not found", file=sys.stderr)
+            sys.exit(1)
+        line_start = text.rfind("\n", 0, idx) + 1
+        text = text[:line_start] + block + "\n" + text[line_start:]
+        text = text.replace(debug_ref, release_ref)
+        path.write_text(text)
+    print(f"{path} patched: release signing enabled")
+
+
 def main() -> int:
     if not MANIFEST.exists():
         print(f"manifest not found: {MANIFEST}", file=sys.stderr)
@@ -41,8 +111,8 @@ def main() -> int:
         text = text.replace("    <application", QUERIES + "    <application", 1)
 
     MANIFEST.write_text(text)
-    print("AndroidManifest.xml patched:")
-    print(text)
+    print("AndroidManifest.xml patched")
+    patch_signing()
     return 0
 
 

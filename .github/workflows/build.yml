@@ -29,7 +29,19 @@ jobs:
         working-directory: app
         run: flutter create --platforms=android --org com.fosttt --project-name lang_me .
 
-      - name: Patch AndroidManifest (INTERNET, RECORD_AUDIO, queries)
+      # постоянный ключ подписи из секретов: без него каждая сборка имела бы
+      # новую подпись и Android отказывался бы обновлять приложение поверх
+      - name: Setup release signing
+        run: |
+          echo "${{ secrets.ANDROID_KEYSTORE_B64 }}" | base64 -d > app/android/app/keystore.p12
+          cat > app/android/key.properties <<EOF
+          storeFile=keystore.p12
+          storePassword=${{ secrets.ANDROID_KEY_PASS }}
+          keyAlias=langme
+          keyPassword=${{ secrets.ANDROID_KEY_PASS }}
+          EOF
+
+      - name: Patch Android project (permissions, queries, signing)
         run: python3 tools/patch_android.py
 
       # URL/токен/отпечаток сертификата AI-сервера вшиваются из секретов —
@@ -39,6 +51,7 @@ jobs:
         run: |
           flutter pub get
           flutter build apk --release \
+            --build-number=${{ github.run_number }} \
             --dart-define=AI_URL="${{ secrets.AI_URL }}" \
             --dart-define=AI_TOKEN="${{ secrets.AI_TOKEN }}" \
             --dart-define=AI_CERT_SHA256="${{ secrets.AI_CERT_SHA256 }}"

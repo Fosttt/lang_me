@@ -53,15 +53,16 @@ class _PlacementScreenState extends State<PlacementScreen> {
       _finish(state);
       return;
     }
-    _used.add(pick.word);
+    final chosen = pick;
+    _used.add(chosen.word);
     final distractors = state.words
-        .where((w) => w.word != pick!.word && w.ru != pick.ru)
+        .where((w) => w.word != chosen.word && w.ru != chosen.ru)
         .toList()
       ..shuffle(_rng);
-    final opts = [pick.ru, ...distractors.take(3).map((w) => w.ru)]
+    final opts = [chosen.ru, ...distractors.take(3).map((w) => w.ru)]
       ..shuffle(_rng);
     setState(() {
-      _current = pick;
+      _current = chosen;
       _options = opts;
     });
   }

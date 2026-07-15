@@ -35,11 +35,15 @@ QUERIES = """    <queries>
 """
 
 
+# `java.util.*` нельзя писать полным именем внутри android {} — имя `java`
+# перекрыто Gradle-расширением, поэтому импорты добавляются в начало файла
+KTS_IMPORTS = "import java.io.FileInputStream\nimport java.util.Properties\n"
+
 SIGNING_KTS = """
-    val keystoreProperties = java.util.Properties()
+    val keystoreProperties = Properties()
     val keystorePropertiesFile = rootProject.file("key.properties")
     if (keystorePropertiesFile.exists()) {
-        keystoreProperties.load(java.io.FileInputStream(keystorePropertiesFile))
+        keystoreProperties.load(FileInputStream(keystorePropertiesFile))
     }
     signingConfigs {
         create("release") {
@@ -86,6 +90,8 @@ def patch_signing() -> None:
 
     text = path.read_text()
     if "key.properties" not in text:
+        if path is GRADLE_KTS:
+            text = KTS_IMPORTS + text
         # signingConfigs must live inside android {} before buildTypes
         idx = text.find("buildTypes")
         if idx < 0:

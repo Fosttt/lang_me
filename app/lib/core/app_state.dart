@@ -4,6 +4,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'ai_config.dart';
 import 'db.dart';
 import 'models.dart';
 import 'srs.dart';
@@ -39,8 +40,11 @@ class AppState extends ChangeNotifier {
     autoSpeak = _prefs.getBool('autoSpeak') ?? true;
     ttsRate = _prefs.getDouble('ttsRate') ?? 0.5;
     dailyGoal = _prefs.getInt('dailyGoal') ?? 20;
+    // если пользователь ничего не настраивал — берём вшитые в сборку значения
     serverUrl = _prefs.getString('serverUrl') ?? '';
     serverToken = _prefs.getString('serverToken') ?? '';
+    if (serverUrl.isEmpty) serverUrl = kDefaultAiUrl;
+    if (serverToken.isEmpty) serverToken = kDefaultAiToken;
     placementDone = _prefs.getBool('placementDone') ?? false;
 
     words = await WordsRepo.load();

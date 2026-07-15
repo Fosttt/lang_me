@@ -32,11 +32,16 @@ jobs:
       - name: Patch AndroidManifest (INTERNET, RECORD_AUDIO, queries)
         run: python3 tools/patch_android.py
 
+      # URL/токен/отпечаток сертификата AI-сервера вшиваются из секретов —
+      # приложение работает из коробки, в репозитории значений нет
       - name: Build release APK
         working-directory: app
         run: |
           flutter pub get
-          flutter build apk --release
+          flutter build apk --release \
+            --dart-define=AI_URL="${{ secrets.AI_URL }}" \
+            --dart-define=AI_TOKEN="${{ secrets.AI_TOKEN }}" \
+            --dart-define=AI_CERT_SHA256="${{ secrets.AI_CERT_SHA256 }}"
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4

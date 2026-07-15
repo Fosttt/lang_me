@@ -1,7 +1,11 @@
 import 'dart:convert';
+import 'dart:io';
 
+import 'package:crypto/crypto.dart';
 import 'package:http/http.dart' as http;
+import 'package:http/io_client.dart';
 
+import 'ai_config.dart';
 import 'db.dart';
 
 /// Client for the personal LLM proxy (server/ in this repo, runs on my VPS
@@ -13,12 +17,24 @@ class AiClient {
 
   AiClient({required this.baseUrl, required this.token});
 
+  /// Shared client with certificate pinning: for https the app trusts ONLY
+  /// the certificate whose SHA-256 (DER) matches [kAiCertSha256].
+  static final http.Client _http = _makeClient();
+
+  static http.Client _makeClient() {
+    if (kAiCertSha256.isEmpty) return http.Client();
+    final inner = HttpClient()
+      ..badCertificateCallback = (X509Certificate cert, String host, int port) =>
+          sha256.convert(cert.der).toString() == kAiCertSha256.toLowerCase();
+    return IOClient(inner);
+  }
+
   Uri _u(String path) =>
       Uri.parse('${baseUrl.replaceAll(RegExp(r'/+$'), '')}$path');
 
   Future<String> _post(String path, Map<String, dynamic> body,
       {Duration timeout = const Duration(seconds: 90)}) async {
-    final resp = await http
+    final resp = await _http
         .post(
           _u(path),
           headers: {
@@ -46,7 +62,7 @@ class AiClient {
 
   Future<bool> health() async {
     try {
-      final resp = await http
+      final resp = await _http
           .get(_u('/health'), headers: {'X-Auth-Token': token})
           .timeout(const Duration(seconds: 10));
       return resp.statusCode == 200;

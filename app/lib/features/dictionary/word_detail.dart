@@ -6,6 +6,7 @@ import '../../core/models.dart';
 import '../../core/tts.dart';
 import '../../core/visual.dart';
 import '../ai/ai_sheet.dart';
+import '../dialog/dialog_sheet.dart';
 import '../pronounce/pronounce_sheet.dart';
 
 /// Full word page: card, status controls, personal notes, AI actions.
@@ -112,6 +113,14 @@ class _WordDetailScreenState extends State<WordDetailScreen> {
                 ),
               ),
             const SizedBox(height: 16),
+          ],
+          if (w.dialog.isNotEmpty || state.aiConfigured) ...[
+            OutlinedButton.icon(
+              onPressed: () => showWordDialog(context, w),
+              icon: const Icon(Icons.forum),
+              label: const Text('Диалог со словом'),
+            ),
+            const SizedBox(height: 12),
           ],
           Row(
             children: [

@@ -6,6 +6,7 @@ import '../../core/models.dart';
 import '../../core/tts.dart';
 import '../../core/visual.dart';
 import '../ai/ai_sheet.dart';
+import '../dialog/dialog_sheet.dart';
 import '../pronounce/pronounce_sheet.dart';
 
 /// One full-screen card of the feed: visual, word, transcription, translation,
@@ -114,6 +115,13 @@ class WordCard extends StatelessWidget {
                           icon: Icons.mic,
                           onTap: () => showPronounceSheet(context, word),
                         ),
+                        if (word.dialog.isNotEmpty || state.aiConfigured) ...[
+                          const SizedBox(height: 12),
+                          _roundBtn(
+                            icon: Icons.forum,
+                            onTap: () => showWordDialog(context, word),
+                          ),
+                        ],
                         if (state.aiConfigured) ...[
                           const SizedBox(height: 12),
                           _roundBtn(

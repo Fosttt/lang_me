@@ -119,6 +119,26 @@ async def examples(req: WordReq, x_auth_token: str | None = Header(default=None)
     return {"text": await ask(prompt, cache_key=f"examples:{req.word}")}
 
 
+class DialogReq(BaseModel):
+    word: str
+    ru: str = ""
+    level: str = "A2"
+
+
+@app.post("/llm/dialog")
+async def dialog(req: DialogReq, x_auth_token: str | None = Header(default=None)):
+    check_token(x_auth_token)
+    prompt = (
+        f'Составь короткий естественный диалог из 4 реплик между говорящими A и B '
+        f'(чередуются: A, B, A, B), где английское слово "{req.word}" '
+        f"(перевод: {req.ru}) звучит минимум дважды. Сложность — уровень {req.level}. "
+        'Ответ — ТОЛЬКО валидный JSON-массив без пояснений: '
+        '[{"s":"A","en":"...","ru":"перевод"},{"s":"B","en":"...","ru":"..."},'
+        '{"s":"A","en":"...","ru":"..."},{"s":"B","en":"...","ru":"..."}]'
+    )
+    return {"text": await ask(prompt, cache_key=f"dialog:{req.word}")}
+
+
 @app.post("/llm/check")
 async def check(req: CheckReq, x_auth_token: str | None = Header(default=None)):
     check_token(x_auth_token)

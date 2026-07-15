@@ -11,6 +11,20 @@ class Example {
   Map<String, dynamic> toJson() => {'en': en, 'ru': ru};
 }
 
+/// One line of a mini-dialogue; [s] is the speaker: "A" or "B".
+class DialogLine {
+  final String s;
+  final String en;
+  final String ru;
+  const DialogLine({required this.s, required this.en, required this.ru});
+
+  factory DialogLine.fromJson(Map<String, dynamic> j) => DialogLine(
+        s: (j['s'] ?? 'A') as String,
+        en: (j['en'] ?? '') as String,
+        ru: (j['ru'] ?? '') as String,
+      );
+}
+
 class Word {
   final String word;
   final String ipa;
@@ -19,6 +33,7 @@ class Word {
   final String ru;
   final String theme;
   final List<Example> examples;
+  final List<DialogLine> dialog;
 
   const Word({
     required this.word,
@@ -28,6 +43,7 @@ class Word {
     required this.ru,
     required this.theme,
     required this.examples,
+    this.dialog = const [],
   });
 
   factory Word.fromJson(Map<String, dynamic> j) => Word(
@@ -39,6 +55,9 @@ class Word {
         theme: (j['theme'] ?? 'other') as String,
         examples: ((j['examples'] ?? []) as List)
             .map((e) => Example.fromJson(e as Map<String, dynamic>))
+            .toList(),
+        dialog: ((j['dialog'] ?? []) as List)
+            .map((e) => DialogLine.fromJson(e as Map<String, dynamic>))
             .toList(),
       );
 }

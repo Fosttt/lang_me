@@ -91,6 +91,17 @@ class AiClient {
     return text;
   }
 
+  /// Cached: mini-dialogue for a word without a bundled one (JSON array text).
+  Future<String> dialog(String word, String ru, String level) async {
+    final key = 'dialog:$word';
+    final cached = await AppDb.cacheGet(key);
+    if (cached != null) return cached;
+    final text = await _post(
+        '/llm/dialog', {'word': word, 'ru': ru, 'level': level});
+    await AppDb.cachePut(key, text);
+    return text;
+  }
+
   /// Not cached: check the user's own sentence with the word.
   Future<String> check(String word, String sentence) =>
       _post('/llm/check', {'word': word, 'sentence': sentence});

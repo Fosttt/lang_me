@@ -1,7 +1,7 @@
 name: lang_me
 description: Personal offline-first English vocabulary app with a TikTok-style word feed.
 publish_to: 'none'
-version: 0.3.0
+version: 0.4.0
 
 environment:
   sdk: '>=3.4.0 <4.0.0'
@@ -25,3 +25,4 @@ flutter:
   uses-material-design: true
   assets:
     - assets/words.json
+    - assets/dialogs.json

@@ -7,7 +7,7 @@ import 'features/feed/feed_screen.dart';
 import 'features/placement/placement_screen.dart';
 import 'features/stats/stats_screen.dart';
 import 'features/training/training_screen.dart';
-import 'features/tutor/tutor_screen.dart';
+import 'features/dialogs/dialog_list_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -65,7 +65,7 @@ class _HomeShellState extends State<HomeShell> {
 
     final screens = const [
       FeedScreen(),
-      TutorScreen(),
+      DialogListScreen(),
       TrainingScreen(),
       DictionaryScreen(),
       StatsScreen(),

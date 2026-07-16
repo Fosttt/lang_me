@@ -11,8 +11,22 @@ class AppDb {
     final path = '${await getDatabasesPath()}/lang_me.db';
     _db = await openDatabase(
       path,
-      version: 1,
+      version: 2,
+      onUpgrade: (db, oldV, newV) async {
+        if (oldV < 2) {
+          await db.execute('''
+            CREATE TABLE IF NOT EXISTS dialog_result(
+              id TEXT PRIMARY KEY,
+              score INTEGER NOT NULL
+            )''');
+        }
+      },
       onCreate: (db, v) async {
+        await db.execute('''
+          CREATE TABLE dialog_result(
+            id TEXT PRIMARY KEY,
+            score INTEGER NOT NULL
+          )''');
         await db.execute('''
           CREATE TABLE progress(
             word TEXT PRIMARY KEY,
@@ -103,11 +117,32 @@ class AppDb {
     await db.delete('chat');
   }
 
+  /// Лучший результат по каждому пройденному диалогу-сценке.
+  static Future<Map<String, int>> dialogProgress() async {
+    final db = await open();
+    final rows = await db.query('dialog_result');
+    return {for (final r in rows) r['id'] as String: r['score'] as int};
+  }
+
+  static Future<void> saveDialogResult(String id, int score) async {
+    final db = await open();
+    final prev = await db.query('dialog_result',
+        where: 'id = ?', whereArgs: [id], limit: 1);
+    final best = prev.isEmpty
+        ? score
+        : (prev.first['score'] as int) > score
+            ? prev.first['score'] as int
+            : score;
+    await db.insert('dialog_result', {'id': id, 'score': best},
+        conflictAlgorithm: ConflictAlgorithm.replace);
+  }
+
   static Future<void> resetAll() async {
     final db = await open();
     await db.delete('progress');
     await db.delete('activity');
     await db.delete('ai_cache');
     await db.delete('chat');
+    await db.delete('dialog_result');
   }
 }

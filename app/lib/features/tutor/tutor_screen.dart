@@ -14,7 +14,10 @@ import '../../core/tts.dart';
 /// come back corrected with a short RU note, and every tutor line hides its
 /// translation behind a tap. Recent studied words are woven in.
 class TutorScreen extends StatefulWidget {
-  const TutorScreen({super.key});
+  /// [showHeader] — собственный заголовок с кнопкой сброса; false, когда
+  /// экран открыт внутри Scaffold с AppBar.
+  final bool showHeader;
+  const TutorScreen({super.key, this.showHeader = true});
 
   @override
   State<TutorScreen> createState() => _TutorScreenState();
@@ -242,11 +245,12 @@ class _TutorScreenState extends State<TutorScreen> {
             padding: const EdgeInsets.fromLTRB(16, 8, 8, 0),
             child: Row(
               children: [
-                Text('Диалог',
-                    style: Theme.of(context).textTheme.headlineSmall),
+                if (widget.showHeader)
+                  Text('Разговор',
+                      style: Theme.of(context).textTheme.headlineSmall),
                 const Spacer(),
                 IconButton(
-                  tooltip: 'Новый диалог',
+                  tooltip: 'Новый разговор',
                   onPressed: _restart,
                   icon: const Icon(Icons.refresh),
                 ),

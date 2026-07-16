@@ -5,9 +5,9 @@ import 'core/app_state.dart';
 import 'features/dictionary/dictionary_screen.dart';
 import 'features/feed/feed_screen.dart';
 import 'features/placement/placement_screen.dart';
-import 'features/review/review_screen.dart';
 import 'features/stats/stats_screen.dart';
 import 'features/training/training_screen.dart';
+import 'features/tutor/tutor_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -65,7 +65,7 @@ class _HomeShellState extends State<HomeShell> {
 
     final screens = const [
       FeedScreen(),
-      ReviewScreen(),
+      TutorScreen(),
       TrainingScreen(),
       DictionaryScreen(),
       StatsScreen(),
@@ -81,19 +81,19 @@ class _HomeShellState extends State<HomeShell> {
               icon: Icon(Icons.style_outlined),
               selectedIcon: Icon(Icons.style),
               label: 'Лента'),
+          const NavigationDestination(
+              icon: Icon(Icons.forum_outlined),
+              selectedIcon: Icon(Icons.forum),
+              label: 'Диалог'),
           NavigationDestination(
             icon: Badge(
               isLabelVisible: dueCount > 0,
               label: Text('$dueCount'),
-              child: const Icon(Icons.refresh_outlined),
+              child: const Icon(Icons.fitness_center_outlined),
             ),
-            selectedIcon: const Icon(Icons.refresh),
-            label: 'Повторение',
+            selectedIcon: const Icon(Icons.fitness_center),
+            label: 'Тренировка',
           ),
-          const NavigationDestination(
-              icon: Icon(Icons.fitness_center_outlined),
-              selectedIcon: Icon(Icons.fitness_center),
-              label: 'Тренировка'),
           const NavigationDestination(
               icon: Icon(Icons.menu_book_outlined),
               selectedIcon: Icon(Icons.menu_book),

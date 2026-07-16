@@ -43,9 +43,12 @@ def cache_path(key: str) -> Path:
 
 
 def run_claude(prompt: str) -> str:
+    # промпт через stdin + запрет инструментов: prompt-injection в запросе не
+    # сможет заставить claude читать файлы или выполнять команды на сервере
     try:
         proc = subprocess.run(
-            [CLAUDE_BIN, "-p", "--model", MODEL, prompt],
+            [CLAUDE_BIN, "-p", "--model", MODEL, "--disallowedTools", "*"],
+            input=prompt,
             capture_output=True,
             text=True,
             timeout=TIMEOUT_S,
@@ -149,6 +152,49 @@ async def check(req: CheckReq, x_auth_token: str | None = Header(default=None)):
         "3) одна короткая подсказка."
     )
     return {"text": await ask(prompt)}
+
+
+@app.post("/llm/tutor")
+async def tutor(req: ChatReq, x_auth_token: str | None = Header(default=None)):
+    """Interactive tutor turn. Returns structured JSON:
+    fix — corrected version of the student's last answer (null if fine),
+    fix_note — короткое пояснение правки по-русски (null if fine),
+    text — tutor's next reply ending with a question (EN),
+    ru — перевод реплики репетитора.
+    """
+    check_token(x_auth_token)
+    dialog = "\n".join(
+        f"{'Student' if m.get('role') == 'user' else 'Tutor'}: {m.get('text', '')}"
+        for m in req.history[-12:]
+    )
+    words = ", ".join(req.recent_words[:15]) or "-"
+    if not dialog.strip():
+        dialog = "(разговор ещё не начался — поздоровайся и задай первый вопрос)"
+    prompt = (
+        "Ты дружелюбный репетитор английского для русскоязычного ученика. "
+        "Веди живой разговор: короткая реакция на ответ ученика и ОДИН новый вопрос, "
+        "простой язык, 1-3 предложения. Старайся естественно вплетать слова, "
+        f"которые ученик недавно учил: {words}.\n\n"
+        f"Диалог:\n{dialog}\n\n"
+        "Ответ — ТОЛЬКО валидный JSON-объект без пояснений и markdown:\n"
+        '{"fix": "исправленная версия ПОСЛЕДНЕЙ реплики ученика, если в ней есть '
+        'ошибки, иначе null", "fix_note": "короткое пояснение правки по-русски, '
+        'иначе null", "text": "твоя реплика с вопросом на английском", '
+        '"ru": "перевод твоей реплики на русский"}'
+    )
+    raw = await ask(prompt)
+    start, end = raw.find("{"), raw.rfind("}")
+    try:
+        data = json.loads(raw[start:end + 1])
+        assert isinstance(data.get("text"), str) and data["text"]
+    except Exception:
+        data = {"fix": None, "fix_note": None, "text": raw.strip(), "ru": ""}
+    return {
+        "fix": data.get("fix") or None,
+        "fix_note": data.get("fix_note") or None,
+        "text": data.get("text", ""),
+        "ru": data.get("ru", ""),
+    }
 
 
 @app.post("/llm/chat")

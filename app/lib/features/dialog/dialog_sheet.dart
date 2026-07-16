@@ -44,7 +44,8 @@ class _DialogSheetState extends State<_DialogSheet> {
   List<DialogLine> _lines = [];
   bool _loading = false;
   String? _error;
-  bool _showRu = true;
+  bool _showRu = false; // общий тоггл; отдельные реплики — долгим тапом
+  final Set<int> _ruShown = {};
   bool _practice = false;
   int _playingLine = -1;
   // практика: результат по индексу реплики (null = не пробовал)
@@ -290,6 +291,11 @@ class _DialogSheetState extends State<_DialogSheet> {
                   ? () => setState(() => _practiceResult[i] = false)
                   : () => Tts.speak(l.en,
                       rate: state.ttsRate, pitch: _pitchOf(l)),
+              onLongPress: hidden
+                  ? null
+                  : () => setState(() => _ruShown.contains(i)
+                      ? _ruShown.remove(i)
+                      : _ruShown.add(i)),
               child: Container(
                 margin: const EdgeInsets.symmetric(vertical: 5),
                 padding:
@@ -316,7 +322,7 @@ class _DialogSheetState extends State<_DialogSheet> {
                       hidden ? '🎤 Произнеси свою реплику…' : l.en,
                       style: const TextStyle(fontSize: 16),
                     ),
-                    if (_showRu && !hidden) ...[
+                    if ((_showRu || _ruShown.contains(i)) && !hidden) ...[
                       const SizedBox(height: 2),
                       Text(l.ru,
                           style: TextStyle(

@@ -5,7 +5,6 @@ import 'package:provider/provider.dart';
 import '../../core/ai_client.dart';
 import '../../core/app_state.dart';
 import '../../core/models.dart';
-import '../ai/chat_screen.dart';
 
 /// Settings: level, theme, TTS, daily goal, AI server URL+token,
 /// export/import of progress, full reset.
@@ -152,15 +151,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
             Padding(
               padding: const EdgeInsets.only(top: 8),
               child: Text(_connStatus!),
-            ),
-          if (state.aiConfigured)
-            ListTile(
-              leading: const Icon(Icons.chat_bubble_outline),
-              title: const Text('AI-репетитор (чат)'),
-              trailing: const Icon(Icons.chevron_right),
-              onTap: () => Navigator.of(context).push(
-                MaterialPageRoute(builder: (_) => const ChatScreen()),
-              ),
             ),
           const Divider(),
           Text('Данные', style: Theme.of(context).textTheme.titleMedium),

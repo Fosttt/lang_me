@@ -111,6 +111,27 @@ class AiClient {
           List<String> recentWords) =>
       _post('/llm/chat', {'history': history, 'recent_words': recentWords},
           timeout: const Duration(seconds: 120));
+
+  /// Interactive tutor turn: returns {fix, fix_note, text, ru}.
+  /// fix/fix_note — correction of the student's last answer (may be null),
+  /// text — tutor's next question (EN), ru — its hidden translation.
+  Future<Map<String, dynamic>> tutor(List<Map<String, String>> history,
+      List<String> recentWords) async {
+    final resp = await _http
+        .post(
+          _u('/llm/tutor'),
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Auth-Token': token,
+          },
+          body: jsonEncode({'history': history, 'recent_words': recentWords}),
+        )
+        .timeout(const Duration(seconds: 120));
+    if (resp.statusCode != 200) {
+      throw AiError('Ошибка сервера: HTTP ${resp.statusCode}');
+    }
+    return jsonDecode(utf8.decode(resp.bodyBytes)) as Map<String, dynamic>;
+  }
 }
 
 class AiError implements Exception {

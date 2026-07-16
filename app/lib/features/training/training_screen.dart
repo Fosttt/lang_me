@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import '../../core/app_state.dart';
 import '../../core/models.dart';
 import '../../core/tts.dart';
+import '../review/review_screen.dart';
 
 /// Training hub: four modes over the words the user has already touched.
 class TrainingScreen extends StatelessWidget {
@@ -41,6 +42,29 @@ class TrainingScreen extends StatelessWidget {
             style: TextStyle(color: Colors.grey.shade600),
           ),
           const SizedBox(height: 16),
+          Card(
+            color: Theme.of(context).colorScheme.primaryContainer,
+            child: ListTile(
+              leading: Badge(
+                isLabelVisible: state.dueReviews().isNotEmpty,
+                label: Text('${state.dueReviews().length}'),
+                child: const Icon(Icons.refresh, size: 32),
+              ),
+              title: const Text('Повторение (SM-2)'),
+              subtitle: Text(state.dueReviews().isEmpty
+                  ? 'На сегодня всё повторено'
+                  : 'Слов к повторению: ${state.dueReviews().length}'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => Scaffold(
+                    appBar: AppBar(title: const Text('Повторение')),
+                    body: const ReviewScreen(),
+                  ),
+                ),
+              ),
+            ),
+          ),
           for (final (mode, icon, title, subtitle) in modes)
             Card(
               child: ListTile(

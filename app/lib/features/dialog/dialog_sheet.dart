@@ -2,11 +2,12 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:speech_to_text/speech_to_text.dart';
 
 import '../../core/ai_client.dart';
 import '../../core/app_state.dart';
 import '../../core/models.dart';
+import '../../core/phonetics.dart';
+import '../../core/speech_service.dart';
 import '../../core/tts.dart';
 
 /// Mini-dialogue for a word: chat bubbles A/B with distinct voices,
@@ -51,7 +52,6 @@ class _DialogSheetState extends State<_DialogSheet> {
   // практика: результат по индексу реплики (null = не пробовал)
   final Map<int, bool> _practiceResult = {};
   int _listeningLine = -1;
-  final SpeechToText _speech = SpeechToText();
 
   @override
   void initState() {
@@ -103,45 +103,27 @@ class _DialogSheetState extends State<_DialogSheet> {
 
   // ---------- практика: пользователь озвучивает реплики B ----------
 
-  static String _norm(String s) => s
-      .toLowerCase()
-      .replaceAll(RegExp(r"[^a-z' ]"), ' ')
-      .replaceAll(RegExp(r'\s+'), ' ')
-      .trim();
-
-  static bool _closeEnough(String heard, String target) {
-    final h = _norm(heard).split(' ').where((w) => w.isNotEmpty).toSet();
-    final t = _norm(target).split(' ').where((w) => w.isNotEmpty).toList();
-    if (t.isEmpty) return false;
-    final hit = t.where(h.contains).length;
-    return hit / t.length >= 0.7;
-  }
-
   Future<void> _practiceLine(int index) async {
-    final ok = await _speech.initialize();
-    if (!ok || !mounted) return;
+    await Tts.stop();
     setState(() {
       _listeningLine = index;
       _practiceResult.remove(index);
     });
-    await _speech.listen(
-      localeId: 'en_US',
-      listenFor: const Duration(seconds: 8),
-      onResult: (r) {
-        if (!r.finalResult) return;
-        if (!mounted) return;
-        setState(() {
-          _practiceResult[index] =
-              _closeEnough(r.recognizedWords, _lines[index].en);
-          _listeningLine = -1;
-        });
-      },
-    );
+    final attempt = await SpeechService.instance
+        .listenOnce(timeout: const Duration(seconds: 8));
+    if (!mounted) return;
+    setState(() {
+      _listeningLine = -1;
+      if (!attempt.failed) {
+        _practiceResult[index] =
+            scoreSentence(_lines[index].en, attempt.recognized).score >= 60;
+      }
+    });
   }
 
   @override
   void dispose() {
-    _speech.stop();
+    SpeechService.instance.stopListening();
     Tts.stop();
     super.dispose();
   }

@@ -2,11 +2,11 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:speech_to_text/speech_to_text.dart';
 
 import '../../core/ai_client.dart';
 import '../../core/app_state.dart';
 import '../../core/db.dart';
+import '../../core/speech_service.dart';
 import '../../core/tts.dart';
 
 /// Interactive tutor conversation (main "Диалог" tab):
@@ -66,7 +66,6 @@ class _TutorMsg {
 class _TutorScreenState extends State<TutorScreen> {
   final _input = TextEditingController();
   final _scroll = ScrollController();
-  final SpeechToText _speech = SpeechToText();
   final List<_TutorMsg> _messages = [];
   bool _loading = false;
   bool _listening = false;
@@ -154,31 +153,25 @@ class _TutorScreenState extends State<TutorScreen> {
 
   Future<void> _dictate() async {
     if (_listening) {
-      await _speech.stop();
-      setState(() => _listening = false);
+      await SpeechService.instance.stopListening();
       return;
     }
-    final ok = await _speech.initialize(
-      onStatus: (s) {
-        if (s == 'notListening' && mounted) {
-          setState(() => _listening = false);
-        }
-      },
-      onError: (_) {
-        if (mounted) setState(() => _listening = false);
-      },
-    );
-    if (!ok || !mounted) return;
+    await Tts.stop();
     setState(() => _listening = true);
-    await _speech.listen(
-      localeId: 'en_US',
-      listenFor: const Duration(seconds: 15),
-      onResult: (r) {
-        _input.text = r.recognizedWords;
+    final attempt = await SpeechService.instance.listenOnce(
+      timeout: const Duration(seconds: 15),
+      onPartial: (p) {
+        _input.text = p;
         _input.selection =
             TextSelection.collapsed(offset: _input.text.length);
       },
     );
+    if (!mounted) return;
+    setState(() => _listening = false);
+    if (!attempt.failed) {
+      _input.text = attempt.recognized;
+      _input.selection = TextSelection.collapsed(offset: _input.text.length);
+    }
   }
 
   Future<void> _restart() async {
@@ -219,7 +212,7 @@ class _TutorScreenState extends State<TutorScreen> {
   void dispose() {
     _input.dispose();
     _scroll.dispose();
-    _speech.stop();
+    SpeechService.instance.stopListening();
     super.dispose();
   }
 
@@ -270,33 +263,65 @@ class _TutorScreenState extends State<TutorScreen> {
               padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
               child: LinearProgressIndicator(),
             ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(12, 4, 12, 8),
-            child: Row(
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
+            decoration: BoxDecoration(
+              color: Theme.of(context).colorScheme.surfaceContainerLow,
+              borderRadius:
+                  const BorderRadius.vertical(top: Radius.circular(24)),
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
               children: [
-                IconButton.filledTonal(
-                  onPressed: _dictate,
-                  icon: Icon(_listening ? Icons.graphic_eq : Icons.mic,
-                      color: _listening ? Colors.red : null),
-                  tooltip: 'Ответить голосом',
-                ),
-                const SizedBox(width: 8),
-                Expanded(
-                  child: TextField(
-                    controller: _input,
-                    decoration: const InputDecoration(
-                      hintText: 'Answer in English…',
-                      border: OutlineInputBorder(),
-                      isDense: true,
-                    ),
-                    textInputAction: TextInputAction.send,
-                    onSubmitted: (_) => _send(),
+                if (_listening)
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 8),
+                    child: Text('Слушаю… говори по-английски',
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodySmall
+                            ?.copyWith(
+                                color: Theme.of(context)
+                                    .colorScheme
+                                    .onSurfaceVariant)),
                   ),
-                ),
-                const SizedBox(width: 8),
-                IconButton.filled(
-                  onPressed: _loading ? null : _send,
-                  icon: const Icon(Icons.send),
+                Row(
+                  children: [
+                    GestureDetector(
+                      onTap: _dictate,
+                      child: Container(
+                        width: 48,
+                        height: 48,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: _listening
+                              ? Colors.red
+                              : Theme.of(context).colorScheme.primary,
+                        ),
+                        child: Icon(_listening ? Icons.stop : Icons.mic,
+                            color: Colors.white, size: 24),
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: TextField(
+                        controller: _input,
+                        decoration: const InputDecoration(
+                          hintText: 'Answer in English…',
+                          border: OutlineInputBorder(),
+                          isDense: true,
+                        ),
+                        textInputAction: TextInputAction.send,
+                        onSubmitted: (_) => _send(),
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    IconButton.filled(
+                      onPressed: _loading ? null : _send,
+                      icon: const Icon(Icons.send),
+                    ),
+                  ],
                 ),
               ],
             ),
@@ -307,7 +332,8 @@ class _TutorScreenState extends State<TutorScreen> {
   }
 
   Widget _bubble(BuildContext context, _TutorMsg m) {
-    final scheme = Theme.of(context).colorScheme;
+    final theme = Theme.of(context);
+    final muted = theme.colorScheme.onSurfaceVariant;
     final state = context.read<AppState>();
     final mine = m.role == 'user';
 
@@ -318,26 +344,28 @@ class _TutorScreenState extends State<TutorScreen> {
         // правка ответа ученика — над репликой репетитора
         if (m.fix != null)
           Container(
-            margin: const EdgeInsets.only(top: 6),
-            padding: const EdgeInsets.all(10),
+            margin: const EdgeInsets.only(bottom: 10),
+            padding: const EdgeInsets.all(12),
             constraints: BoxConstraints(
-                maxWidth: MediaQuery.of(context).size.width * 0.85),
+                maxWidth: MediaQuery.of(context).size.width * 0.82),
             decoration: BoxDecoration(
-              color: Colors.amber.withOpacity(0.18),
-              borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: Colors.amber.shade600, width: 1),
+              color: Colors.amber.withOpacity(0.15),
+              borderRadius: BorderRadius.circular(16),
+              border: Border.all(
+                  color: Colors.amber.withOpacity(0.6), width: 1),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text('✏️ Правильнее: ${m.fix}',
-                    style: const TextStyle(fontWeight: FontWeight.w600)),
+                    style: theme.textTheme.bodyLarge
+                        ?.copyWith(fontWeight: FontWeight.w600)),
                 if (m.fixNote != null && m.fixNote!.isNotEmpty)
                   Padding(
-                    padding: const EdgeInsets.only(top: 2),
+                    padding: const EdgeInsets.only(top: 4),
                     child: Text(m.fixNote!,
-                        style:
-                            TextStyle(fontSize: 13, color: scheme.outline)),
+                        style: theme.textTheme.bodySmall
+                            ?.copyWith(color: muted)),
                   ),
               ],
             ),
@@ -347,46 +375,56 @@ class _TutorScreenState extends State<TutorScreen> {
           onTap: mine || m.ru.isEmpty
               ? null
               : () => setState(() => m.showRu = !m.showRu),
-          onLongPress: mine
-              ? null
-              : () => Tts.speak(m.text, rate: state.ttsRate),
           child: Container(
-            margin: const EdgeInsets.symmetric(vertical: 5),
+            margin: const EdgeInsets.only(bottom: 10),
             padding: const EdgeInsets.all(12),
             constraints: BoxConstraints(
                 maxWidth: MediaQuery.of(context).size.width * 0.82),
             decoration: BoxDecoration(
-              color: mine ? scheme.primaryContainer : scheme.surfaceContainerHighest,
-              borderRadius: BorderRadius.circular(14),
+              color: mine
+                  ? theme.colorScheme.primaryContainer.withOpacity(0.6)
+                  : theme.colorScheme.surfaceContainerHighest,
+              borderRadius: BorderRadius.only(
+                topLeft: const Radius.circular(16),
+                topRight: const Radius.circular(16),
+                bottomLeft: Radius.circular(mine ? 16 : 4),
+                bottomRight: Radius.circular(mine ? 4 : 16),
+              ),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(m.text, style: const TextStyle(fontSize: 16)),
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    if (!mine)
+                      GestureDetector(
+                        onTap: () =>
+                            Tts.speak(m.text, rate: state.ttsRate),
+                        child: Icon(Icons.volume_up,
+                            size: 18, color: theme.colorScheme.primary),
+                      ),
+                    if (!mine) const SizedBox(width: 6),
+                    Flexible(
+                        child: Text(m.text,
+                            style: theme.textTheme.bodyLarge)),
+                  ],
+                ),
                 if (!mine && m.ru.isNotEmpty) ...[
-                  const SizedBox(height: 6),
+                  const SizedBox(height: 4),
                   if (m.showRu)
                     Text(m.ru,
-                        style: TextStyle(
-                            fontSize: 14, color: scheme.outline))
+                        style: theme.textTheme.bodySmall
+                            ?.copyWith(color: muted))
                   else
-                    Text('👆 перевод',
-                        style: TextStyle(
-                            fontSize: 12,
-                            color: scheme.outline.withOpacity(0.7))),
+                    Text('перевод ▾',
+                        style: theme.textTheme.labelSmall
+                            ?.copyWith(color: muted.withOpacity(0.7))),
                 ],
               ],
             ),
           ),
         ),
-        if (!mine)
-          Padding(
-            padding: const EdgeInsets.only(left: 4),
-            child: Text('долгий тап — озвучить',
-                style: TextStyle(
-                    fontSize: 10,
-                    color: scheme.outline.withOpacity(0.5))),
-          ),
       ],
     );
   }

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:speech_to_text/speech_recognition_result.dart';
-import 'package:speech_to_text/speech_to_text.dart';
 
 import '../../core/app_state.dart';
 import '../../core/models.dart';
+import '../../core/phonetics.dart';
+import '../../core/speech_service.dart';
 import '../../core/tts.dart';
 
-/// Pronunciation practice: press the mic, say the word, get instant feedback
-/// (exact match / close by edit distance / try again). Offline recognition.
+/// Практика произношения слова: нажми микрофон, произнеси, получи вердикт
+/// по фонетическому скорингу (общий SpeechService, как в диалогах).
 Future<void> showPronounceSheet(BuildContext context, Word word) {
   return showModalBottomSheet(
     context: context,
@@ -26,102 +26,63 @@ class _PronounceSheet extends StatefulWidget {
 }
 
 class _PronounceSheetState extends State<_PronounceSheet> {
-  final SpeechToText _speech = SpeechToText();
-  bool _available = true;
   bool _listening = false;
   String _heard = '';
-  String? _verdict; // null = ещё не пробовал
+  String? _verdict;
+  String? _error;
   Color _verdictColor = Colors.grey;
 
   Future<void> _start() async {
-    setState(() {
-      _heard = '';
-      _verdict = null;
-    });
-    final ok = await _speech.initialize(
-      onStatus: (s) {
-        if (s == 'notListening' && mounted) {
-          setState(() => _listening = false);
-        }
-      },
-      onError: (_) {
-        if (mounted) setState(() => _listening = false);
-      },
-    );
-    if (!ok) {
-      setState(() => _available = false);
+    if (_listening) {
+      await SpeechService.instance.stopListening();
       return;
     }
-    setState(() => _listening = true);
-    await _speech.listen(
-      localeId: 'en_US',
-      listenFor: const Duration(seconds: 5),
-      onResult: _onResult,
+    await Tts.stop();
+    setState(() {
+      _listening = true;
+      _heard = '';
+      _verdict = null;
+      _error = null;
+    });
+    final attempt = await SpeechService.instance.listenOnce(
+      timeout: const Duration(seconds: 6),
+      onPartial: (p) {
+        if (mounted) setState(() => _heard = p);
+      },
     );
-  }
-
-  void _onResult(SpeechRecognitionResult result) {
-    final heard = result.recognizedWords.toLowerCase().trim();
-    if (heard.isEmpty) return;
-    final target = widget.word.word.toLowerCase();
-    final tokens = heard.split(RegExp(r'\s+'));
-    var best = 999;
-    for (final t in tokens) {
-      final d = _levenshtein(t, target);
-      if (d < best) best = d;
+    if (!mounted) return;
+    if (attempt.failed) {
+      setState(() {
+        _listening = false;
+        _error = attempt.error;
+      });
+      return;
     }
-    // фраза целиком тоже считается
-    best = best < _levenshtein(heard, target)
-        ? best
-        : _levenshtein(heard, target);
-
+    final score =
+        scoreWord(widget.word.word, attempt.recognized, attempt.confidence);
     String verdict;
     Color color;
-    if (best == 0) {
-      verdict = 'Отлично! 🎯';
+    if (score >= 80) {
+      verdict = 'Отлично! 🎯 ($score)';
       color = Colors.green;
-    } else if (best <= 2) {
-      verdict = 'Близко — ещё разок 👍';
+    } else if (score >= 55) {
+      verdict = 'Близко — ещё разок 👍 ($score)';
       color = Colors.orange;
     } else {
-      verdict = 'Попробуй ещё 🙂';
+      verdict = 'Попробуй ещё 🙂 ($score)';
       color = Colors.red;
     }
     setState(() {
-      _heard = heard;
+      _listening = false;
+      _heard = attempt.recognized;
       _verdict = verdict;
       _verdictColor = color;
-      _listening = false;
     });
-  }
-
-  static int _levenshtein(String a, String b) {
-    if (a == b) return 0;
-    final m = a.length, n = b.length;
-    if (m == 0) return n;
-    if (n == 0) return m;
-    var prev = List<int>.generate(n + 1, (i) => i);
-    var curr = List<int>.filled(n + 1, 0);
-    for (var i = 1; i <= m; i++) {
-      curr[0] = i;
-      for (var j = 1; j <= n; j++) {
-        final cost = a[i - 1] == b[j - 1] ? 0 : 1;
-        curr[j] = [
-          curr[j - 1] + 1,
-          prev[j] + 1,
-          prev[j - 1] + cost,
-        ].reduce((x, y) => x < y ? x : y);
-      }
-      final tmp = prev;
-      prev = curr;
-      curr = tmp;
-    }
-    return prev[n];
   }
 
   @override
   void dispose() {
-    _speech.stop();
+    SpeechService.instance.stopListening();
     super.dispose();
   }
 
@@ -155,33 +116,33 @@ class _PronounceSheetState extends State<_PronounceSheet> {
             label: const Text('Послушать образец'),
           ),
           const SizedBox(height: 16),
-          if (!_available)
-            const Text(
-              'Распознавание речи недоступно на этом устройстве. Проверьте разрешение на микрофон.',
-              textAlign: TextAlign.center,
-            )
-          else ...[
-            GestureDetector(
-              onTap: _listening ? null : _start,
-              child: CircleAvatar(
-                radius: 44,
-                backgroundColor: _listening
-                    ? Colors.red
-                    : Theme.of(context).colorScheme.primary,
-                child: Icon(
-                  _listening ? Icons.graphic_eq : Icons.mic,
-                  color: Colors.white,
-                  size: 40,
-                ),
+          GestureDetector(
+            onTap: _start,
+            child: CircleAvatar(
+              radius: 44,
+              backgroundColor: _listening
+                  ? Colors.red
+                  : Theme.of(context).colorScheme.primary,
+              child: Icon(
+                _listening ? Icons.stop : Icons.mic,
+                color: Colors.white,
+                size: 40,
               ),
             ),
-            const SizedBox(height: 12),
-            Text(_listening ? 'Слушаю…' : 'Нажми и говори'),
-          ],
+          ),
+          const SizedBox(height: 12),
+          Text(_listening ? 'Слушаю… (нажми ещё раз — стоп)' : 'Нажми и говори'),
           const SizedBox(height: 16),
           if (_heard.isNotEmpty)
             Text('Услышал: «$_heard»',
                 style: TextStyle(color: Colors.grey.shade600)),
+          if (_error != null)
+            Padding(
+              padding: const EdgeInsets.only(top: 8),
+              child: Text(_error!,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(color: Colors.orange)),
+            ),
           if (_verdict != null) ...[
             const SizedBox(height: 8),
             Text(
